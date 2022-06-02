@@ -1,12 +1,23 @@
 {
   "private": true,
+  "engines": {
+    "node": ">=14.0"
+  },
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "node .output/server/index.mjs",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "prepare": "nuxi prepare"
   },
   "devDependencies": {
+    "h3": "^0.7.8",
     "nuxt": "3.0.0-rc.3"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.6.4",
+    "element-plus": "^2.2.2",
+    "less": "^4.1.2"
   }
 }
