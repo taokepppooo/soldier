@@ -22,6 +22,14 @@
     "preview": "nuxi preview",
     "prepare": "nuxi prepare && husky install"
   },
+  "config": {
+    "commitizen": {
+      "path": [
+        "@commitlint/cz-commitlint",
+        "cz-customizable"
+      ]
+    }
+  },
   "husky": {
     "hooks": {
       "commit-msg": "cz-commitlint -E HUSKY_GIT_PARAMS",
