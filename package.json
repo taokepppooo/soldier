@@ -1,22 +1,74 @@
 {
   "private": true,
+  "packageManager": "pnpm@6.27.2",
   "engines": {
-    "node": ">=14.0"
+    "node": ">=14.0",
+    "pnpm": ">= 6",
+    "npm": ">= 8"
   },
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
+    "format": "prettier . --write",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0 && pretty-quick --check --branch dev",
+    "lint:fix": "eslint . --fix --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0  && pretty-quick --branch dev",
+    "lint:stylelint": "stylelint . \"**/*.{vue,less,postcss,css,scss}\"",
+    "lint:stylelint:fix": "stylelint . --fix \"**/*.{vue,less,postcss,css,scss}\"",
+    "clean:cache": "rimraf node_modules/.cache/ && rimraf node_modules/.vite",
+    "clean:lib": "rimraf node_modules",
+    "commit": "git add . && cz-customizable",
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "prepare": "nuxi prepare"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "cz-commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx}": "eslint --fix",
+    "*.{*.vue,less,postcss,css,scss}": "stylelint --fix"
+  },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@commitlint/cz-commitlint": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-define-config": "^1.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.1.0",
     "h3": "^0.7.8",
-    "nuxt": "3.0.0-rc.3"
+    "husky": "^8.0.1",
+    "inquirer": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "nuxt": "3.0.0-rc.3",
+    "postcss": "^8.4.14",
+    "postcss-html": ">=1.0.0 <2.0.0",
+    "postcss-less": "^6.0.0",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.8.5",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0",
+    "typescript": "^4.7.3",
+    "vue": ">=3.2.0 <4.0.0"
   },
   "dependencies": {
     "@headlessui/vue": "^1.6.4",
+    "@mapbox/node-pre-gyp": "^1.0.9",
     "element-plus": "^2.2.2",
     "less": "^4.1.2"
   }

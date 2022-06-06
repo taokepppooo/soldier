@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-05-19 18:09:01
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-02 17:48:36
+ * @LastEditTime: 2022-06-06 09:19:16
  * @Description: 
  * @FilePath: \soldier\nuxt.config.ts
  */
@@ -25,6 +25,8 @@ export default defineNuxtConfig({
   // },
   // auto import components
   components: true,
+  // css
+  css: ["~/assets/less/index.less"],
   // vite plugins
   vite: {
     // optimizeDeps: {

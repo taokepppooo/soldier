@@ -1,0 +1,19 @@
+{
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine": "auto"
+    }
+  ],
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}
