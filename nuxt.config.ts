@@ -2,13 +2,14 @@
  * @Author: taoke
  * @Date: 2022-05-19 18:09:01
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-06 09:19:16
- * @Description: 
+ * @LastEditTime: 2022-06-07 18:18:50
+ * @Description:
  * @FilePath: \soldier\nuxt.config.ts
  */
 import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
+  modules: ['@unocss/nuxt'],
   // app: {
   //   head: {
   //     script: [
@@ -23,10 +24,8 @@ export default defineNuxtConfig({
   // build: {
   //   transpile: ['element-plus'],
   // },
-  // auto import components
-  components: true,
   // css
-  css: ["~/assets/less/index.less"],
+  css: ['~/assets/less/index.less'],
   // vite plugins
   vite: {
     // optimizeDeps: {

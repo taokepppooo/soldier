@@ -7,6 +7,7 @@
     "stylelint.vscode-stylelint",
     "hex-ci.stylelint-plus",
     "Vue.vscode-typescript-vue-plugin",
-    "sidneys1.gitconfig"
+    "sidneys1.gitconfig",
+    "antfu.unocss"
   ]
 }

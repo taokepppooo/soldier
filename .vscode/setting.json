@@ -27,5 +27,6 @@
   "markdownlint.customRules": [".markdownlint.json"],
   "vetur.format.enable": true,
   "vetur.validation.style": true,
-  "vetur.validation.template": true
+  "vetur.validation.template": true,
+  "unocss.root": "packages/client"
 }

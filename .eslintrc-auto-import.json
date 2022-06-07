@@ -1,0 +1,5 @@
+{
+  "globals": {
+    "useHead": "readonly"
+  }
+}
