@@ -81,7 +81,6 @@
   "dependencies": {
     "@headlessui/vue": "^1.6.4",
     "@mapbox/node-pre-gyp": "^1.0.9",
-    "element-plus": "^2.2.2",
-    "less": "^4.1.2"
+    "element-plus": "^2.2.2"
   }
 }
