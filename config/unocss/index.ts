@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-06-08 15:50:40
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-08 17:29:20
+ * @LastEditTime: 2022-06-16 19:00:47
  * @Description:
  * @FilePath: \soldier\config\unocss\index.ts
  */
@@ -17,6 +17,7 @@ import {
   transformerCompileClass,
 } from 'unocss'
 
+import { cssTypes } from '@/types/css'
 import type { UnocssNuxtOptions } from '@unocss/nuxt'
 
 const COLOR_MAIN = '#3d83f6'
@@ -52,13 +53,7 @@ export const unocssConfig = {
   ],
   preflights: [
     {
-      getCSS: () => `
-      * {
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-      }
-    `,
+      getCSS: () => cssTypes,
     },
   ],
 } as UnocssNuxtOptions

@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-06-07 16:36:54
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-08 17:35:51
+ * @LastEditTime: 2022-06-16 17:50:18
  * @Description:
  * @FilePath: \soldier\components\HeaderLogo.vue
 -->
@@ -19,9 +19,14 @@
         xmlns="http://www.w3.org/2000/svg"
       >
         <title>SkyLark</title>
-        <circle cx="16" cy="16" r="16" class="cr-fill-color-main"></circle>
+        <circle
+          cx="16"
+          cy="16"
+          r="16"
+          class=":uno: cr-fill-color-main"
+        ></circle>
       </svg>
-      <span>SkyLark</span>
+      <span class=":uno: text-5">SkyLark</span>
     </NuxtLink>
   </div>
 </template>
