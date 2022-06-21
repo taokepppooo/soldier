@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-06-07 16:36:54
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-21 13:31:38
+ * @LastEditTime: 2022-06-21 18:53:28
  * @Description:
  * @FilePath: \soldier\components\HeaderLogo.vue
 -->
@@ -27,9 +27,16 @@
           class=":uno: cr-fill-color-main"
         ></circle>
       </svg>
-      <span class=":uno: text-24 font-700">SkyLark</span>
+      <span class="custom-title">SkyLark</span>
     </NuxtLink>
   </div>
 </template>
 
 <script setup lang="ts"></script>
+
+<style scoped>
+.custom-title {
+  @apply text-24 font-roboto;
+  line-height: 1;
+}
+</style>
