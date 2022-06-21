@@ -2,14 +2,15 @@
  * @Author: taoke
  * @Date: 2022-06-07 16:36:54
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-16 17:50:18
+ * @LastEditTime: 2022-06-21 13:31:38
  * @Description:
  * @FilePath: \soldier\components\HeaderLogo.vue
 -->
 <template>
   <div>
-    <NuxtLink to="/" class=":uno: sc-flex-xy">
+    <NuxtLink to="/" class=":uno: sc-flex-xy w-180">
       <svg
+        class=":uno: mr-15px"
         clip-rule="evenodd"
         fill-rule="evenodd"
         stroke-linejoin="round"
@@ -26,7 +27,7 @@
           class=":uno: cr-fill-color-main"
         ></circle>
       </svg>
-      <span class=":uno: text-5">SkyLark</span>
+      <span class=":uno: text-24 font-700">SkyLark</span>
     </NuxtLink>
   </div>
 </template>

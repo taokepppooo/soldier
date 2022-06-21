@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-06-02 13:56:56
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-07 18:17:46
+ * @LastEditTime: 2022-06-20 11:02:50
  * @Description:
  * @FilePath: \soldier\layouts\s-footer.vue
 -->
@@ -15,4 +15,4 @@
 <script setup lang="ts">
 import { ElFooter } from 'element-plus/dist/index.full.js'
 </script>
-<style lang="less" scoped></style>
+<style scoped></style>

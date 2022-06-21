@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-06-08 15:50:40
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-16 19:00:47
+ * @LastEditTime: 2022-06-21 14:33:39
  * @Description:
  * @FilePath: \soldier\config\unocss\index.ts
  */
@@ -17,16 +17,13 @@ import {
   transformerCompileClass,
 } from 'unocss'
 
-import { cssTypes } from '@/types/css'
+import { cssTypes } from '../../types/css'
+import { shortcuts } from '../../types/css/shortcuts'
+import { rules } from '../../types/css/rules'
 import type { UnocssNuxtOptions } from '@unocss/nuxt'
 
-const COLOR_MAIN = '#3d83f6'
-
 export const unocssConfig = {
-  shortcuts: {
-    'sc-flex-xy': 'flex items-center justify-center',
-    'sc-flex-center-xy': 'items-center justify-center',
-  },
+  shortcuts,
   presets: [
     presetUno(),
     presetAttributify(),
@@ -35,10 +32,24 @@ export const unocssConfig = {
     }),
     presetTypography(),
     presetWebFonts({
+      provider: 'google', // default provider
       fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
+        // these will extend the default theme
+        sans: 'Roboto',
+        mono: ['Fira Code', 'Fira Mono:400,700'],
+        // custom ones
+        lobster: 'Lobster',
+        lato: [
+          {
+            name: 'Lato',
+            weights: ['400', '700'],
+            italic: true,
+          },
+          {
+            name: 'sans-serif',
+            provider: 'none',
+          },
+        ],
       },
     }),
   ],
@@ -47,10 +58,7 @@ export const unocssConfig = {
     transformerVariantGroup(),
     transformerCompileClass(),
   ],
-  rules: [
-    ['cr-color-main', { color: COLOR_MAIN }],
-    ['cr-fill-color-main', { fill: COLOR_MAIN }],
-  ],
+  rules,
   preflights: [
     {
       getCSS: () => cssTypes,

@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-06-02 13:56:15
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-07 15:55:31
+ * @LastEditTime: 2022-06-20 11:02:46
  * @Description:
  * @FilePath: \soldier\layouts\s-main.vue
 -->
@@ -15,4 +15,4 @@
 <script setup lang="ts">
 import { ElMain } from 'element-plus/dist/index.full.js'
 </script>
-<style lang="less" scoped></style>
+<style scoped></style>
