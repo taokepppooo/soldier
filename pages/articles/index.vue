@@ -1,18 +1,18 @@
 <!--
  * @Author: taoke
- * @Date: 2022-06-23 10:31:38
+ * @Date: 2022-06-23 10:31:33
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-23 13:26:48
+ * @LastEditTime: 2022-06-23 13:26:54
  * @Description:
- * @FilePath: \soldier\pages\hot\index.vue
+ * @FilePath: \soldier\pages\articles\index.vue
 -->
 <template>
-  <div>榜单</div>
+  <div>文章</div>
 </template>
 
 <script>
 export default {
-  name: 'hot',
+  name: 'articles',
 }
 </script>
 <script setup lang="ts"></script>

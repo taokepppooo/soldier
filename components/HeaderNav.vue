@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-06-08 13:14:41
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-21 18:22:04
+ * @LastEditTime: 2022-06-23 11:32:25
  * @Description:
  * @FilePath: \soldier\components\HeaderNav.vue
 -->
@@ -10,7 +10,7 @@
   <div>
     <NuxtLink to="/" class="custom-link">首页</NuxtLink>
     <NuxtLink to="/tools" class="custom-link">工具</NuxtLink>
-    <NuxtLink to="/article" class="custom-link">文章</NuxtLink>
+    <NuxtLink to="/articles" class="custom-link">文章</NuxtLink>
     <NuxtLink to="/hot" class="custom-link">榜单</NuxtLink>
   </div>
 </template>

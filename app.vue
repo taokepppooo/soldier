@@ -2,13 +2,22 @@
  * @Author: taoke
  * @Date: 2022-05-19 18:09:01
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-07 18:18:13
+ * @LastEditTime: 2022-06-23 13:25:32
  * @Description:
  * @FilePath: \soldier\app.vue
 -->
 <template>
   <ElConfigProvider :locale="locale">
-    <NuxtPage />
+    <NuxtLayout name="s-header">
+      <nav class=":uno: flex items-center h-60">
+        <HeaderLogo></HeaderLogo>
+        <HeaderNav></HeaderNav>
+      </nav>
+    </NuxtLayout>
+    <NuxtLayout name="s-main">
+      <NuxtPage />
+    </NuxtLayout>
+    <NuxtLayout name="s-footer">网站页脚</NuxtLayout>
   </ElConfigProvider>
 </template>
 
