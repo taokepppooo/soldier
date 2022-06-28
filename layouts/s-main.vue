@@ -2,12 +2,12 @@
  * @Author: taoke
  * @Date: 2022-06-02 13:56:15
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-20 11:02:46
+ * @LastEditTime: 2022-06-28 16:33:53
  * @Description:
  * @FilePath: \soldier\layouts\s-main.vue
 -->
 <template>
-  <ElMain>
+  <ElMain class=":uno: sc-web-main">
     <slot />
   </ElMain>
 </template>

@@ -2,7 +2,7 @@
  * @Author: taoke
  * @Date: 2022-06-08 13:14:41
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-23 11:32:25
+ * @LastEditTime: 2022-06-28 16:17:36
  * @Description:
  * @FilePath: \soldier\components\HeaderNav.vue
 -->
@@ -21,5 +21,6 @@
 .custom-link {
   @apply text-15 font-600 p-x-18 font-noto;
   letter-spacing: 1rem;
+  color: #757575;
 }
 </style>

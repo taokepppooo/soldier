@@ -2,13 +2,13 @@
  * @Author: taoke
  * @Date: 2022-05-19 18:09:01
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-23 13:25:32
+ * @LastEditTime: 2022-06-28 16:27:39
  * @Description:
  * @FilePath: \soldier\app.vue
 -->
 <template>
   <ElConfigProvider :locale="locale">
-    <NuxtLayout name="s-header">
+    <NuxtLayout name="s-header" class="header-shadow">
       <nav class=":uno: flex items-center h-60">
         <HeaderLogo></HeaderLogo>
         <HeaderNav></HeaderNav>
@@ -36,3 +36,9 @@ useHead({
   ],
 })
 </script>
+
+<style scoped>
+.header-shadow {
+  box-shadow: 0 0 18px rgb(0 0 0 / 6%);
+}
+</style>

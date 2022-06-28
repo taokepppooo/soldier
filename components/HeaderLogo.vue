@@ -2,13 +2,13 @@
  * @Author: taoke
  * @Date: 2022-06-07 16:36:54
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-21 19:00:46
+ * @LastEditTime: 2022-06-28 16:42:01
  * @Description:
  * @FilePath: \soldier\components\HeaderLogo.vue
 -->
 <template>
   <div>
-    <NuxtLink to="/" class=":uno: sc-flex-xy w-180">
+    <NuxtLink to="/" class=":uno: sc-flex-center-y-start-x w-180">
       <svg
         class=":uno: mr-15px"
         clip-rule="evenodd"

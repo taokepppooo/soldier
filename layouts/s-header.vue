@@ -2,13 +2,13 @@
  * @Author: taoke
  * @Date: 2022-06-02 13:56:08
  * @LastEditors: taoke
- * @LastEditTime: 2022-06-20 14:48:48
+ * @LastEditTime: 2022-06-28 16:34:09
  * @Description:
  * @FilePath: \soldier\layouts\s-header.vue
 -->
 <template>
   <ElHeader>
-    <div class=":uno: h-60 min-w-1280 w-80% m-a">
+    <div class=":uno: h-60 sc-web-main">
       <slot />
     </div>
   </ElHeader>
