@@ -1,5 +1,7 @@
 {
   "globals": {
-    "useHead": "readonly"
+    "useHead": "readonly",
+    "ref": "readonly",
+    "reactive": "readonly"
   }
 }
