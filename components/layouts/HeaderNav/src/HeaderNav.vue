@@ -1,13 +1,22 @@
 <template>
   <div>
-    <NuxtLink v-for="n in nav" :key="n.link" :to="n.link" class="custom-link">
+    <NuxtLink
+      v-for="n in nav"
+      :key="n.link"
+      :to="n.link"
+      class="custom-link"
+      exact-active-class="is-active"
+    >
       {{ n.name }}
     </NuxtLink>
   </div>
 </template>
 
 <script setup lang="ts">
-const nav = ref([
+import type { NavItem } from './types.ts'
+
+// TODO 接口
+const nav = ref<NavItem[]>([
   {
     link: '/',
     name: '首页',
@@ -36,5 +45,9 @@ const nav = ref([
   &:hover {
     --at-apply: 'cr-color-main';
   }
+}
+
+.is-active {
+  --at-apply: 'cr-color-main';
 }
 </style>

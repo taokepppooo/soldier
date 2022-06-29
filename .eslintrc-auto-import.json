@@ -2,6 +2,9 @@
   "globals": {
     "useHead": "readonly",
     "ref": "readonly",
-    "reactive": "readonly"
+    "reactive": "readonly",
+    "useRoute": "readonly",
+    "useRouter": "readonly",
+    "computed": "readonly"
   }
 }
