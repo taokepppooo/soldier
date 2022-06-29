@@ -1,11 +1,3 @@
-<!--
- * @Author: taoke
- * @Date: 2022-06-08 13:14:41
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-29 15:44:43
- * @Description:
- * @FilePath: \soldier\components\HeaderNav.vue
--->
 <template>
   <div>
     <NuxtLink v-for="n in nav" :key="n.link" :to="n.link" class="custom-link">

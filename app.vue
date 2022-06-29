@@ -1,11 +1,3 @@
-<!--
- * @Author: taoke
- * @Date: 2022-05-19 18:09:01
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-29 16:14:12
- * @Description:
- * @FilePath: \soldier\app.vue
--->
 <template>
   <ElConfigProvider :locale="locale">
     <NuxtLayout name="s-header" class="header-shadow">

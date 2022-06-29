@@ -1,12 +1,3 @@
-/*
- * @Author: taoke
- * @Date: 2022-06-06 10:16:55
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-06 10:16:55
- * @Description:
- * @FilePath: \soldier\commitlint.config.js
- */
-
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {

@@ -1,12 +1,3 @@
-/*
- * @Author: taoke
- * @Date: 2022-06-06 10:01:44
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-06 10:01:44
- * @Description:
- * @FilePath: \soldier\stylelint.config.js
- */
-
 module.exports = {
   root: true,
   plugins: ['stylelint-order'],

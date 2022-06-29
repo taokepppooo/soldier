@@ -1,11 +1,3 @@
-/*
- * @Author: taoke
- * @Date: 2022-06-08 15:50:40
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-21 18:01:11
- * @Description:
- * @FilePath: \soldier\config\unocss\index.ts
- */
 import {
   presetIcons,
   presetTypography,

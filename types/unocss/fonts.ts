@@ -1,11 +1,3 @@
-/*
- * @Author: taoke
- * @Date: 2022-06-21 18:01:20
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-21 18:04:38
- * @Description:
- * @FilePath: \soldier\types\unocss\fonts.ts
- */
 import type { WebFontsOptions } from '@unocss/preset-web-fonts'
 export const fonts = {
   provider: 'google', // default provider

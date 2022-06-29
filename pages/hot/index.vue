@@ -1,11 +1,3 @@
-<!--
- * @Author: taoke
- * @Date: 2022-06-23 10:31:38
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-23 13:26:48
- * @Description:
- * @FilePath: \soldier\pages\hot\index.vue
--->
 <template>
   <div>榜单</div>
 </template>

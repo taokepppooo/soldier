@@ -1,11 +1,3 @@
-<!--
- * @Author: taoke
- * @Date: 2022-06-02 13:56:56
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-20 11:02:50
- * @Description:
- * @FilePath: \soldier\layouts\s-footer.vue
--->
 <template>
   <ElFooter>
     <slot />

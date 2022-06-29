@@ -1,11 +1,3 @@
-/*
- * @Author: taoke
- * @Date: 2022-06-21 13:53:57
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-28 16:43:55
- * @Description:
- * @FilePath: \soldier\types\unocss\shortcuts.ts
- */
 import type { UserShortcuts } from '@unocss/core'
 export const shortcuts = {
   'sc-flex-xy': 'flex items-center justify-center',

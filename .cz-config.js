@@ -1,12 +1,3 @@
-/*
- * @Author: taoke
- * @Date: 2022-06-06 10:15:36
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-06 10:15:36
- * @Description:
- * @FilePath: \soldier\.cz-config.js
- */
-
 module.exports = {
   types: [
     { value: 'feat', name: 'feat:     新功能' },

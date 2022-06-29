@@ -1,11 +1,3 @@
-<!--
- * @Author: taoke
- * @Date: 2022-06-02 13:56:08
- * @LastEditors: taoke
- * @LastEditTime: 2022-06-28 16:34:09
- * @Description:
- * @FilePath: \soldier\layouts\s-header.vue
--->
 <template>
   <ElHeader>
     <div class=":uno: h-60 sc-web-main">
