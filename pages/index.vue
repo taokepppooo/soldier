@@ -1,5 +1,7 @@
 <template>
-  <div>首页</div>
+  <div>
+    <s-swiper></s-swiper>
+  </div>
 </template>
 
 <script>

@@ -16,8 +16,6 @@
 <script setup lang="ts">
 import { ElConfigProvider } from 'element-plus/dist/index.full.js'
 import zhCn from 'element-plus/lib/locale/lang/zh-cn'
-import { HeaderLogo } from '@/components/layouts/HeaderLogo'
-import { HeaderNav } from '@/components/layouts/HeaderNav'
 const locale = zhCn
 useHead({
   title: 'Sky Lark',
