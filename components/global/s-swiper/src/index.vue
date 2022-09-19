@@ -12,6 +12,12 @@
 </template>
 
 <script setup lang="ts">
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+// Import Swiper styles
+import 'swiper/css'
+
 const onSwiper = (swiper) => {
   console.log(swiper)
 }

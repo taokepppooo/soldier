@@ -84,6 +84,6 @@
     "@headlessui/vue": "^1.6.4",
     "@mapbox/node-pre-gyp": "^1.0.9",
     "element-plus": "^2.2.2",
-    "swiper": "^8.3.2"
+    "swiper": "^8.4.2"
   }
 }

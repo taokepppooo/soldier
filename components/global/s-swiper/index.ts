@@ -1,6 +1,6 @@
 import { withInstall } from '@/utils'
 
-import sSwiper from './src/s-swiper.vue'
+import sSwiper from './src/index.vue'
 
 export const SSwiper = withInstall(sSwiper)
 

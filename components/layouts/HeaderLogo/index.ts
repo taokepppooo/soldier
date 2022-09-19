@@ -1,6 +1,6 @@
 import { withInstall } from '@/utils'
 
-import headerLogo from './src/HeaderLogo.vue'
+import headerLogo from './src/index.vue'
 
 export const HeaderLogo = withInstall(headerLogo)
 

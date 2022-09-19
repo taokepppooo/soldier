@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import type { NavItem } from './types.ts'
+import type { NavItem } from './types'
 
 // TODO 接口
 const nav = ref<NavItem[]>([

@@ -1,6 +1,6 @@
 import { withInstall } from '@/utils'
 
-import headerNav from './src/HeaderNav.vue'
+import headerNav from './src/index.vue'
 
 export const HeaderNav = withInstall(headerNav)
 
