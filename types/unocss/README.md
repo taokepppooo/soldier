@@ -2,6 +2,6 @@
 
 ```css
 html {
-  font-size: 3px;
+  font-size: 4px;
 }
 ```
