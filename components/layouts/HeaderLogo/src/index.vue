@@ -19,7 +19,7 @@
           class=":uno: cr-fill-color-main"
         ></circle>
       </svg>
-      <span class=":uno: text-24 font-roboto lh-24">SkyLark</span>
+      <span class=":uno: text-24 font-roboto">SkyLark</span>
     </NuxtLink>
   </div>
 </template>

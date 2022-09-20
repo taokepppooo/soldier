@@ -1,7 +1,6 @@
-import { defineNuxtConfig } from 'nuxt'
 import { unocssConfig } from './config/unocss'
 
-export default defineNuxtConfig({
+export default {
   modules: ['@unocss/nuxt'],
   app: {
     head: {
@@ -43,4 +42,4 @@ export default defineNuxtConfig({
       exclude: ['@unocss/nuxt'],
     },
   },
-})
+}
