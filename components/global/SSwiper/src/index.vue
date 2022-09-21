@@ -3,19 +3,24 @@
     <swiper
       :space-between="30"
       loop
-      :pagination="{
-        clickable: true,
-      }"
-      navigation
+      :pagination="pagination"
+      :navigation="navigation"
       :modules="modules"
     >
       <swiper-slide v-for="(slide, index) in slides" :key="index">
         <img :src="slide.src" />
       </swiper-slide>
+      <button type="button" class="swiper-button-prev">
+        <el-icon><ArrowLeft /></el-icon>
+      </button>
+      <button type="button" class="swiper-button-next">
+        <el-icon><ArrowRight /></el-icon>
+      </button>
     </swiper>
   </div>
 </template>
 <script setup lang="ts">
+import { ElIcon } from 'element-plus'
 import { Autoplay, Pagination, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
@@ -24,8 +29,14 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
-import '@/components/style/swiper.less'
-
+const pagination = {
+  clickable: true,
+}
+const navigation = {
+  enabled: true,
+  prevEl: '.swiper-button-prev',
+  nextEl: '.swiper-button-next',
+}
 const modules = [Autoplay, Pagination, Navigation]
 
 // TODO 接口获取
@@ -36,4 +47,6 @@ const slides = [
   { src: 'https://swiperjs.com/demos/images/nature-4.jpg' },
 ]
 </script>
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+@import url('@/components/style/swiper.less');
+</style>

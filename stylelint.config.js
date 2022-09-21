@@ -9,13 +9,13 @@ module.exports = {
     'selector-pseudo-class-no-unknown': [
       true,
       {
-        ignorePseudoClasses: ['global'],
+        ignorePseudoClasses: ['deep', 'global'],
       },
     ],
     'selector-pseudo-element-no-unknown': [
       true,
       {
-        ignorePseudoElements: ['v-deep'],
+        ignorePseudoElements: ['deep'],
       },
     ],
     'at-rule-no-unknown': [
@@ -85,7 +85,7 @@ module.exports = {
         'selector-pseudo-element-no-unknown': [
           true,
           {
-            ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted'],
+            ignorePseudoElements: ['deep', 'v-global', 'v-slotted'],
           },
         ],
       },

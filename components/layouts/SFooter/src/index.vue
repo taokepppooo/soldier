@@ -1,5 +1,5 @@
 <template>
-  <ElFooter class=":uno: sc-web-main"> 网站页脚 </ElFooter>
+  <el-footer class=":uno: sc-web-main"> 网站页脚 </el-footer>
 </template>
 
 <script setup lang="ts">

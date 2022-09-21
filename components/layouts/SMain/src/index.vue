@@ -1,7 +1,7 @@
 <template>
-  <ElMain class=":uno: mt-12 sc-web-main">
+  <el-main class=":uno: mt-12 sc-web-main">
     <slot />
-  </ElMain>
+  </el-main>
 </template>
 
 <script setup lang="ts">

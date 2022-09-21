@@ -1,12 +1,12 @@
 <template>
-  <ElHeader>
+  <el-header>
     <div class="header-shadow">
       <nav class=":uno: flex items-center h-60 sc-web-main">
         <HeaderLogo></HeaderLogo>
         <HeaderNav></HeaderNav>
       </nav>
     </div>
-  </ElHeader>
+  </el-header>
 </template>
 
 <script setup lang="ts">

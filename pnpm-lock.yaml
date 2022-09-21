@@ -4,6 +4,7 @@ specifiers:
   '@commitlint/cli': ^17.0.2
   '@commitlint/config-conventional': ^17.0.2
   '@commitlint/cz-commitlint': ^17.0.0
+  '@element-plus/icons-vue': ^2.0.9
   '@mapbox/node-pre-gyp': ^1.0.9
   '@typescript-eslint/eslint-plugin': ^5.27.0
   '@typescript-eslint/parser': ^5.27.0
@@ -43,6 +44,7 @@ specifiers:
   vue: ^3.2.37
 
 dependencies:
+  '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue/2.0.9_vue@3.2.39
   '@mapbox/node-pre-gyp': registry.npmmirror.com/@mapbox/node-pre-gyp/1.0.10
   element-plus: registry.npmmirror.com/element-plus/2.2.17_vue@3.2.39
   swiper: registry.npmmirror.com/swiper/8.4.2
