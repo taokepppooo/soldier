@@ -1,8 +1,9 @@
 <template>
   <div>
     <swiper
-      :space-between="30"
+      :space-between="50"
       loop
+      :autoplay="autoplay"
       :pagination="pagination"
       :navigation="navigation"
       :modules="modules"
@@ -21,23 +22,13 @@
 </template>
 <script setup lang="ts">
 import { ElIcon } from 'element-plus'
-import { Autoplay, Pagination, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-
-import 'swiper/css'
-
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
-
-const pagination = {
-  clickable: true,
-}
-const navigation = {
-  enabled: true,
-  prevEl: '.swiper-button-prev',
-  nextEl: '.swiper-button-next',
-}
-const modules = [Autoplay, Pagination, Navigation]
+import {
+  autoplay,
+  pagination,
+  navigation,
+  modules,
+} from '../hooks/useSwiperOptions'
 
 // TODO 接口获取
 const slides = [

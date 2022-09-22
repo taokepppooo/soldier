@@ -4,18 +4,11 @@ export default {
   modules: ['@unocss/nuxt'],
   app: {
     head: {
-      script: [
-        { src: 'https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.js' },
-        { src: 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js' },
-      ],
-      link: [
+      meta: [
+        { charset: 'utf-8' },
         {
-          rel: 'stylesheet',
-          href: 'https://cdn.jsdelivr.net/npm/@unocss/reset/normalize.min.css',
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css',
+          name: 'viewport',
+          content: 'width=device-width,initial-scale=1.0',
         },
       ],
     },
@@ -35,7 +28,7 @@ export default {
   // unocss
   unocss: unocssConfig,
   // css
-  css: ['~/assets/css/index.css'],
+  css: ['~/assets/less/index.less'],
   // vite plugins
   vite: {
     optimizeDeps: {

@@ -1,17 +1,17 @@
 <template>
   <div>
-    <ElConfigProvider :locale="locale">
+    <el-config-provider :locale="locale">
       <SHeader></SHeader>
       <SMain>
         <slot />
       </SMain>
       <SFooter></SFooter>
-    </ElConfigProvider>
+    </el-config-provider>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ElConfigProvider } from 'element-plus/dist/index.full.js'
+import { ElConfigProvider } from 'element-plus'
 import zhCn from 'element-plus/lib/locale/lang/zh-cn'
 const locale = zhCn
 useHead({

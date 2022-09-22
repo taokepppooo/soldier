@@ -19,6 +19,7 @@
     "clean:lib": "rimraf node_modules",
     "commit": "git add . && cz-customizable",
     "generate": "nuxi generate",
+    "postinstall": "npm-install-peers",
     "preview": "nuxi preview",
     "prepare": "nuxi prepare && husky install"
   },
