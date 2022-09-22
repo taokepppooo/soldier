@@ -13,7 +13,6 @@ export const autoplay = {
 export const pagination = {
   clickable: true,
 }
-
 export const navigation = {
   enabled: true,
   prevEl: '.swiper-button-prev',
