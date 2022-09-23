@@ -1,6 +1,7 @@
 import { unocssConfig } from './config/unocss'
 
 export default {
+  ssr: true,
   modules: ['@unocss/nuxt'],
   app: {
     head: {
@@ -23,6 +24,10 @@ export default {
         path: '~/components/layouts',
         global: true,
       },
+      {
+        path: '~/components/pages',
+        global: true,
+      },
     ],
   },
   // unocss
@@ -30,9 +35,5 @@ export default {
   // css
   css: ['~/assets/less/index.less'],
   // vite plugins
-  vite: {
-    optimizeDeps: {
-      exclude: ['@unocss/nuxt'],
-    },
-  },
+  vite: {},
 }

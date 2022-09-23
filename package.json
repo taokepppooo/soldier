@@ -10,6 +10,8 @@
     "build": "nuxi build",
     "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "format": "prettier . --write",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0 && pretty-quick --check --branch dev",
     "lint:fix": "eslint . --fix --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0  && pretty-quick --branch dev",
@@ -40,6 +42,9 @@
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx}": "eslint --fix",
     "*.{*.vue,less,postcss,css,scss}": "stylelint --fix"
+  },
+  "peerDependencies": {
+    "webpack": ">=4.0.0 <5.0.0 || >=5.0.0 <6.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
@@ -76,14 +81,16 @@
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0",
+    "tsx": "^3.9.0",
     "typescript": "^4.7.3",
     "vite": "^3.1.3",
-    "vue": "^3.2.37"
+    "vitest": "^0.23.4"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.9",
     "@mapbox/node-pre-gyp": "^1.0.9",
     "element-plus": "^2.2.17",
-    "swiper": "^8.4.2"
+    "swiper": "^8.4.2",
+    "vue": "^3.2.39"
   }
 }

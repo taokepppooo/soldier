@@ -8,6 +8,7 @@
     "hex-ci.stylelint-plus",
     "Vue.vscode-typescript-vue-plugin",
     "sidneys1.gitconfig",
-    "antfu.unocss"
+    "antfu.unocss",
+    "ZixuanChen.vitest-explorer"
   ]
 }

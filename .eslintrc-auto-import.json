@@ -5,6 +5,9 @@
     "reactive": "readonly",
     "useRoute": "readonly",
     "useRouter": "readonly",
-    "computed": "readonly"
+    "computed": "readonly",
+    "onMounted": "readonly",
+    "onUnmounted": "readonly",
+    "nextTick": "readonly"
   }
 }
