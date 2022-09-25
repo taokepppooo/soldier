@@ -1,6 +1,7 @@
 <template>
   <div>
     <SSwiper></SSwiper>
+    <HomeCards></HomeCards>
   </div>
 </template>
 

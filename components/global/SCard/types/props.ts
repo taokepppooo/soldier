@@ -28,7 +28,3 @@ export interface Options {
   height: string | number
   transition?: Transition
 }
-
-export interface Props {
-  options: Options
-}

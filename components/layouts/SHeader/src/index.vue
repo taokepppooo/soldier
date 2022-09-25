@@ -1,7 +1,7 @@
 <template>
   <el-header>
     <div class="header-shadow">
-      <nav class=":uno: flex items-center h-60 sc-web-main">
+      <nav class=":uno: flex items-center h-60 sc-web-default">
         <HeaderLogo></HeaderLogo>
         <HeaderNav></HeaderNav>
       </nav>

@@ -1,5 +1,5 @@
 <template>
-  <el-main class=":uno: mt-18 sc-web-main">
+  <el-main class=":uno: mt-18 sc-web-default">
     <slot />
   </el-main>
 </template>

@@ -7,9 +7,14 @@
 </template>
 
 <script setup lang="ts">
-import { Props } from '../types/props'
+import { Options } from '../types/props'
 // eslint-disable-next-line vue/prefer-import-from-vue
 import type { CSSProperties } from '@vue/runtime-dom'
+
+// props不支持导入ts，vue团队后续会尝试解决此问题
+export interface Props {
+  options: Options
+}
 
 const props = defineProps<Props>()
 
