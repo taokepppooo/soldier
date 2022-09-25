@@ -13,9 +13,5 @@ export const autoplay = {
 export const pagination = {
   clickable: true,
 }
-export const navigation = {
-  prevEl: '.swiper-button-prev',
-  nextEl: '.swiper-button-next',
-}
 
 export const modules = [Autoplay, Pagination, Navigation]

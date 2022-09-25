@@ -1,0 +1,23 @@
+{
+  "id": "3671074",
+  "name": "soldier",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "31737517",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "31737520",
+      "name": "left",
+      "font_class": "left",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    }
+  ]
+}

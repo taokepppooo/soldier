@@ -1,3 +1,5 @@
+@import '~/assets/mixins/index.less';
+
 .swiper-button {
   position: absolute;
   top: 50%;
@@ -64,7 +66,9 @@
   .swiper-button();
 
   &::after {
-    content: '';
+    content: '\e621';
+    font-size: 16px;
+    .font-minxin-iconfont();
   }
 
   &:hover {
@@ -76,7 +80,9 @@
   .swiper-button();
 
   &::after {
-    content: '';
+    content: '\e620';
+    font-size: 16px;
+    .font-minxin-iconfont();
   }
 
   &:hover {
