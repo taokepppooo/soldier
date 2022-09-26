@@ -9,6 +9,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.27.0
   '@typescript-eslint/parser': ^5.27.0
   '@unocss/nuxt': ^0.45.21
+  '@vue/shared': ^3.2.39
   commitizen: ^4.2.4
   consola: '*'
   cz-customizable: ^6.3.0
@@ -48,6 +49,7 @@ specifiers:
 dependencies:
   '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue/2.0.9_vue@3.2.39
   '@mapbox/node-pre-gyp': registry.npmmirror.com/@mapbox/node-pre-gyp/1.0.10
+  '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.39
   element-plus: registry.npmmirror.com/element-plus/2.2.17_vue@3.2.39
   swiper: registry.npmmirror.com/swiper/8.4.2
   vue: registry.npmmirror.com/vue/3.2.39

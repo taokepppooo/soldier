@@ -10,6 +10,7 @@
     "onUnmounted": "readonly",
     "nextTick": "readonly",
     "unref": "readonly",
-    "toRefs": "readonly"
+    "toRefs": "readonly",
+    "defineComponent": "readonly"
   }
 }
