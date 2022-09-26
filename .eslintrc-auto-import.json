@@ -8,6 +8,8 @@
     "computed": "readonly",
     "onMounted": "readonly",
     "onUnmounted": "readonly",
-    "nextTick": "readonly"
+    "nextTick": "readonly",
+    "unref": "readonly",
+    "toRefs": "readonly"
   }
 }
