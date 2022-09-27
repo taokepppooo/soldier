@@ -16,7 +16,7 @@
 </template>
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { autoplay, pagination, modules } from '../hooks/useSwiperOptions'
+import { autoplay, pagination, modules } from './hooks/useSwiperOptions'
 
 // TODO 接口获取
 const slides = [

@@ -7,16 +7,11 @@
 </template>
 
 <script setup lang="ts">
-import { Options } from '../types/props'
+import { cardProps } from './types/props'
 // eslint-disable-next-line vue/prefer-import-from-vue
-import type { CSSProperties, PropType } from 'vue'
+import type { CSSProperties } from 'vue'
 
-const props = defineProps({
-  options: {
-    type: Object as PropType<Options>,
-    require: true,
-  },
-})
+const props = defineProps(cardProps)
 
 const baseStyles = reactive<CSSProperties>({
   width: props.options?.width,

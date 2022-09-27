@@ -8,8 +8,8 @@
 
 <script setup lang="ts">
 const cardOptions = {
-  width: 330,
-  height: 80,
+  width: '330px',
+  height: '80px',
 }
 
 // TODO 接口获取
