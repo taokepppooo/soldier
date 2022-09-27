@@ -8,14 +8,9 @@
 
 <script setup lang="ts">
 import { cardProps } from './types/props'
-// eslint-disable-next-line vue/prefer-import-from-vue
-import type { CSSProperties } from 'vue'
+import { useStyle } from './hooks/useStyle'
 
 const props = defineProps(cardProps)
 
-const baseStyles = reactive<CSSProperties>({
-  width: props.options?.width,
-  height: props.options?.height,
-  transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)',
-})
+const baseStyles = useStyle(props)
 </script>

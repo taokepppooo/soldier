@@ -36,8 +36,4 @@ export const cardProps = {
     type: Object as PropType<Options>,
     require: true,
   },
-  height: {
-    type: String,
-    require: true,
-  },
 }
