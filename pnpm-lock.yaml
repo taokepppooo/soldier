@@ -27,6 +27,7 @@ specifiers:
   inquirer: ^8.0.0
   less: ^4.1.3
   lint-staged: ^13.0.0
+  lodash: ^4.17.21
   nuxt: v3.0.0-rc.10
   postcss: ^8.4.14
   postcss-html: '>=1.0.0 <2.0.0'
@@ -51,6 +52,7 @@ dependencies:
   '@mapbox/node-pre-gyp': registry.npmmirror.com/@mapbox/node-pre-gyp/1.0.10
   '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.39
   element-plus: registry.npmmirror.com/element-plus/2.2.17_vue@3.2.39
+  lodash: registry.npmmirror.com/lodash/4.17.21
   swiper: registry.npmmirror.com/swiper/8.4.2
   vue: registry.npmmirror.com/vue/3.2.39
 
