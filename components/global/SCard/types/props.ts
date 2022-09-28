@@ -4,7 +4,6 @@ export interface Options {
   width: string | number
   height: string | number
   backgroundImage?: string
-  transform?: string
 }
 
 export const cardProps = {

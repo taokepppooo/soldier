@@ -34,8 +34,6 @@ const getCardOptions = (index) => {
     width: 330,
     height: 80,
     backgroundImage: cards[index].backgroundImage,
-    transform:
-      'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)',
   }
 }
 </script>

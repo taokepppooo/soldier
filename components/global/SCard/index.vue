@@ -13,7 +13,7 @@ import { useStyle } from './hooks/useStyle'
 
 const props = defineProps(cardProps)
 
-const target = ref(null)
+const target = ref()
 
 const { baseStyles, mouse } = useStyle(props, target)
 </script>
