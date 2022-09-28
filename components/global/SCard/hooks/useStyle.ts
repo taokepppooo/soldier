@@ -15,7 +15,7 @@ export const useStyle = (props: ExtractPropTypes<typeof cardProps>) => {
   return reactive<CSSProperties>({
     width,
     height,
-    'background-image': 'linear-gradient()',
+    'background-image': options?.backgroundImage,
     transform:
       'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)',
   })

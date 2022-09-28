@@ -18,11 +18,6 @@ export interface Perspective {
   v: number
 }
 
-export interface linearGradient {
-  angle?: string
-  points?: string
-}
-
 export interface Transition {
   scale3d?: Scale3D
   rotateX?: RotateX
@@ -33,7 +28,7 @@ export interface Transition {
 export interface Options {
   width: string | number
   height: string | number
-  'linear-gradient'?: linearGradient
+  backgroundImage?: string
   transition?: Transition
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <NuxtLink v-for="(card, index) in cards" :key="index" :to="card.link">
-      <SCard :options="cardOptions">
+      <SCard :options="getCardOptions(index)">
         <div>1</div>
       </SCard>
     </NuxtLink>
@@ -9,15 +9,31 @@
 </template>
 
 <script setup lang="ts">
-const cardOptions = {
-  width: 330,
-  height: 80,
-  'linear-gradient': {
-    angle: '45deg',
-    points: '#7fe496, #6edf8f',
-  },
-}
-
 // TODO 接口获取
-const cards = [{ link: '/' }, { link: '/' }, { link: '/' }, { link: '/' }]
+const cards = reactive([
+  {
+    link: '/',
+    backgroundImage: 'linear-gradient(45deg,#7fe496,#6edf8f)',
+  },
+  {
+    link: '/',
+    backgroundImage: 'linear-gradient(45deg,#fe9078,#f1b87f)',
+  },
+  {
+    link: '/',
+    backgroundImage: 'linear-gradient(45deg,#6cacfd,#93c8ff)',
+  },
+  {
+    link: '/',
+    backgroundImage: 'linear-gradient(45deg,#a682e4,#c1a7e9)',
+  },
+])
+
+const getCardOptions = (index) => {
+  return {
+    width: 330,
+    height: 80,
+    backgroundImage: cards[index].backgroundImage,
+  }
+}
 </script>
