@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div :style="[baseStyles]">
+    <div ref="target" :style="[baseStyles]">
+      <div>{{ mouse.elementX }}</div>
       <slot></slot>
     </div>
   </div>
@@ -12,5 +13,7 @@ import { useStyle } from './hooks/useStyle'
 
 const props = defineProps(cardProps)
 
-const baseStyles = useStyle(props)
+const target = ref(null)
+
+const { baseStyles, mouse } = useStyle(props, target)
 </script>

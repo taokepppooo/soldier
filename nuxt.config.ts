@@ -2,7 +2,7 @@ import { unocssConfig } from './config/unocss'
 
 export default {
   ssr: true,
-  modules: ['@unocss/nuxt'],
+  modules: ['@unocss/nuxt', '@vueuse/nuxt'],
   app: {
     head: {
       meta: [
