@@ -1,7 +1,6 @@
 <template>
   <div>
     <div ref="target" :style="[baseStyles]">
-      <div>{{ mouse.elementX }}</div>
       <slot></slot>
     </div>
   </div>
@@ -15,5 +14,5 @@ const props = defineProps(cardProps)
 
 const target = ref()
 
-const { baseStyles, mouse } = useStyle(props, target)
+const { baseStyles } = useStyle(props, target)
 </script>
