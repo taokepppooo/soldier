@@ -34,6 +34,7 @@ const getCardOptions = (index) => {
     width: 330,
     height: 80,
     backgroundImage: cards[index].backgroundImage,
+    mode: '3d' as const,
   }
 }
 </script>

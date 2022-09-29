@@ -3,9 +3,6 @@ import { useMouseInElement, UseMouseInElementReturn } from '@vueuse/core'
 import { cardProps } from '../types/props'
 import type { CSSProperties, ExtractPropTypes, Ref } from 'vue'
 
-const TRANSFORM =
-  'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'
-
 export const useStyle = (
   props: ExtractPropTypes<typeof cardProps>,
   target: Ref
@@ -19,9 +16,12 @@ export const useStyle = (
     ? `${options?.height}px`
     : options?.height
 
-  const mouse = useMouseInElement(target)
-  const transform = ref<string>(TRANSFORM)
-  setHoverStyle(transform, mouse)
+  const transform = ref<string>('')
+
+  if (options?.mode === '3d') {
+    const mouse = useMouseInElement(target)
+    setHoverStyle(transform, mouse)
+  }
 
   const baseStyles = reactive<CSSProperties>({
     width,
@@ -32,11 +32,17 @@ export const useStyle = (
 
   return {
     baseStyles,
-    mouse,
   }
 }
 
+/**
+ * @param  {Ref<string>} transform
+ * @param  {UseMouseInElementReturn} mouse
+ * @returns UseMouseInElementReturn
+ */
 function setHoverStyle(transform: Ref<string>, mouse: UseMouseInElementReturn) {
+  const TRANSFORM =
+    'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'
   const { elementX, elementY, elementWidth, elementHeight } = mouse
 
   const rotateXVal = ref<number>(0)
@@ -68,6 +74,12 @@ function setHoverStyle(transform: Ref<string>, mouse: UseMouseInElementReturn) {
   })
 }
 
+/**
+ * @param  {number} box
+ * @param  {number} mouse
+ * @param  {Ref<number>} val
+ * @returns Ref
+ */
 function rotateXY(box: number, mouse: number, val: Ref<number>) {
   // 中线
   const yMiddle = divide(box, 2)
