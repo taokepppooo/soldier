@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="cards">
     <NuxtLink v-for="(card, index) in cards" :key="index" :to="card.link">
       <SCard :options="getCardOptions(index)">
         <div>1</div>
@@ -38,3 +38,12 @@ const getCardOptions = (index) => {
   }
 }
 </script>
+
+<style lang="less" scoped>
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+</style>

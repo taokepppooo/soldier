@@ -11,6 +11,7 @@
     "nextTick": "readonly",
     "unref": "readonly",
     "toRefs": "readonly",
-    "defineComponent": "readonly"
+    "defineComponent": "readonly",
+    "definePageMeta": "readonly"
   }
 }

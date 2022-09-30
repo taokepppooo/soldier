@@ -1,22 +1,16 @@
 <template>
-  <el-header>
-    <div class="header-shadow">
-      <nav class=":uno: flex items-center h-60 sc-web-default">
+  <div class="header-shadow">
+    <NuxtLayout name="container">
+      <nav class=":uno: flex items-center h-60">
         <HeaderLogo></HeaderLogo>
         <HeaderNav></HeaderNav>
       </nav>
-    </div>
-  </el-header>
+    </NuxtLayout>
+  </div>
 </template>
 
-<script setup lang="ts">
-import { ElHeader } from 'element-plus'
-</script>
+<script setup lang="ts"></script>
 <style lang="less" scoped>
-.el-header {
-  padding: unset;
-}
-
 .header-shadow {
   box-shadow: 0 0 18px rgb(0 0 0 / 6%);
 }

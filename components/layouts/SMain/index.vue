@@ -1,14 +1,7 @@
 <template>
-  <el-main class=":uno: mt-18 sc-web-default">
+  <NuxtLayout name="container" class=":uno: mt-18">
     <slot />
-  </el-main>
+  </NuxtLayout>
 </template>
 
-<script setup lang="ts">
-import { ElMain } from 'element-plus'
-</script>
-<style lang="less" scoped>
-.el-main {
-  padding: unset;
-}
-</style>
+<script setup lang="ts"></script>
