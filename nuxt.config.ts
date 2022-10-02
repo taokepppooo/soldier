@@ -3,6 +3,9 @@ import { unocssConfig } from './config/unocss'
 export default {
   ssr: true,
   modules: ['@unocss/nuxt', '@vueuse/nuxt'],
+  meta: {
+    link: [{ rel: 'stylesheet', href: './assets/font/iconfont.css' }],
+  },
   app: {
     head: {
       meta: [

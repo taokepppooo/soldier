@@ -4,6 +4,9 @@ export const cssTypes = `
   margin: 0;
   text-decoration: none;
 }
+*, :after, :before {
+  box-sizing: border-box;
+}
 html {
   font-size: 4px;
 }
