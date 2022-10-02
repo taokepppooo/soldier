@@ -48,7 +48,7 @@ const getCardOptions = (index: number) => {
   }
 }
 const getIconfont = (icon: string) => {
-  return ['font-minxin-iconfont', icon]
+  return ['iconfont', icon]
 }
 </script>
 
