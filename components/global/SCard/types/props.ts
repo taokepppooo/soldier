@@ -5,6 +5,7 @@ export interface Options {
   height: string | number
   backgroundImage?: string
   mode?: '3d'
+  transition?: string
 }
 
 export const cardProps = {

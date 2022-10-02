@@ -35,6 +35,7 @@ const getCardOptions = (index) => {
     height: 80,
     backgroundImage: cards[index].backgroundImage,
     mode: '3d' as const,
+    transition: 'all 0.3s ease-in-out',
   }
 }
 </script>
@@ -45,5 +46,9 @@ const getCardOptions = (index) => {
   justify-content: space-between;
   margin-top: 15px;
   margin-bottom: 15px;
+
+  :deep(.card) {
+    border-radius: 5px;
+  }
 }
 </style>

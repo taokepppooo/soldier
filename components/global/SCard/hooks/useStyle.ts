@@ -28,6 +28,7 @@ export const useStyle = (
     height,
     'background-image': options?.backgroundImage,
     transform: transform as any as string,
+    transition: options?.transition,
   })
 
   return {
