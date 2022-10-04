@@ -12,6 +12,7 @@
     "unref": "readonly",
     "toRefs": "readonly",
     "defineComponent": "readonly",
-    "definePageMeta": "readonly"
+    "definePageMeta": "readonly",
+    "h": "readonly"
   }
 }

@@ -1,5 +1,7 @@
 <template>
-  <div>文章</div>
+  <div>
+    <ArticleCard></ArticleCard>
+  </div>
 </template>
 
 <script setup lang="ts"></script>
