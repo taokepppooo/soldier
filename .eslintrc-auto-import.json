@@ -13,6 +13,7 @@
     "toRefs": "readonly",
     "defineComponent": "readonly",
     "definePageMeta": "readonly",
-    "h": "readonly"
+    "h": "readonly",
+    "defineProps": "readonly"
   }
 }

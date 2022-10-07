@@ -1,0 +1,19 @@
+{
+  "rose": "#fff1f2,#f43f5e",
+  "pink": "#fdf2f8,#ec4899",
+  "fuchsia": "#fdf4ff,#d946ef",
+  "purple": "#faf5ff,#a855f7",
+  "violet": "#f5f3ff,#8b5cf6",
+  "indigo": "#eef2ff,#6366f1",
+  "blue": "#eff6ff,#3b82f6",
+  "sky": "#f0f9ff,#0ea5e9",
+  "cyan": "#ecfeff,#06b6d4",
+  "teal": "#f0fdfa,#14b8a6",
+  "emerald": "#ecfdf5,#10b981",
+  "green": "#f0fdf4,#22c55e",
+  "lime": "#f7fee7,#84cc16",
+  "yellow": "#fefce8,#eab308",
+  "orange": "#fff7ed,#f97316",
+  "red": "#fef2f2,#ef4444",
+  "lightblue": "#f0f9ff,#0ea5e9"
+}

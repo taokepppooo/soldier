@@ -1,3 +1,4 @@
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import { unocssConfig } from './config/unocss'
 
 export default {
@@ -37,6 +38,7 @@ export default {
   unocss: unocssConfig,
   // css
   css: ['~/assets/less/index.less'],
-  // vite plugins
-  vite: {},
+  vite: {
+    plugins: [vueJsx()],
+  },
 }
