@@ -1,16 +1,13 @@
+import { Options } from '@/components/global/SCard/types/props'
 import type { PropType } from 'vue'
 
-export interface Options {
-  width: string | number
-  height: string | number
-  backgroundImage?: string
-  mode?: '3d'
-  transition?: string
+export interface ArticleCardsOptions extends Options {
+  layout?: 'vertical' | 'horizontal'
 }
 
 export const cardProps = {
   options: {
-    type: Object as PropType<Options>,
+    type: Object as PropType<ArticleCardsOptions>,
     require: true,
   },
 }

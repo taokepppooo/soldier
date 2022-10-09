@@ -1,11 +1,14 @@
 import { SCard } from '@@/components/types'
 import { cardProps } from '@@/components/types/cardProps'
+import { setStyles } from '../hooks/useStyle'
 
 // 使用vue中的defineComponent会报错
 const RenderCard = defineNuxtComponent({
   props: cardProps,
   setup(props) {
-    return () => <SCard options={props.options}> </SCard>
+    const styles = setStyles(props.options)
+
+    return () => <SCard options={props.options} style={styles}></SCard>
   },
 })
 
