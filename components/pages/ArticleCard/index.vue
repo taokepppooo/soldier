@@ -1,5 +1,5 @@
 <template>
-  <RenderCard :options="options"></RenderCard>
+  <RenderCard class="render-card" :options="options"></RenderCard>
 </template>
 
 <script setup lang="tsx">
@@ -14,8 +14,15 @@ const options = reactive({
   width: 330,
   height: 80,
   backgroundImage: `linear-gradient(45deg,${colors[key]})`,
+  transform: 'scale(1.1)',
   transition: 'all 0.3s ease-in-out',
   layout: 'vertical' as const,
 })
 </script>
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.render-card {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 6px;
+}
+</style>

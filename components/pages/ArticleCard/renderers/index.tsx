@@ -6,7 +6,7 @@ import { setStyles } from '../hooks/useStyle'
 const RenderCard = defineNuxtComponent({
   props: cardProps,
   setup(props) {
-    const styles = setStyles(props.options)
+    const styles = setStyles(props.options!)
 
     return () => <SCard options={props.options} style={styles}></SCard>
   },
