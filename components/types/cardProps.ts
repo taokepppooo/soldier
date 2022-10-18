@@ -1,8 +1,10 @@
 import { Options } from '@/components/global/SCard/types/props'
-import type { PropType } from 'vue'
+import type { PropType, Ref } from 'vue'
 
 export interface ArticleCardsOptions extends Options {
   layout?: 'vertical' | 'horizontal'
+  transform?: string
+  hoverTarget?: Ref
 }
 
 export const cardProps = {

@@ -39,7 +39,6 @@ export const useStyle = (
 /**
  * @param  {Ref<string>} transform
  * @param  {UseMouseInElementReturn} mouse
- * @returns UseMouseInElementReturn
  */
 function setHoverStyle(transform: Ref<string>, mouse: UseMouseInElementReturn) {
   const TRANSFORM =
