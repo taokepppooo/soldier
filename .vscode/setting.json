@@ -25,8 +25,8 @@
   ],
   "vite.devCommand": "pnpm run dev -- --",
   "markdownlint.customRules": [".markdownlint.json"],
-  "vetur.format.enable": true,
-  "vetur.validation.style": true,
-  "vetur.validation.template": true,
+  "vetur.format.enable": false,
+  "vetur.validation.style": false,
+  "vetur.validation.template": false,
   "unocss.root": "packages/client"
 }

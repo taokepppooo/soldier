@@ -44,7 +44,6 @@ const getCardOptions = (index: number) => {
     height: 80,
     backgroundImage: cards[index].backgroundImage,
     mode: '3d' as const,
-    transition: 'all 0.3s ease-in-out',
   }
 }
 const getIconfont = (icon: string) => {

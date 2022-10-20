@@ -4,7 +4,13 @@
 
 <script setup lang="tsx">
 import RenderCard from './renderers'
+import type { ArticleCardsOptions } from '@/components/types/cardProps'
+import type { PropType } from 'vue'
 import colors from '~~/assets/color-transition/card-colors.json'
+
+const props = defineProps({
+  options: Object as PropType<ArticleCardsOptions>,
+})
 
 const colorKeysArray = Object.keys(colors)
 
@@ -12,13 +18,12 @@ const target = ref()
 
 const key = colorKeysArray[Math.floor(Math.random() * colorKeysArray.length)]
 
-const options = reactive({
-  width: 330,
-  height: 80,
+const options = reactive<ArticleCardsOptions>({
+  ...(props.options as ArticleCardsOptions),
   backgroundImage: `linear-gradient(45deg,${colors[key]})`,
   transform: 'scale(1.05)',
-  transition: 'all 0.3s ease-in-out',
   layout: 'vertical' as const,
+  transition: 'all 0.3s ease-in-out' as const,
   hoverTarget: target,
 })
 </script>
