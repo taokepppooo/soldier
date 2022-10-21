@@ -15,7 +15,6 @@ module.exports = defineConfig({
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'prettier',
-    './.eslintrc-auto-import.json',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -27,6 +26,12 @@ module.exports = defineConfig({
     },
   },
   plugins: ['@typescript-eslint', 'prettier', 'import'],
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx', '*.vue'],
+      rules: { 'no-undef': 'off' },
+    },
+  ],
   rules: {
     'no-debugger': 'error',
     'no-console': ['warn', { allow: ['error'] }],
