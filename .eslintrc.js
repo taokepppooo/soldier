@@ -30,6 +30,7 @@ module.exports = defineConfig({
   overrides: [
     {
       files: ['*.ts', '*.tsx', '*.vue'],
+      excludedFiles: 'node_modules',
       rules: { 'no-undef': 'off' },
     },
   ],
@@ -124,11 +125,4 @@ module.exports = defineConfig({
       },
     ],
   },
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx', '*.vue'],
-      excludedFiles: 'node_modules',
-      rules: { 'no-undef': 'off' },
-    },
-  ],
 })
