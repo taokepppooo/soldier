@@ -1,7 +1,12 @@
 <template>
   <div>
-    <ArticleCard></ArticleCard>
+    <ArticleCard :options="options"></ArticleCard>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const options = reactive({
+  width: 330,
+  height: 80,
+})
+</script>

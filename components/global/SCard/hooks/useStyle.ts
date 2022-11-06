@@ -16,11 +16,11 @@ export const useStyle = (
     ? `${options?.height}px`
     : options?.height
 
-  const transform = ref<string>('')
+  const transform = ref<string>()
 
   if (options?.mode === '3d') {
     const mouse = useMouseInElement(target)
-    setHoverStyle(transform, mouse)
+    setHoverStyle(transform as Ref<string>, mouse)
   }
 
   const baseStyles = reactive<CSSProperties>({
@@ -39,7 +39,6 @@ export const useStyle = (
 /**
  * @param  {Ref<string>} transform
  * @param  {UseMouseInElementReturn} mouse
- * @returns UseMouseInElementReturn
  */
 function setHoverStyle(transform: Ref<string>, mouse: UseMouseInElementReturn) {
   const TRANSFORM =

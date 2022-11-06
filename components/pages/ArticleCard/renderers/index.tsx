@@ -1,16 +1,16 @@
-import { SCard } from '~~/components/types'
+import { SCard } from '@@/components/types'
+import { cardProps } from '@@/components/types/cardProps'
+import { setStyles } from '../hooks/useStyle'
 
-const getCardOptions = () => {
-  return {
-    width: 330,
-    height: 80,
-    backgroundImage: 'linear-gradient(45deg,#a682e4,#c1a7e9)',
-    transition: 'all 0.3s ease-in-out',
-  }
-}
+// 使用vue中的defineComponent会报错
+const RenderCard = defineNuxtComponent({
+  props: cardProps,
+  setup(props) {
+    const styles = setStyles(props.options!)
 
-const renderCard = () => {
-  return <SCard options={getCardOptions()}> </SCard>
-}
+    return () => <SCard options={props.options} style={styles}></SCard>
+  },
+})
 
-export default renderCard
+export type RenderCardInstance = InstanceType<typeof RenderCard>
+export default RenderCard
