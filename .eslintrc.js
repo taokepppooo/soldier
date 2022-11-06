@@ -12,10 +12,10 @@ module.exports = defineConfig({
   parser: 'vue-eslint-parser',
   extends: [
     'eslint:recommended',
+    'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'prettier',
-    './.eslintrc-auto-import.json',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -118,4 +118,11 @@ module.exports = defineConfig({
       },
     ],
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx', '*.vue'],
+      excludedFiles: 'node_modules',
+      rules: { 'no-undef': 'off' },
+    },
+  ],
 })
