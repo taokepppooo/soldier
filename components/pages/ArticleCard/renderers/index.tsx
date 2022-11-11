@@ -5,10 +5,14 @@ import { setStyles } from '../hooks/useStyle'
 // 使用vue中的defineComponent会报错
 const RenderCard = defineNuxtComponent({
   props: cardProps,
-  setup(props) {
+  setup(props, { slots }) {
     const styles = setStyles(props.options!)
 
-    return () => <SCard options={props.options} style={styles}></SCard>
+    return () => (
+      <SCard options={props.options} style={styles}>
+        {slots}
+      </SCard>
+    )
   },
 })
 

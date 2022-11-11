@@ -1,9 +1,12 @@
 <template>
-  <RenderCard ref="target" class="render-card" :options="options"></RenderCard>
+  <RenderCard ref="target" class="render-card" :options="options">
+    <slot></slot>
+  </RenderCard>
 </template>
 
 <script setup lang="tsx">
 import RenderCard from './renderers'
+import type { RenderCardInstance } from './renderers'
 import type { ArticleCardsOptions } from '@/components/types/cardProps'
 import type { PropType } from 'vue'
 import colors from '~~/assets/color-transition/card-colors.json'
@@ -14,7 +17,7 @@ const props = defineProps({
 
 const colorKeysArray = Object.keys(colors)
 
-const target = ref()
+const target = ref<RenderCardInstance>()
 
 const key = colorKeysArray[Math.floor(Math.random() * colorKeysArray.length)]
 

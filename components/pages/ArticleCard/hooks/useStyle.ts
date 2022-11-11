@@ -13,7 +13,7 @@ export const setStyles = (
   const transform = ref<transformType>()
 
   if (options.transform) {
-    const mouse = useMouseInElement(options.hoverTarget)
+    const mouse = useMouseInElement(toRef(options, 'hoverTarget') as Ref)
     setHoverStyle(options, transform as Ref<transformType>, mouse)
   }
 
