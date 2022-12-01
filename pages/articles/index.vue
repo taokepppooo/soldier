@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ArticleBigCard :options="options"></ArticleBigCard>
+    <ArticleBigCard :options="options"> </ArticleBigCard>
   </div>
 </template>
 

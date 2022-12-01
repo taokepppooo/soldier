@@ -3,7 +3,7 @@ import { unocssConfig } from './config/unocss'
 
 export default {
   ssr: true,
-  modules: ['@unocss/nuxt', '@vueuse/nuxt'],
+  modules: ['@unocss/nuxt', '@vueuse/nuxt', '@nuxt/image-edge'],
   meta: {
     link: [{ rel: 'stylesheet', href: './assets/font/iconfont.css' }],
   },
