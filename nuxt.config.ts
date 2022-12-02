@@ -4,9 +4,6 @@ import { unocssConfig } from './config/unocss'
 export default {
   ssr: true,
   modules: ['@unocss/nuxt', '@vueuse/nuxt', '@nuxt/image-edge'],
-  meta: {
-    link: [{ rel: 'stylesheet', href: './assets/font/iconfont.css' }],
-  },
   app: {
     head: {
       meta: [
@@ -37,7 +34,7 @@ export default {
   // unocss
   unocss: unocssConfig,
   // css
-  css: ['~/assets/less/index.less'],
+  css: ['~/assets/less/index.less', '~/assets/font/iconfont.css'],
   vite: {
     plugins: [vueJsx()],
   },
