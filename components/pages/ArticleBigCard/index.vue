@@ -1,26 +1,28 @@
 <template>
   <ArticleCard :options="props.cardOptions">
-    <nuxt-img
-      format="webp"
-      loading="lazy"
-      :width="width"
-      :height="height"
-      src="https://sky-lark-public.oss-cn-qingdao.aliyuncs.com/ux-hybrid.svg"
-    />
+    <div class="bg" :style="bgStyle"></div>
   </ArticleCard>
 </template>
 
 <script setup lang="ts">
+import { toPx } from '@/utils/style'
 import type { ArticleCardsOptions } from '@/components/types/cardProps'
 import type { ArticleCardContentOptions } from '@/components/types/pages/articleBigCardProps'
-import type { PropType } from 'vue'
+import type { CSSProperties, PropType } from 'vue'
 
 const props = defineProps({
   cardOptions: Object as PropType<ArticleCardsOptions>,
   contentOptions: Object as PropType<ArticleCardContentOptions>,
 })
 
-const width = ref(props.contentOptions?.img?.width)
-const height = ref(props.contentOptions?.img?.height)
+const width = toPx(props.contentOptions!.img!.width)
+const height = toPx(props.contentOptions!.img!.height)
+const source = ref(props.contentOptions!.img!.source)
+
+const bgStyle = reactive<CSSProperties>({
+  width,
+  height,
+  'background-image': source.value ? `url('${source.value}')` : undefined,
+})
 </script>
 <style lang="less" scoped></style>

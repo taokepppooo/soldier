@@ -1,5 +1,6 @@
-import { isNumber, divide, subtract, round, multiply } from 'lodash'
+import { divide, subtract, round, multiply } from 'lodash'
 import { useMouseInElement, UseMouseInElementReturn } from '@vueuse/core'
+import { toPx } from '@/utils/style'
 import { cardProps } from '../types/props'
 import type { CSSProperties, ExtractPropTypes, Ref } from 'vue'
 
@@ -9,16 +10,12 @@ export const useStyle = (
 ) => {
   const options = props.options
 
-  const width = isNumber(options?.width)
-    ? `${options?.width}px`
-    : options?.width
-  const height = isNumber(options?.height)
-    ? `${options?.height}px`
-    : options?.height
+  const width = toPx(options!.width)
+  const height = toPx(options!.height)
 
   const transform = ref<string>()
 
-  if (options?.mode === '3d') {
+  if (options!.mode === '3d') {
     const mouse = useMouseInElement(target)
     setHoverStyle(transform as Ref<string>, mouse)
   }
@@ -26,9 +23,9 @@ export const useStyle = (
   const baseStyles = reactive<CSSProperties>({
     width,
     height,
-    'background-image': options?.backgroundImage,
+    'background-image': options!.backgroundImage,
     transform: transform as any as string,
-    transition: options?.transition,
+    transition: options!.transition,
   })
 
   return {
