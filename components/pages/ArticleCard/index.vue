@@ -18,9 +18,15 @@ const props = defineProps({
 
 const target = ref<RenderCardInstance>()
 
+const backgroundAngle = props.options!.backgroundAngle
+  ? `${props.options!.backgroundAngle},`
+  : ''
+
 const options = reactive<ArticleCardsOptions>({
   ...(props.options as ArticleCardsOptions),
-  backgroundImage: `linear-gradient(45deg,${getRandomValueFromObject(colors)})`,
+  background: `linear-gradient(${backgroundAngle}${getRandomValueFromObject(
+    colors
+  )})`,
   transform: 'scale(1.05)',
   layout: 'vertical' as const,
   transition: 'all 0.3s ease-in-out' as const,
@@ -31,6 +37,6 @@ const options = reactive<ArticleCardsOptions>({
 .render-card {
   display: inline-block;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 </style>
