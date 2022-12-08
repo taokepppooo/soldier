@@ -1,7 +1,7 @@
-.text-ellipsis-2 {
+.text-ellipsis(@line) {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: @line;
   text-overflow: ellipsis;
   overflow: hidden;
   word-break: break-all;

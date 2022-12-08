@@ -1,10 +1,15 @@
 <template>
   <ArticleCard :options="props.cardOptions">
     <div class="card-wrapper">
-      <div class="bg" :style="bgStyle">
-        <h5 class="title">苹果发布iOS/iPadOS 14.4.2 提供重要安全更新</h5>
-      </div>
-      <div>aaa</div>
+      <div class="bg" :style="bgStyle"></div>
+      <title class="title" :style="titleStyle">
+        {{ titleContent }}
+      </title>
+      <ArticleBigCardInfo
+        v-if="infoOptions"
+        :options="infoOptions"
+        class="card-info"
+      ></ArticleBigCardInfo>
     </div>
   </ArticleCard>
 </template>
@@ -21,37 +26,54 @@ const props = defineProps({
 })
 
 const imgOptions = props.contentOptions!.img
+const titleOptions = props.contentOptions!.title
+const infoOptions = props.contentOptions!.info
 
-const width = toPx(imgOptions!.width)
-const height = toPx(imgOptions!.height)
-const source = ref(imgOptions!.source)
+const imgWidth = toPx(imgOptions!.width)
+const imgHeight = toPx(imgOptions!.height)
+const imgSource = imgOptions!.source
 
 const bgStyle = reactive<CSSProperties>({
-  width,
-  height,
-  'background-image': source.value ? `url('${source.value}')` : undefined,
+  width: imgWidth,
+  height: imgHeight,
+  'background-image': imgSource ? `url('${imgSource}')` : undefined,
+})
+
+const titleWidth = toPx(titleOptions!.width)
+const titleContent = ref(titleOptions!.content)
+
+const titleStyle = reactive<CSSProperties>({
+  width: titleWidth,
 })
 </script>
 <style lang="less" scoped>
 @import '~/assets/less/common.less';
 
 .card-wrapper {
+  position: relative;
   background-color: rgba(255, 255, 255, 0.3);
   height: 100%;
   padding: 20px;
 
   .bg {
+    opacity: 0.6;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   .title {
-    .text-ellipsis-2();
+    .text-ellipsis(5);
+    position: absolute;
+    top: 20px;
     text-align: justify;
-    font-weight: normal;
     color: #ffffff;
     font-size: 55px;
     line-height: 1.3;
+  }
+
+  .card-info {
+    position: absolute;
+    bottom: 40px;
   }
 }
 </style>

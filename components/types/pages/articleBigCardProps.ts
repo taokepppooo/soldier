@@ -4,8 +4,20 @@ interface ArticleImg {
   source?: string
 }
 
+interface ArticleTitle {
+  width: string | number
+  content: string
+}
+
+export interface ArticleInfo {
+  tag: string
+  headSource: string
+  username: string
+  publishTime: string
+}
+
 export interface ArticleCardContentOptions {
   img?: ArticleImg
-  title?: string
-  articleInfo?: string
+  title?: ArticleTitle
+  info?: ArticleInfo
 }
