@@ -4,8 +4,8 @@
     <nuxt-img
       class="head-portrait"
       :src="options.headSource"
-      width="35"
-      height="35"
+      width="30"
+      height="30"
     />
     <div class="info-detail">
       <span>{{ options.username }}</span>
