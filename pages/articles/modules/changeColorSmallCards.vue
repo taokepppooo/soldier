@@ -1,5 +1,5 @@
 <template>
-  <template v-for="(option, index) in cardOptionsArr" :key="index">
+  <template v-for="option in cardOptionsArr" :key="option.id">
     <ChangeColorSmallArticleCard
       :card-options="option.cardOptions"
       :content-options="option.contentOptions"
@@ -14,11 +14,12 @@ import type { ArticleCardContentOptions } from '@/components/types/pages/article
 
 const cardOptionsArr = reactive([
   {
-    cardOptions: reactive<ArticleCardOptions>({
+    id: 1,
+    cardOptions: {
       width: 550,
       height: 550,
-    }),
-    contentOptions: reactive<ArticleCardContentOptions>({
+    } as ArticleCardOptions,
+    contentOptions: {
       title: {
         label:
           '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
@@ -32,7 +33,7 @@ const cardOptionsArr = reactive([
         username: 'MacDown',
         publishTime: '2021-03-27 11:24:12',
       },
-    }),
+    } as ArticleCardContentOptions,
   },
 ])
 </script>
