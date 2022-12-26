@@ -1,10 +1,10 @@
 <template>
   <div>
-    <ArticleBigCard
+    <ChangeColorBigArticleCard
       :card-options="cardOptions"
       :content-options="contentOptions"
     >
-    </ArticleBigCard>
+    </ChangeColorBigArticleCard>
   </div>
 </template>
 

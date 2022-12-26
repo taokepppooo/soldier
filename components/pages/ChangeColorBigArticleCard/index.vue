@@ -1,17 +1,17 @@
 <template>
-  <ArticleCard :options="props.cardOptions">
+  <ChangeColorArticleCard :options="props.cardOptions">
     <div class="card-wrapper">
       <div class="bg" :style="bgStyle"></div>
       <title class="title" :style="titleStyle">
         {{ titleContent }}
       </title>
-      <ArticleBigCardInfo
+      <ChangeColorBigArticleCardInfo
         v-if="infoOptions"
         :options="infoOptions"
         class="card-info"
-      ></ArticleBigCardInfo>
+      ></ChangeColorBigArticleCardInfo>
     </div>
-  </ArticleCard>
+  </ChangeColorArticleCard>
 </template>
 
 <script setup lang="ts">
