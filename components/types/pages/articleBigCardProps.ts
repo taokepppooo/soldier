@@ -5,7 +5,8 @@ interface ArticleImg {
 }
 
 interface ArticleTitle {
-  width: string | number
+  width?: string | number
+  label?: string
   content: string
 }
 

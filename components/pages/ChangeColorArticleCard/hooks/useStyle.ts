@@ -1,15 +1,13 @@
 import { useMouseInElement, UseMouseInElementReturn } from '@vueuse/core'
-import type { ArticleCardsOptions } from '@/components/types/cardProps'
+import type { ArticleCardOptions } from '@/components/types/cardProps'
 import type { Ref } from 'vue'
 
 type transformType = string | undefined
 
 /**
- * @param  {ArticleCardsOptions} options
+ * @param  {ArticleCardOptions} options
  */
-export const setStyles = (
-  options: ArticleCardsOptions
-): ArticleCardsOptions => {
+export const setStyles = (options: ArticleCardOptions): ArticleCardOptions => {
   const transform = ref<transformType>()
 
   if (options.transform) {
@@ -17,7 +15,7 @@ export const setStyles = (
     setHoverStyle(options, transform as Ref<transformType>, mouse)
   }
 
-  const baseStyles = reactive<ArticleCardsOptions>({
+  const baseStyles = reactive<ArticleCardOptions>({
     width: options.width,
     height: options.height,
     background: options.background,
@@ -35,7 +33,7 @@ export const setStyles = (
  * @returns UseMouseInElementReturn
  */
 function setHoverStyle(
-  options: ArticleCardsOptions,
+  options: ArticleCardOptions,
   transform: Ref<transformType>,
   mouse: UseMouseInElementReturn
 ) {

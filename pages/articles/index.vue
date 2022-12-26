@@ -1,37 +1,9 @@
 <template>
-  <div>
-    <ChangeColorBigArticleCard
-      :card-options="cardOptions"
-      :content-options="contentOptions"
-    >
-    </ChangeColorBigArticleCard>
-  </div>
+  <change-color-big-cards></change-color-big-cards>
+  <change-color-small-cards></change-color-small-cards>
 </template>
 
 <script setup lang="ts">
-// TODO 可自定义
-const cardOptions = reactive({
-  width: 550,
-  height: 550,
-})
-// TODO 可自定义
-const contentOptions = reactive({
-  img: {
-    width: '100%',
-    height: 400,
-    source: 'https://sky-lark-public.oss-cn-qingdao.aliyuncs.com/ux-hybrid.svg',
-  },
-  title: {
-    width: 350,
-    content:
-      '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
-  },
-  info: {
-    tag: '文章',
-    headSource:
-      'https://sky-lark-public.oss-cn-qingdao.aliyuncs.com/ux-hybrid.svg',
-    username: 'MacDown',
-    publishTime: '2021-03-27 11:24:12',
-  },
-})
+import changeColorBigCards from './modules/changeColorBigCards.vue'
+import changeColorSmallCards from './modules/changeColorSmallCards.vue'
 </script>

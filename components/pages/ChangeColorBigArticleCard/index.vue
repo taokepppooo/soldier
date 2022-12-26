@@ -16,12 +16,12 @@
 
 <script setup lang="ts">
 import { toPx } from '@/utils/style'
-import type { ArticleCardsOptions } from '@/components/types/cardProps'
+import type { ArticleCardOptions } from '@/components/types/cardProps'
 import type { ArticleCardContentOptions } from '@/components/types/pages/articleBigCardProps'
 import type { CSSProperties, PropType } from 'vue'
 
 const props = defineProps({
-  cardOptions: Object as PropType<ArticleCardsOptions>,
+  cardOptions: Object as PropType<ArticleCardOptions>,
   contentOptions: Object as PropType<ArticleCardContentOptions>,
 })
 
