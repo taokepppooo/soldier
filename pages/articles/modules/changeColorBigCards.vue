@@ -7,8 +7,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleBigCardProps'
 import type { ArticleCardOptions } from '@/components/types/cardProps'
-import type { ArticleCardContentOptions } from '@/components/types/pages/articleBigCardProps'
 
 // TODO 可自定义
 const cardOptions = reactive<ArticleCardOptions>({

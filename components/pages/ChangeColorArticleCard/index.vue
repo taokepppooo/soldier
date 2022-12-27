@@ -22,12 +22,18 @@ const backgroundAngle = props.options!.backgroundAngle
   ? `${props.options!.backgroundAngle},`
   : ''
 
+let defaultScale = '1.05'
+
+if (props.options!.scale) {
+  defaultScale = props.options!.scale
+}
+
 const options = reactive<ArticleCardOptions>({
   ...(props.options as ArticleCardOptions),
   background: `linear-gradient(${backgroundAngle}${getRandomValueFromObject(
     colors
   )})`,
-  transform: 'scale(1.05)',
+  transform: `scale(${defaultScale})`,
   layout: 'vertical' as const,
   transition: 'all 0.3s ease-in-out' as const,
   hoverTarget: target,

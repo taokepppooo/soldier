@@ -16,8 +16,8 @@
 
 <script setup lang="ts">
 import { toPx } from '@/utils/style'
-import type { ArticleCardOptions } from '@/components/types/cardProps'
-import type { ArticleCardContentOptions } from '@/components/types/pages/articleBigCardProps'
+import { ArticleCardOptions } from '@/components/types/cardProps'
+import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleBigCardProps'
 import type { CSSProperties, PropType } from 'vue'
 
 const props = defineProps({

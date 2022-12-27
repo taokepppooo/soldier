@@ -14,8 +14,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleBigCardProps'
 import type { ArticleCardOptions } from '@/components/types/cardProps'
-import type { ArticleCardContentOptions } from '@/components/types/pages/articleBigCardProps'
 import type { PropType } from 'vue'
 
 const props = defineProps({

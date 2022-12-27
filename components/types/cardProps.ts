@@ -4,6 +4,7 @@ import type { PropType, Ref } from 'vue'
 export interface ArticleCardOptions extends Options {
   backgroundAngle?: string
   layout?: 'vertical' | 'horizontal'
+  scale?: string
   transform?: string
   hoverTarget?: Ref
 }
