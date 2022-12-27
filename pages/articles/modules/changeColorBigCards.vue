@@ -1,14 +1,14 @@
 <template>
-  <ChangeColorBigArticleCard
+  <ChangeColorArticleLargeCard
     :card-options="cardOptions"
     :content-options="contentOptions"
   >
-  </ChangeColorBigArticleCard>
+  </ChangeColorArticleLargeCard>
 </template>
 
 <script setup lang="ts">
 import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleBigCardProps'
-import type { ArticleCardOptions } from '@/components/types/cardProps'
+import { ArticleCardOptions } from '@/components/types/cardProps'
 
 // TODO 可自定义
 const cardOptions = reactive<ArticleCardOptions>({

@@ -2,11 +2,11 @@
   <div class="cards-wrapper">
     <div class="cards-wrapper__cards">
       <div v-for="option in cardOptionsArr" :key="option.id">
-        <ChangeColorSmallArticleCard
+        <ChangeColorArticleSmallCard
           :card-options="option.cardOptions"
           :content-options="option.contentOptions"
         >
-        </ChangeColorSmallArticleCard>
+        </ChangeColorArticleSmallCard>
       </div>
     </div>
   </div>

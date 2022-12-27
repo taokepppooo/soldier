@@ -5,11 +5,11 @@
       <title class="title" :style="titleStyle">
         {{ titleContent }}
       </title>
-      <ChangeColorBigArticleCardInfo
+      <ChangeColorArticleLargeCardInfo
         v-if="infoOptions"
         :options="infoOptions"
         class="card-info"
-      ></ChangeColorBigArticleCardInfo>
+      ></ChangeColorArticleLargeCardInfo>
     </div>
   </ChangeColorArticleCard>
 </template>
