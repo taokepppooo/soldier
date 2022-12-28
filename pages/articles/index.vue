@@ -15,7 +15,9 @@ import changeColorSmallCards from './modules/changeColorSmallCards.vue'
 .top-wrapper {
   .top-wrapper__box {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 20px;
   }
 }
 </style>

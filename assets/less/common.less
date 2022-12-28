@@ -6,3 +6,8 @@
   overflow: hidden;
   word-break: break-all;
 }
+
+// 消除动画文字抖动和模糊问题
+.transform-font {
+  transform: translateZ(0) translate3d(0, 0, 0) perspective(0);
+}

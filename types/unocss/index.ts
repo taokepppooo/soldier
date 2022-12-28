@@ -5,6 +5,7 @@ export const cssTypes = `
   text-decoration: none;
 }
 *, :after, :before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {

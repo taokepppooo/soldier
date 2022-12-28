@@ -1,15 +1,17 @@
 <template>
   <ChangeColorArticleCard :options="props.cardOptions">
     <div class="card-wrapper">
-      <div class="bg" :style="bgStyle"></div>
-      <title class="title" :style="titleStyle">
-        {{ titleContent }}
-      </title>
-      <ChangeColorArticleLargeCardInfo
-        v-if="infoOptions"
-        :options="infoOptions"
-        class="card-info"
-      ></ChangeColorArticleLargeCardInfo>
+      <div class="card-wrapper__box">
+        <div class="box__bg" :style="bgStyle"></div>
+        <title class="box__title" :style="titleStyle">
+          {{ titleContent }}
+        </title>
+        <ChangeColorArticleLargeCardInfo
+          v-if="infoOptions"
+          :options="infoOptions"
+          class="box__card-info"
+        ></ChangeColorArticleLargeCardInfo>
+      </div>
     </div>
   </ChangeColorArticleCard>
 </template>
@@ -50,30 +52,35 @@ const titleStyle = reactive<CSSProperties>({
 @import '~/assets/less/common.less';
 
 .card-wrapper {
-  position: relative;
   background-color: rgba(255, 255, 255, 0.3);
   height: 100%;
-  padding: 20px;
 
-  .bg {
-    opacity: 0.6;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+  .card-wrapper__box {
+    position: relative;
+    height: inherit;
+    padding: 20px;
 
-  .title {
-    .text-ellipsis(5);
-    position: absolute;
-    top: 20px;
-    text-align: justify;
-    color: #ffffff;
-    font-size: 55px;
-    line-height: 1.3;
-  }
+    .box__bg {
+      opacity: 0.6;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
 
-  .card-info {
-    position: absolute;
-    bottom: 40px;
+    .box__title {
+      .text-ellipsis(5);
+      .transform-font();
+      position: absolute;
+      top: 20px;
+      text-align: justify;
+      color: #ffffff;
+      font-size: 55px;
+      line-height: 1.3;
+    }
+
+    .box__card-info {
+      position: absolute;
+      bottom: 40px;
+    }
   }
 }
 </style>
