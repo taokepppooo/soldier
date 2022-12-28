@@ -33,7 +33,7 @@ const options = reactive<ArticleCardOptions>({
   background: `linear-gradient(${backgroundAngle}${getRandomValueFromObject(
     colors
   )})`,
-  transform: `scale(${defaultScale}) translateZ(0) translate3d(0,0,0)`,
+  transform: `scale(${defaultScale}) translateZ(0)`,
   layout: 'vertical' as const,
   transition: 'all 0.3s ease-in-out' as const,
   hoverTarget: target,
