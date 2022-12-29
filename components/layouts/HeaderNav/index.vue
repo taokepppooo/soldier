@@ -16,7 +16,7 @@
 import type { NavItem } from './types'
 
 // TODO 接口
-const nav = ref<NavItem[]>([
+const nav = reactive<NavItem[]>([
   {
     link: '/',
     name: '首页',

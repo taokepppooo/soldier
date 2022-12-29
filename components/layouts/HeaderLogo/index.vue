@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <NuxtLink to="/" class=":uno: sc-flex-center-y-start-x w-180">
+  <div class="logo">
+    <NuxtLink to="/" class=":uno: sc-flex-center-y-start-x logo__wrapper">
       <svg
-        class=":uno: mr-15px"
+        class="wrapper__logo"
         clip-rule="evenodd"
         fill-rule="evenodd"
         stroke-linejoin="round"
@@ -19,9 +19,24 @@
           class=":uno: cr-fill-color-main"
         ></circle>
       </svg>
-      <span class=":uno: text-24 font-roboto">SkyLark</span>
+      <span class=":uno: font-roboto wrapper__title">SkyLark</span>
     </NuxtLink>
   </div>
 </template>
 
 <script setup lang="ts"></script>
+<style lang="less" scoped>
+.logo {
+  .logo__wrapper {
+    width: 180px;
+
+    .wrapper__logo {
+      margin-right: 15px;
+    }
+
+    .wrapper__title {
+      font-size: 24px;
+    }
+  }
+}
+</style>

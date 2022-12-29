@@ -35,6 +35,19 @@ export default {
   unocss: unocssConfig,
   // css
   css: ['~/assets/less/index.less', '~/assets/font/iconfont.css'],
+  postcss: {
+    plugins: {
+      'postcss-pixel-to-viewport': {
+        viewportWidth: 1920,
+        viewportUnit: 'vw',
+        propertyBlacklist: [/^font$/],
+        minPixelValue: 1,
+        enableConvertComment: 'on',
+        disableConvertComment: 'off',
+        mediaQuery: false,
+      },
+    },
+  },
   vite: {
     plugins: [vueJsx()],
   },
