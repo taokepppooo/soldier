@@ -4,7 +4,6 @@ specifiers:
   '@commitlint/cli': ^17.2.0
   '@commitlint/config-conventional': ^17.2.0
   '@commitlint/cz-commitlint': ^17.2.0
-  '@element-plus/icons-vue': ^2.0.10
   '@mapbox/node-pre-gyp': ^1.0.10
   '@nuxt/image-edge': 1.0.0-27827328.bc9ddc0
   '@nuxt/kit': npm:@nuxt/kit-edge@3.0.1-rc.0-27828744.aa9aec1
@@ -53,7 +52,6 @@ specifiers:
   vue: ^3.2.45
 
 dependencies:
-  '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue/2.0.10_vue@3.2.45
   '@mapbox/node-pre-gyp': registry.npmmirror.com/@mapbox/node-pre-gyp/1.0.10
   '@nuxt/kit': registry.npmmirror.com/@nuxt/kit-edge/3.0.1-rc.0-27828744.aa9aec1_rollup@2.79.1
   '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.45
@@ -239,7 +237,7 @@ packages:
     version: 7.20.4
     engines: { node: '>=6.9.0' }
     dependencies:
-      '@babel/types': registry.npmmirror.com/@babel/types/7.20.2
+      '@babel/types': registry.npmmirror.com/@babel/types/7.20.5
       '@jridgewell/gen-mapping': registry.npmmirror.com/@jridgewell/gen-mapping/0.3.2
       jsesc: registry.npmmirror.com/jsesc/2.5.2
 
@@ -536,8 +534,8 @@ packages:
     engines: { node: '>=6.9.0' }
     dependencies:
       '@babel/template': registry.npmmirror.com/@babel/template/7.18.10
-      '@babel/traverse': registry.npmmirror.com/@babel/traverse/7.20.1
-      '@babel/types': registry.npmmirror.com/@babel/types/7.20.2
+      '@babel/traverse': registry.npmmirror.com/@babel/traverse/7.20.5
+      '@babel/types': registry.npmmirror.com/@babel/types/7.20.5
     transitivePeerDependencies:
       - supports-color
 
@@ -585,7 +583,7 @@ packages:
     engines: { node: '>=6.0.0' }
     hasBin: true
     dependencies:
-      '@babel/types': registry.npmmirror.com/@babel/types/7.20.2
+      '@babel/types': registry.npmmirror.com/@babel/types/7.20.5
 
   registry.npmmirror.com/@babel/parser/7.20.5:
     resolution:
@@ -694,13 +692,13 @@ packages:
     engines: { node: '>=6.9.0' }
     dependencies:
       '@babel/code-frame': registry.npmmirror.com/@babel/code-frame/7.18.6
-      '@babel/generator': registry.npmmirror.com/@babel/generator/7.20.4
+      '@babel/generator': registry.npmmirror.com/@babel/generator/7.20.5
       '@babel/helper-environment-visitor': registry.npmmirror.com/@babel/helper-environment-visitor/7.18.9
       '@babel/helper-function-name': registry.npmmirror.com/@babel/helper-function-name/7.19.0
       '@babel/helper-hoist-variables': registry.npmmirror.com/@babel/helper-hoist-variables/7.18.6
       '@babel/helper-split-export-declaration': registry.npmmirror.com/@babel/helper-split-export-declaration/7.18.6
-      '@babel/parser': registry.npmmirror.com/@babel/parser/7.20.3
-      '@babel/types': registry.npmmirror.com/@babel/types/7.20.2
+      '@babel/parser': registry.npmmirror.com/@babel/parser/7.20.5
+      '@babel/types': registry.npmmirror.com/@babel/types/7.20.5
       debug: registry.npmmirror.com/debug/4.3.4
       globals: registry.npmmirror.com/globals/11.12.0
     transitivePeerDependencies:
@@ -1311,7 +1309,7 @@ packages:
       debug: registry.npmmirror.com/debug/4.3.4
       espree: registry.npmmirror.com/espree/9.4.1
       globals: registry.npmmirror.com/globals/13.17.0
-      ignore: registry.npmmirror.com/ignore/5.2.0
+      ignore: registry.npmmirror.com/ignore/5.2.1
       import-fresh: registry.npmmirror.com/import-fresh/3.3.0
       js-yaml: registry.npmmirror.com/js-yaml/4.1.0
       minimatch: registry.npmmirror.com/minimatch/3.1.2
@@ -2156,7 +2154,7 @@ packages:
     version: 3.7.4
     dependencies:
       '@types/eslint': registry.npmmirror.com/@types/eslint/8.4.10
-      '@types/estree': registry.npmmirror.com/@types/estree/0.0.51
+      '@types/estree': registry.npmmirror.com/@types/estree/1.0.0
     dev: true
 
   registry.npmmirror.com/@types/eslint/8.4.10:
@@ -2169,7 +2167,7 @@ packages:
     name: '@types/eslint'
     version: 8.4.10
     dependencies:
-      '@types/estree': registry.npmmirror.com/@types/estree/0.0.51
+      '@types/estree': registry.npmmirror.com/@types/estree/1.0.0
       '@types/json-schema': registry.npmmirror.com/@types/json-schema/7.0.11
     dev: true
 
@@ -14360,6 +14358,7 @@ packages:
       }
     name: sourcemap-codec
     version: 1.4.8
+    deprecated: Please use @jridgewell/sourcemap-codec instead
 
   registry.npmmirror.com/spdx-correct/3.1.1:
     resolution:

@@ -89,7 +89,6 @@
     "vitest": "^0.23.4"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "^2.0.10",
     "@mapbox/node-pre-gyp": "^1.0.10",
     "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.1-rc.0-27828744.aa9aec1",
     "@vue/shared": "^3.2.45",
