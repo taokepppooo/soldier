@@ -1,12 +1,17 @@
 <template>
   <ChangeColorArticleCard :options="props.cardOptions">
     <div class="card-wrapper">
-      <div class="card-wrapper__top">
-        <div class="top-left">
-          <title class="top-left__title">{{ titleLabel }}</title>
-          <title class="top-left__content">{{ titleContent }}</title>
-        </div>
-        <div class="top-right"></div>
+      <div class=":uno: p-15">
+        <title
+          class=":uno: ellipsis-1 label--style color-#fff font-bold text-18"
+        >
+          {{ titleLabel }}
+        </title>
+        <title
+          class=":uno: ellipsis-3 label--style color-#ffffff99 text-14 lh-[1.5]"
+        >
+          {{ titleContent }}
+        </title>
       </div>
       <div class="card-wrapper__info"></div>
     </div>
@@ -28,36 +33,8 @@ const titleOptions = props.contentOptions!.title
 const titleLabel = ref(titleOptions!.label)
 const titleContent = ref(titleOptions!.content)
 </script>
-<style lang="less" scoped>
-@import '~/assets/less/common.less';
-
+<style scoped>
 .label--style {
-  .transform-font();
-  text-align: justify;
-  margin-bottom: 10px;
-}
-
-.card-wrapper {
-  .card-wrapper__top {
-    padding: 15px;
-
-    .top-left {
-      .top-left__title {
-        .text-ellipsis(1);
-        .label--style();
-        color: #ffffff;
-        font-weight: bold;
-        font-size: 18px;
-      }
-
-      .top-left__content {
-        .text-ellipsis(3);
-        .label--style();
-        color: #ffffff99;
-        font-size: 14px;
-        line-height: 1.5;
-      }
-    }
-  }
+  --at-apply: transform-font text-justify mb-10;
 }
 </style>

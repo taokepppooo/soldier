@@ -42,10 +42,7 @@ module.exports = defineConfig({
     'no-var': 'error',
     'no-empty': ['error', { allowEmptyCatch: true }],
     'no-void': 'error',
-    'no-unused-vars': [
-      2,
-      { ignoreRestSiblings: true, argsIgnorePattern: '^_' },
-    ],
+    'no-unused-vars': 'off',
     'prefer-const': [
       'warn',
       { destructuring: 'all', ignoreReadBeforeAssign: true },

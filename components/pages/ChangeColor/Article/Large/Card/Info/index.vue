@@ -1,13 +1,17 @@
 <template>
-  <div class="info">
-    <div class="tag">{{ options.tag }}</div>
+  <div class=":uno: flex items-center col-gap-12">
+    <div
+      class=":uno: py-8 px-14 text-14 spacing-[1.5] bg-#d62164 radius-12 inline-block color-#fff"
+    >
+      {{ options.tag }}
+    </div>
     <nuxt-img
-      class="head-portrait"
+      class="radius-50%"
       :src="options.headSource"
       width="30"
       height="30"
     />
-    <div class="info-detail">
+    <div class=":uno: flex col-gap-5 color-#fff text-14">
       <span>{{ options.username }}</span>
       <span>•</span>
       <span>{{ options.publishTime }}</span>
@@ -24,32 +28,3 @@ const props = defineProps({
 
 const options = props.options!
 </script>
-<style lang="less" scoped>
-.info {
-  display: flex;
-  align-items: center;
-  column-gap: 12px;
-
-  .tag {
-    padding: 8px 14px;
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    background: #d62164;
-    border-radius: 12px;
-    display: inline-block;
-    color: #fff;
-  }
-
-  .head-portrait {
-    border-radius: 50%;
-  }
-
-  .info-detail {
-    display: flex;
-    column-gap: 5px;
-    color: #fff;
-    font-size: 14px;
-  }
-}
-</style>

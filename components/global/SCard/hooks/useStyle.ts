@@ -1,6 +1,6 @@
 import { divide, subtract, round, multiply } from 'lodash'
 import { useMouseInElement, UseMouseInElementReturn } from '@vueuse/core'
-import { toPx } from '@/utils/style'
+import { toRem } from '@/utils/style'
 import { cardProps } from '../types/props'
 import type { CSSProperties, ExtractPropTypes, Ref } from 'vue'
 
@@ -10,8 +10,8 @@ export const useStyle = (
 ) => {
   const options = props.options
 
-  const width = toPx(options!.width)
-  const height = toPx(options!.height)
+  const width = toRem(options!.width)
+  const height = toRem(options!.height)
 
   const transform = ref<string>()
 

@@ -1,9 +1,12 @@
 <template>
-  <div class="cards">
+  <div class=":uno: flex justify-between mt-15 mb-15 cards">
     <NuxtLink v-for="(card, index) in cards" :key="index" :to="card.link">
       <SCard :options="getCardOptions(index)">
-        <span class="card-icon" :class="getIconfont(card.icon)"></span>
-        <span class=":uno: truncate card-title">{{ card.title }}</span>
+        <span
+          class=":uno: text-22 mr-10"
+          :class="getIconfont(card.icon)"
+        ></span>
+        <span class=":uno: truncate text-18 font-400">{{ card.title }}</span>
       </SCard>
     </NuxtLink>
   </div>
@@ -53,28 +56,13 @@ const getIconfont = (icon: string) => {
 
 <style lang="less" scoped>
 .cards {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-  margin-bottom: 15px;
-
   :deep(.card) {
-    border-radius: 5px;
+    border-radius: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    padding: 37px;
-
-    .card-icon {
-      font-size: 22px;
-      margin-right: 10px;
-    }
-
-    .card-title {
-      font-size: 18px;
-      font-weight: 400;
-    }
+    padding: 9.25rem;
   }
 }
 </style>

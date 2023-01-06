@@ -1,13 +1,11 @@
 <template>
-  <div class="cards-wrapper">
-    <div class="cards-wrapper__cards">
-      <div v-for="option in cardOptionsArr" :key="option.id">
-        <ChangeColorArticleSmallCard
-          :card-options="option.cardOptions"
-          :content-options="option.contentOptions"
-        >
-        </ChangeColorArticleSmallCard>
-      </div>
+  <div class=":uno: flex flex-col row-gap-10">
+    <div v-for="option in cardOptionsArr" :key="option.id">
+      <ChangeColorArticleSmallCard
+        :card-options="option.cardOptions"
+        :content-options="option.contentOptions"
+      >
+      </ChangeColorArticleSmallCard>
     </div>
   </div>
 </template>
@@ -87,12 +85,3 @@ const cardOptionsArr = reactive<ChangeColorCard[]>([
   },
 ])
 </script>
-<style lang="less" scoped>
-.cards-wrapper {
-  .cards-wrapper__cards {
-    display: flex;
-    flex-direction: column;
-    grid-row-gap: 10px;
-  }
-}
-</style>

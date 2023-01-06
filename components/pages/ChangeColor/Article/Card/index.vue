@@ -1,5 +1,9 @@
 <template>
-  <RenderCard ref="target" class="render-card" :options="options">
+  <RenderCard
+    ref="target"
+    class=":uno: inline-block overflow-hidden radius-10"
+    :options="options"
+  >
     <slot></slot>
   </RenderCard>
 </template>
@@ -39,10 +43,3 @@ const options = reactive<ArticleCardOptions>({
   hoverTarget: target,
 })
 </script>
-<style lang="less" scoped>
-.render-card {
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 20px;
-}
-</style>

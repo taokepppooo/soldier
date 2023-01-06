@@ -1,7 +1,7 @@
 <template>
-  <div class="header">
+  <div class=":uno: shadow-[0_0_4.5rem_rgba(0,0,0,6%)]">
     <NuxtLayout name="container">
-      <nav class=":uno: flex items-center nav">
+      <nav class=":uno: flex items-center h-60">
         <HeaderLogo></HeaderLogo>
         <HeaderNav></HeaderNav>
       </nav>
@@ -10,12 +10,3 @@
 </template>
 
 <script setup lang="ts"></script>
-<style lang="less" scoped>
-.header {
-  box-shadow: 0 0 18px rgb(0 0 0 / 6%);
-
-  .nav {
-    height: 60px; /*off*/
-  }
-}
-</style>

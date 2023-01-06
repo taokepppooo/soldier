@@ -1,15 +1,21 @@
 <template>
   <ChangeColorArticleCard :options="props.cardOptions">
-    <div class="card-wrapper">
-      <div class="card-wrapper__box">
-        <div class="box__bg" :style="bgStyle"></div>
-        <title class="box__title" :style="titleStyle">
+    <div class=":uno: h-100% bg-[rgba(255,255,255,0.3)]">
+      <div class=":uno: relative h-inherit p-20">
+        <div
+          class=":uno: opacity-60 bg-no-repeat bg-contain"
+          :style="bgStyle"
+        ></div>
+        <title
+          class=":uno: ellipsis-5 transform-font absolute top-20 text-justify c-#fff text-55 lh-[1.3]"
+          :style="titleStyle"
+        >
           {{ titleContent }}
         </title>
         <ChangeColorArticleLargeCardInfo
           v-if="infoOptions"
           :options="infoOptions"
-          class="box__card-info"
+          class=":uno: absolute bottom-40"
         ></ChangeColorArticleLargeCardInfo>
       </div>
     </div>
@@ -17,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { toPx } from '@/utils/style'
+import { toRem } from '@/utils/style'
 import { ArticleCardOptions } from '@/components/types/cardProps'
 import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleBigCardProps'
 import type { CSSProperties, PropType } from 'vue'
@@ -31,8 +37,8 @@ const imgOptions = props.contentOptions!.img
 const titleOptions = props.contentOptions!.title
 const infoOptions = props.contentOptions!.info
 
-const imgWidth = toPx(imgOptions!.width)
-const imgHeight = toPx(imgOptions!.height)
+const imgWidth = toRem(imgOptions!.width)
+const imgHeight = toRem(imgOptions!.height)
 const imgSource = imgOptions!.source
 
 const bgStyle = reactive<CSSProperties>({
@@ -41,46 +47,10 @@ const bgStyle = reactive<CSSProperties>({
   'background-image': imgSource ? `url('${imgSource}')` : undefined,
 })
 
-const titleWidth = toPx(titleOptions!.width)
+const titleWidth = toRem(titleOptions!.width)
 const titleContent = ref(titleOptions!.content)
 
 const titleStyle = reactive<CSSProperties>({
   width: titleWidth,
 })
 </script>
-<style lang="less" scoped>
-@import '~/assets/less/common.less';
-
-.card-wrapper {
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 100%;
-
-  .card-wrapper__box {
-    position: relative;
-    height: inherit;
-    padding: 20px;
-
-    .box__bg {
-      opacity: 0.6;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-
-    .box__title {
-      .text-ellipsis(5);
-      .transform-font();
-      position: absolute;
-      top: 20px;
-      text-align: justify;
-      color: #ffffff;
-      font-size: 55px;
-      line-height: 1.3;
-    }
-
-    .box__card-info {
-      position: absolute;
-      bottom: 40px;
-    }
-  }
-}
-</style>

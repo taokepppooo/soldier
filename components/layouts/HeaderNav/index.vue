@@ -4,8 +4,8 @@
       v-for="n in nav"
       :key="n.link"
       :to="n.link"
-      class="custom-link"
-      exact-active-class="is-active"
+      class=":uno: color-#757575 spacing-4 hover:cr-color-main text-15 font-600 p-x-18 font-noto"
+      exact-active-class=":uno: cr-color-main"
     >
       {{ n.name }}
     </NuxtLink>
@@ -35,19 +35,3 @@ const nav = reactive<NavItem[]>([
   },
 ])
 </script>
-
-<style scoped lang="less">
-.custom-link {
-  --at-apply: 'text-15 font-600 p-x-18 font-noto';
-  letter-spacing: 1rem;
-  color: #757575;
-
-  &:hover {
-    --at-apply: 'cr-color-main';
-  }
-}
-
-.is-active {
-  --at-apply: 'cr-color-main';
-}
-</style>

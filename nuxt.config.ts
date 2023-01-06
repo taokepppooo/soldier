@@ -1,6 +1,5 @@
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { unocssConfig } from './config/unocss'
-import { postcssPixelToViewportConfig } from './config/postcss/postcss-pixel-to-viewport'
 
 export default {
   ssr: true,
@@ -32,14 +31,11 @@ export default {
       },
     ],
   },
-  // unocss
   unocss: unocssConfig,
-  // css
   css: ['~/assets/less/index.less', '~/assets/font/iconfont.css'],
-  postcss: {
-    plugins: {
-      'postcss-pixel-to-viewport': postcssPixelToViewportConfig,
-    },
+  typescript: {
+    strict: true,
+    typeCheck: true,
   },
   vite: {
     plugins: [vueJsx()],

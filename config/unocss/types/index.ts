@@ -1,3 +1,5 @@
+import { constant } from '../../../types/constant'
+
 export const cssTypes = `
 * {
   padding: 0;
@@ -9,7 +11,7 @@ export const cssTypes = `
   box-sizing: border-box;
 }
 html {
-  font-size: 4px;
+  font-size: ${constant.ROOT_SIZE}px;
 }
 a {
   color: unset;
