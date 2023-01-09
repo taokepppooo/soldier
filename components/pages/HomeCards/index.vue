@@ -1,18 +1,31 @@
 <template>
-  <div class=":uno: flex justify-between mt-15 mb-15 cards">
-    <NuxtLink v-for="(card, index) in cards" :key="index" :to="card.link">
-      <SCard :options="getCardOptions(index)">
-        <span
-          class=":uno: text-22 mr-10"
-          :class="getIconfont(card.icon)"
-        ></span>
-        <span class=":uno: truncate text-18 font-400">{{ card.title }}</span>
-      </SCard>
-    </NuxtLink>
-  </div>
+  <el-row :gutter="24" class=":uno: m-y-15 cards">
+    <el-col
+      v-for="(card, index) in cards"
+      :key="index"
+      class=":uno: mb-15"
+      :xs="24"
+      :sm="12"
+      :md="12"
+      :lg="12"
+      :xl="6"
+    >
+      <NuxtLink :to="card.link">
+        <SCard :options="getCardOptions(index)">
+          <span
+            class=":uno: text-22 mr-10"
+            :class="getIconfont(card.icon)"
+          ></span>
+          <span class=":uno: truncate text-18 font-400">{{ card.title }}</span>
+        </SCard>
+      </NuxtLink>
+    </el-col>
+  </el-row>
 </template>
 
 <script setup lang="ts">
+import { ElRow, ElCol } from 'element-plus'
+
 // TODO 接口获取
 const cards = reactive([
   {
@@ -43,7 +56,7 @@ const cards = reactive([
 
 const getCardOptions = (index: number) => {
   return {
-    width: 330,
+    width: '100vw',
     height: 80,
     backgroundImage: cards[index].backgroundImage,
     mode: '3d' as const,

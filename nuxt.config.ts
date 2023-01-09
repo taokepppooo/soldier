@@ -1,4 +1,6 @@
 import vueJsx from '@vitejs/plugin-vue-jsx'
+import IconsResolver from 'unplugin-icons/resolver'
+import Components from 'unplugin-vue-components/vite'
 import { unocssConfig } from './config/unocss'
 
 export default {
@@ -38,6 +40,12 @@ export default {
     typeCheck: true,
   },
   vite: {
-    plugins: [vueJsx()],
+    plugins: [
+      vueJsx(),
+      Components({
+        dts: true,
+        resolvers: [IconsResolver({})],
+      }),
+    ],
   },
 }

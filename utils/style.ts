@@ -6,12 +6,26 @@ import { constant } from '../types/constant'
 export const toRem = (
   value: number | string | undefined
 ): string | undefined => {
-  return PxUnitToRem(value)
+  return getCalculateValue(value)
 }
 
-export const PxUnitToRem = (value: number | string | undefined): string => {
-  const _val = value ? (isString(value) ? Number(value) : value) : 0
-  const remUnit = _val ? divide(_val, constant.ROOT_SIZE) : 0
+export const getCalculateValue = (
+  value: number | string | undefined
+): string => {
+  if (!value) {
+    return '0rem'
+  }
+
+  if (isString(value)) {
+    return value.includes('%') ? value : PxUnitToRem(value)
+  } else {
+    return PxUnitToRem(value)
+  }
+}
+
+export const PxUnitToRem = (value: number | string): string => {
+  const _val = Number(value)
+  const remUnit = divide(_val, constant.ROOT_SIZE)
   const rem = `${remUnit}rem`
   return rem
 }

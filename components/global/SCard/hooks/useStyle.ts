@@ -38,8 +38,9 @@ export const useStyle = (
  * @param  {UseMouseInElementReturn} mouse
  */
 function setHoverStyle(transform: Ref<string>, mouse: UseMouseInElementReturn) {
-  const TRANSFORM =
-    'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'
+  const TRANSFORM = `perspective(${toRem(
+    1000
+  )}) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`
   const { elementX, elementY, elementWidth, elementHeight } = mouse
 
   const rotateXVal = ref<number>(0)
@@ -55,7 +56,9 @@ function setHoverStyle(transform: Ref<string>, mouse: UseMouseInElementReturn) {
   watch(elementX, () => {
     if (!mouse.isOutside.value) {
       rotateXY(elementWidth.value, elementX.value, rotateYVal)
-      transform.value = `perspective(1000px) ${rotateX.value} ${rotateY.value} scale3d(1.05, 1.05, 1.05)`
+      transform.value = `perspective(${toRem(1000)}) ${rotateX.value} ${
+        rotateY.value
+      } scale3d(1.05, 1.05, 1.05)`
     } else {
       transform.value = TRANSFORM
     }
@@ -64,7 +67,9 @@ function setHoverStyle(transform: Ref<string>, mouse: UseMouseInElementReturn) {
   watch(elementY, () => {
     if (!mouse.isOutside.value) {
       rotateXY(elementHeight.value, elementY.value, rotateXVal)
-      transform.value = `perspective(1000px) ${rotateX.value} ${rotateY.value} scale3d(1.05, 1.05, 1.05)`
+      transform.value = `perspective(${toRem(1000)}) ${rotateX.value} ${
+        rotateY.value
+      } scale3d(1.05, 1.05, 1.05)`
     } else {
       transform.value = TRANSFORM
     }
