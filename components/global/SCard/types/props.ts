@@ -1,7 +1,7 @@
 import type { PropType } from 'vue'
 
 export interface Options {
-  width: string | number
+  width?: string | number
   height: string | number
   background?: string
   backgroundImage?: string

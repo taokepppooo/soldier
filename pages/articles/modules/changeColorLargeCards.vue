@@ -12,13 +12,11 @@ import { ArticleCardOptions } from '@/components/types/cardProps'
 
 // TODO 可自定义
 const cardOptions = reactive<ArticleCardOptions>({
-  width: '100%',
   height: 550,
 })
 // TODO 可自定义
 const contentOptions = reactive<ArticleCardContentOptions>({
   img: {
-    width: '100%',
     height: 400,
     source: 'https://sky-lark-public.oss-cn-qingdao.aliyuncs.com/ux-hybrid.svg',
   },

@@ -10,7 +10,7 @@ export const useStyle = (
 ) => {
   const options = props.options
 
-  const width = toRem(options!.width)
+  const width = options!.width ? toRem(options!.width) : '100%'
   const height = toRem(options!.height)
 
   const transform = ref<string>()

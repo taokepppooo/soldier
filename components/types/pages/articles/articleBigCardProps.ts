@@ -1,5 +1,5 @@
 interface ArticleImg {
-  width: string | number
+  width?: string | number
   height: string | number
   source?: string
 }

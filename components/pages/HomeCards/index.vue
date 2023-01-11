@@ -25,6 +25,7 @@
 
 <script setup lang="ts">
 import { ElRow, ElCol } from 'element-plus'
+import { ArticleCardOptions } from '@/components/types/cardProps'
 
 // TODO 接口获取
 const cards = reactive([
@@ -55,12 +56,12 @@ const cards = reactive([
 ])
 
 const getCardOptions = (index: number) => {
-  return {
-    width: '100vw',
+  const options: ArticleCardOptions = {
     height: 80,
     backgroundImage: cards[index].backgroundImage,
     mode: '3d' as const,
   }
+  return options
 }
 const getIconfont = (icon: string) => {
   return ['iconfont', icon]

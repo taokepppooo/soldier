@@ -16,7 +16,7 @@ export const setStyles = (options: ArticleCardOptions): ArticleCardOptions => {
   }
 
   const baseStyles = reactive<ArticleCardOptions>({
-    width: options.width,
+    width: options.width || '100%',
     height: options.height,
     background: options.background,
     transform: transform as any as string,
