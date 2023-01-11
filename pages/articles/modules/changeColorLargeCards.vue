@@ -21,7 +21,6 @@ const contentOptions = reactive<ArticleCardContentOptions>({
     source: 'https://sky-lark-public.oss-cn-qingdao.aliyuncs.com/ux-hybrid.svg',
   },
   title: {
-    width: 350,
     content:
       '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
   },
