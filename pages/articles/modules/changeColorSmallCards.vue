@@ -17,7 +17,7 @@ const cardOptionsArr = reactive<ChangeColorCard[]>([
   {
     id: 1,
     cardOptions: {
-      width: 840,
+      width: '100%',
       height: 173.6,
       scale: '1.02',
     },
@@ -40,7 +40,7 @@ const cardOptionsArr = reactive<ChangeColorCard[]>([
   {
     id: 2,
     cardOptions: {
-      width: 840,
+      width: '100%',
       height: 173.6,
       scale: '1.02',
     },
@@ -63,7 +63,7 @@ const cardOptionsArr = reactive<ChangeColorCard[]>([
   {
     id: 3,
     cardOptions: {
-      width: 840,
+      width: '100%',
       height: 173.6,
       scale: '1.02',
     },
