@@ -1,15 +1,13 @@
 <template>
   <ChangeColorArticleCard :options="props.cardOptions">
     <div class="card-wrapper">
-      <el-row :gutter="24" class=":uno: p-15">
+      <el-row :gutter="24" class="p-15">
         <el-col :span="21">
-          <title
-            class=":uno: ellipsis-1 label--style color-#fff font-bold text-18"
-          >
+          <title class="ellipsis-1 label--style color-#fff font-bold text-18">
             {{ titleLabel }}
           </title>
           <title
-            class=":uno: ellipsis-3 label--style color-#ffffff99 text-14 lh-[1.5]"
+            class="ellipsis-3 label--style color-#ffffff99 text-14 lh-[1.5]"
           >
             {{ titleContent }}
           </title>

@@ -1,9 +1,9 @@
 <template>
-  <el-row :gutter="24" class=":uno: m-y-15 cards">
+  <el-row :gutter="24" class="m-y-15 cards">
     <el-col
       v-for="(card, index) in cards"
       :key="index"
-      class=":uno: mb-15"
+      class="mb-15"
       :xs="24"
       :sm="12"
       :md="12"
@@ -12,11 +12,8 @@
     >
       <NuxtLink :to="card.link">
         <SCard :options="getCardOptions(index)">
-          <span
-            class=":uno: text-22 mr-10"
-            :class="getIconfont(card.icon)"
-          ></span>
-          <span class=":uno: truncate text-18 font-400">{{ card.title }}</span>
+          <span class="text-22 mr-10" :class="getIconfont(card.icon)"></span>
+          <span class="truncate text-18 font-400">{{ card.title }}</span>
         </SCard>
       </NuxtLink>
     </el-col>

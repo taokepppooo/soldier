@@ -1,7 +1,7 @@
 <template>
-  <NuxtLink to="/" class=":uno: sc-flex-y-center-x-left w-180">
+  <NuxtLink to="/" class="sc-flex-y-center-x-left w-180">
     <svg
-      class=":uno: mr-15"
+      class="mr-15"
       clip-rule="evenodd"
       fill-rule="evenodd"
       stroke-linejoin="round"
@@ -11,9 +11,9 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>SkyLark</title>
-      <circle cx="16" cy="16" r="16" class=":uno: cr-fill-color-main"></circle>
+      <circle cx="16" cy="16" r="16" class="cr-fill-color-main"></circle>
     </svg>
-    <span class=":uno: font-roboto text-24">SkyLark</span>
+    <span class="font-roboto text-24">SkyLark</span>
   </NuxtLink>
 </template>
 <script setup lang="ts"></script>

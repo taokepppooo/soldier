@@ -4,8 +4,8 @@
       v-for="n in nav"
       :key="n.link"
       :to="n.link"
-      class=":uno: color-#757575 spacing-4 hover:cr-color-main text-15 font-600 p-x-18 font-noto"
-      exact-active-class=":uno: cr-color-main"
+      class="color-#757575 spacing-4 hover:cr-color-main text-15 font-600 p-x-18 font-noto"
+      exact-active-class="cr-color-main"
     >
       {{ n.name }}
     </NuxtLink>

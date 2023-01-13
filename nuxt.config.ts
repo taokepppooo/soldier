@@ -1,7 +1,6 @@
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
-import { unocssConfig } from './config/unocss'
 
 export default {
   ssr: true,
@@ -33,7 +32,6 @@ export default {
       },
     ],
   },
-  unocss: unocssConfig,
   css: ['~/assets/less/index.less', '~/assets/font/iconfont.css'],
   typescript: {
     strict: true,

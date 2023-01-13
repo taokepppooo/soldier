@@ -1,15 +1,12 @@
 <template>
   <ChangeColorArticleCard :options="props.cardOptions">
-    <div class=":uno: h-100% bg-[rgba(255,255,255,0.3)]">
-      <div class=":uno: relative h-inherit p-20">
-        <div
-          class=":uno: opacity-60 bg-no-repeat bg-contain"
-          :style="bgStyle"
-        ></div>
-        <el-row :gutter="24" class=":uno: absolute top-20">
+    <div class="h-100% bg-[rgba(255,255,255,0.3)]">
+      <div class="relative h-inherit p-20">
+        <div class="opacity-60 bg-no-repeat bg-contain" :style="bgStyle"></div>
+        <el-row :gutter="24" class="absolute top-20">
           <el-col :span="18">
             <title
-              class=":uno: ellipsis-5 transform-font text-justify c-#fff text-55 lh-[1.3]"
+              class="ellipsis-5 transform-font text-justify c-#fff text-55 lh-[1.3]"
               :style="titleStyle"
             >
               {{ titleContent }}
@@ -19,7 +16,7 @@
         <ChangeColorArticleLargeCardInfo
           v-if="infoOptions"
           :options="infoOptions"
-          class=":uno: absolute bottom-40"
+          class="absolute bottom-40"
         ></ChangeColorArticleLargeCardInfo>
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <render-card
     ref="target"
-    class=":uno: inline-block overflow-hidden radius-10"
+    class="inline-block overflow-hidden radius-10"
     :options="options"
   >
     <slot></slot>

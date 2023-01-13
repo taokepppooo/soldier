@@ -1,5 +1,5 @@
 <template>
-  <div class=":uno: flex flex-col row-gap-10">
+  <div class="flex flex-col row-gap-10">
     <div v-for="option in cardOptionsArr" :key="option.id">
       <change-color-article-small-card
         :card-options="option.cardOptions"
