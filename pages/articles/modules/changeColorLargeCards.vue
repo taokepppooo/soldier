@@ -1,9 +1,9 @@
 <template>
-  <ChangeColorArticleLargeCard
+  <change-color-article-large-card
     :card-options="cardOptions"
     :content-options="contentOptions"
   >
-  </ChangeColorArticleLargeCard>
+  </change-color-article-large-card>
 </template>
 
 <script setup lang="ts">
@@ -12,7 +12,7 @@ import { ArticleCardOptions } from '@/components/types/cardProps'
 
 // TODO 可自定义
 const cardOptions = reactive<ArticleCardOptions>({
-  height: 550,
+  height: 547,
 })
 // TODO 可自定义
 const contentOptions = reactive<ArticleCardContentOptions>({

@@ -1,11 +1,11 @@
 <template>
   <div class=":uno: flex flex-col row-gap-10">
     <div v-for="option in cardOptionsArr" :key="option.id">
-      <ChangeColorArticleSmallCard
+      <change-color-article-small-card
         :card-options="option.cardOptions"
         :content-options="option.contentOptions"
       >
-      </ChangeColorArticleSmallCard>
+      </change-color-article-small-card>
     </div>
   </div>
 </template>

@@ -1,11 +1,11 @@
 <template>
-  <RenderCard
+  <render-card
     ref="target"
     class=":uno: inline-block overflow-hidden radius-10"
     :options="options"
   >
     <slot></slot>
-  </RenderCard>
+  </render-card>
 </template>
 
 <script setup lang="tsx">
