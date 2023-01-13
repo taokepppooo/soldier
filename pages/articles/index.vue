@@ -1,21 +1,20 @@
 <template>
-  <el-row :gutter="24">
-    <el-col class="mb-20" :xs="24" :sm="24" :md="24" :lg="12" :xl="9">
+  <div class="flex justify-between">
+    <div class="mb-20 sm: w-1 md:w-1 lg:w-1/2 xl:w-3/8">
       <change-color-large-cards></change-color-large-cards>
-    </el-col>
-    <el-col class="mb-20" :xs="24" :sm="24" :md="24" :lg="12" :xl="15">
+    </div>
+    <div class="mb-20 sm: w-1 md:w-1 lg:w-1/2 xl:w-14.5/24">
       <change-color-small-cards></change-color-small-cards>
-    </el-col>
-  </el-row>
-  <el-row :gutter="24">
-    <el-col class="mt-30" :xs="24" :sm="24" :md="24" :lg="12" :xl="15">
+    </div>
+  </div>
+  <div>
+    <div class="mt-30 sm: w-1 md:w-1 lg:w-1/2 xl:w-5/8">
       <article-list></article-list>
-    </el-col>
-  </el-row>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { ElRow, ElCol } from 'element-plus'
 import changeColorLargeCards from './modules/changeColorLargeCards.vue'
 import changeColorSmallCards from './modules/changeColorSmallCards.vue'
 import articleList from './modules/articleList.vue'

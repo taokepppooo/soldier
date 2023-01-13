@@ -1,6 +1,6 @@
 <template>
   <ChangeColorArticleCard :options="props.cardOptions">
-    <div class="h-100% bg-[rgba(255,255,255,0.3)]">
+    <div class="h-full bg-[rgba(255,255,255,0.3)]">
       <div class="relative h-inherit p-20">
         <div class="opacity-60 bg-no-repeat bg-contain" :style="bgStyle"></div>
         <el-row :gutter="24" class="absolute top-20">

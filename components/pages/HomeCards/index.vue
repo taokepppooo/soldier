@@ -1,14 +1,9 @@
 <template>
-  <el-row :gutter="24" class="m-y-15 cards">
-    <el-col
+  <div class="m-y-15 cards flex col-gap-20">
+    <div
       v-for="(card, index) in cards"
       :key="index"
-      class="mb-15"
-      :xs="24"
-      :sm="12"
-      :md="12"
-      :lg="12"
-      :xl="6"
+      class="mb-15 sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/4"
     >
       <NuxtLink :to="card.link">
         <SCard :options="getCardOptions(index)">
@@ -16,12 +11,11 @@
           <span class="truncate text-18 font-400">{{ card.title }}</span>
         </SCard>
       </NuxtLink>
-    </el-col>
-  </el-row>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { ElRow, ElCol } from 'element-plus'
 import { ArticleCardOptions } from '@/components/types/cardProps'
 
 // TODO 接口获取
