@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="container">
-    <div class="mt-18">
+    <div class="pt-18">
       <slot />
     </div>
   </NuxtLayout>

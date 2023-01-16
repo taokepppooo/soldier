@@ -34,9 +34,9 @@ if (props.options!.scale) {
 
 const options = reactive<ArticleCardOptions>({
   ...(props.options as ArticleCardOptions),
-  background: `linear-gradient(${backgroundAngle}${getRandomValueFromObject(
-    colors
-  )})`,
+  background: props.options?.customBg
+    ? props.options?.customBg
+    : `linear-gradient(${backgroundAngle}${getRandomValueFromObject(colors)})`,
   transform: `scale(${defaultScale}) translateZ(0)`,
   layout: 'vertical' as const,
   transition: 'all 0.3s ease-in-out' as const,

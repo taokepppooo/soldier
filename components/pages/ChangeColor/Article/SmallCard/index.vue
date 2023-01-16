@@ -1,5 +1,5 @@
 <template>
-  <ChangeColorArticleCard :options="props.cardOptions">
+  <ArticleCard :options="props.cardOptions">
     <div class="card-wrapper">
       <el-row :gutter="24" class="p-15">
         <el-col :span="21">
@@ -15,12 +15,12 @@
       </el-row>
       <div class="card-wrapper__info"></div>
     </div>
-  </ChangeColorArticleCard>
+  </ArticleCard>
 </template>
 
 <script setup lang="ts">
 import { ElRow, ElCol } from 'element-plus'
-import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleBigCardProps'
+import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleLargeCardProps'
 import type { ArticleCardOptions } from '@/components/types/cardProps'
 import type { PropType } from 'vue'
 

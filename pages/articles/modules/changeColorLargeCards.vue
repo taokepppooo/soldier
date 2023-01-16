@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleBigCardProps'
+import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleLargeCardProps'
 import { ArticleCardOptions } from '@/components/types/cardProps'
 
 // TODO 可自定义

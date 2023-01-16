@@ -1,21 +1,26 @@
 <template>
-  <div class="flex justify-between">
-    <div class="mb-20 sm: w-1 md:w-1 lg:w-1/2 xl:w-3/8">
+  <el-row :gutter="24">
+    <el-col class="mb-20" :xs="24" :sm="24" :md="24" :lg="12" :xl="9">
       <change-color-large-cards></change-color-large-cards>
-    </div>
-    <div class="mb-20 sm: w-1 md:w-1 lg:w-1/2 xl:w-14.5/24">
+    </el-col>
+    <el-col class="mb-20" :xs="24" :sm="24" :md="24" :lg="12" :xl="15">
       <change-color-small-cards></change-color-small-cards>
-    </div>
-  </div>
-  <div>
-    <div class="mt-30 sm: w-1 md:w-1 lg:w-1/2 xl:w-5/8">
+    </el-col>
+  </el-row>
+  <el-row :gutter="24" class="mt-30 col-gap-20 justify-between">
+    <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="15">
       <article-list></article-list>
-    </div>
-  </div>
+    </el-col>
+    <el-col class="hidden-md-and-down" :lg="9" :xl="8">
+      <article-list></article-list>
+    </el-col>
+  </el-row>
 </template>
 
 <script setup lang="ts">
+import { ElRow, ElCol } from 'element-plus'
 import changeColorLargeCards from './modules/changeColorLargeCards.vue'
 import changeColorSmallCards from './modules/changeColorSmallCards.vue'
 import articleList from './modules/articleList.vue'
+import 'element-plus/theme-chalk/display.css'
 </script>

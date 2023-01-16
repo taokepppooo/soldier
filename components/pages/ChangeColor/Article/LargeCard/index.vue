@@ -1,5 +1,5 @@
 <template>
-  <ChangeColorArticleCard :options="props.cardOptions">
+  <ArticleCard :options="props.cardOptions">
     <div class="h-full bg-[rgba(255,255,255,0.3)]">
       <div class="relative h-inherit p-20">
         <div class="opacity-60 bg-no-repeat bg-contain" :style="bgStyle"></div>
@@ -20,14 +20,14 @@
         ></ChangeColorArticleLargeCardInfo>
       </div>
     </div>
-  </ChangeColorArticleCard>
+  </ArticleCard>
 </template>
 
 <script setup lang="ts">
 import { ElRow, ElCol } from 'element-plus'
 import { toRem } from '@/utils/style'
 import { ArticleCardOptions } from '@/components/types/cardProps'
-import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleBigCardProps'
+import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleLargeCardProps'
 import type { CSSProperties, PropType } from 'vue'
 
 const props = defineProps({
