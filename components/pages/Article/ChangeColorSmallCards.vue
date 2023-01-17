@@ -1,18 +1,17 @@
 <template>
   <div class="flex flex-col row-gap-10">
     <div v-for="option in cardOptionsArr" :key="option.id">
-      <change-color-small-card
+      <ArticleChangeColorSmallCard
         :card-options="option.cardOptions"
         :content-options="option.contentOptions"
       >
-      </change-color-small-card>
+      </ArticleChangeColorSmallCard>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ChangeColorCard } from '@/composables/article/changeColor'
-import ChangeColorSmallCard from './changeColorSmallCard.vue'
 
 const cardOptionsArr = reactive<ChangeColorCard[]>([
   {
@@ -22,7 +21,7 @@ const cardOptionsArr = reactive<ChangeColorCard[]>([
       scale: '1.02',
     },
     contentOptions: {
-      title: {
+      article: {
         label:
           '苹果发布iOS/iPadOS 14苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
         content:
@@ -44,7 +43,7 @@ const cardOptionsArr = reactive<ChangeColorCard[]>([
       scale: '1.02',
     },
     contentOptions: {
-      title: {
+      article: {
         label:
           '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
         content:
@@ -66,7 +65,7 @@ const cardOptionsArr = reactive<ChangeColorCard[]>([
       scale: '1.02',
     },
     contentOptions: {
-      title: {
+      article: {
         label:
           '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
         content:

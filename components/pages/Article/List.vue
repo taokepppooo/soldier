@@ -6,14 +6,13 @@
       :label="tab.label"
       :name="tab.name"
     >
-      <card-list></card-list>
+      <ArticleCardList></ArticleCardList>
     </el-tab-pane>
   </el-tabs>
 </template>
 
 <script setup lang="ts">
 import { ElTabs, ElTabPane } from 'element-plus'
-import CardList from './cardList.vue'
 
 const tabs = [
   {

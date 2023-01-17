@@ -9,7 +9,7 @@ export const rules = [
   [/^lh-(\d+)$/, ([, d]) => ({ 'line-height': d })],
   [/^col-gap-(\d+)$/, ([, d]) => ({ 'column-gap': `${getCssValue(d)}` })],
   [/^row-gap-(\d+)$/, ([, d]) => ({ 'grid-row-gap': `${getCssValue(d)}` })],
-  [/^radius-(\d+)$/, ([, d]) => ({ 'border-radius': `${getCssValue(d)}` })],
+  [/^radius-(.*)$/, ([, c]) => ({ 'border-radius': `${getCssValue(c)}` })],
   [
     /^ellipsis-(\d+)$/,
     ([, d]) => ({

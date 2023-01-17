@@ -11,7 +11,7 @@
       width="30"
       height="30"
     />
-    <div class="flex col-gap-5 color-#fff text-14">
+    <div class="flex col-gap-5 color-#fff text-14" :style="options.tagStyle">
       <span>{{ options.username }}</span>
       <span>•</span>
       <span>{{ options.publishTime }}</span>

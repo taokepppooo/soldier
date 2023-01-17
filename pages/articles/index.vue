@@ -1,10 +1,10 @@
 <template>
   <el-row :gutter="24">
     <el-col class="mb-20" :xs="24" :sm="24" :md="24" :lg="12" :xl="9">
-      <change-color-large-cards></change-color-large-cards>
+      <article-change-color-large-cards></article-change-color-large-cards>
     </el-col>
     <el-col class="mb-20" :xs="24" :sm="24" :md="24" :lg="12" :xl="15">
-      <change-color-small-cards></change-color-small-cards>
+      <article-change-color-small-cards></article-change-color-small-cards>
     </el-col>
   </el-row>
   <el-row :gutter="24" class="mt-30 col-gap-20 justify-between">
@@ -19,8 +19,5 @@
 
 <script setup lang="ts">
 import { ElRow, ElCol } from 'element-plus'
-import changeColorLargeCards from './modules/changeColorLargeCards.vue'
-import changeColorSmallCards from './modules/changeColorSmallCards.vue'
-import articleList from './modules/articleList.vue'
 import 'element-plus/theme-chalk/display.css'
 </script>

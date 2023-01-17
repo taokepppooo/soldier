@@ -1,15 +1,14 @@
 <template>
-  <change-color-large-card
+  <ArticleChangeColorLargeCard
     :card-options="cardOptions"
     :content-options="contentOptions"
   >
-  </change-color-large-card>
+  </ArticleChangeColorLargeCard>
 </template>
 
 <script setup lang="ts">
 import { ArticleCardContentOptions } from '@/composables/article/articleLargeCardProps'
 import { ArticleCardOptions } from '@/composables/cardProps'
-import ChangeColorLargeCard from './changeColorLargeCard.vue'
 
 // TODO 可自定义
 const cardOptions = reactive<ArticleCardOptions>({
@@ -21,7 +20,7 @@ const contentOptions = reactive<ArticleCardContentOptions>({
     height: 400,
     source: 'https://sky-lark-public.oss-cn-qingdao.aliyuncs.com/ux-hybrid.svg',
   },
-  title: {
+  article: {
     content:
       '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
   },

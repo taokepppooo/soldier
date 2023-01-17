@@ -1,20 +1,21 @@
 <template>
   <ArticleCard :options="props.cardOptions">
-    <div class="card-wrapper">
-      <el-row :gutter="24" class="p-15">
-        <el-col :span="21">
-          <title class="ellipsis-1 label--style color-#fff font-bold text-18">
-            {{ titleLabel }}
-          </title>
-          <title
-            class="ellipsis-3 label--style color-#ffffff99 text-14 lh-[1.5]"
-          >
-            {{ titleContent }}
-          </title>
-        </el-col>
-      </el-row>
-      <div class="card-wrapper__info"></div>
-    </div>
+    <el-row :gutter="24" class="p-15">
+      <el-col :span="21">
+        <title class="ellipsis-1 label--style color-#fff font-bold text-18">
+          {{ titleLabel }}
+        </title>
+        <title class="ellipsis-3 label--style color-#ffffff99 text-14 lh-[1.5]">
+          {{ titleContent }}
+        </title>
+      </el-col>
+      <el-col :span="24">
+        <ArticleCardInfo
+          v-if="infoOptions"
+          :options="infoOptions"
+        ></ArticleCardInfo>
+      </el-col>
+    </el-row>
   </ArticleCard>
 </template>
 
@@ -29,7 +30,8 @@ const props = defineProps({
   contentOptions: Object as PropType<ArticleCardContentOptions>,
 })
 
-const titleOptions = props.contentOptions!.title
+const titleOptions = props.contentOptions!.article
+const infoOptions = props.contentOptions!.info
 
 const titleLabel = ref(titleOptions!.label)
 const titleContent = ref(titleOptions!.content)

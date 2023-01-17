@@ -1,13 +1,15 @@
-interface ArticleImg {
+import type { CSSProperties } from 'vue'
+
+export interface ArticleImg {
   width?: string | number
-  height: string | number
+  height?: string | number
   source?: string
 }
 
-interface ArticleTitle {
+export interface Article {
   width?: string | number
   label?: string
-  content: string
+  content?: string
 }
 
 export interface ArticleInfo {
@@ -15,10 +17,11 @@ export interface ArticleInfo {
   headSource: string
   username: string
   publishTime: string
+  tagStyle?: CSSProperties
 }
 
 export interface ArticleCardContentOptions {
   img?: ArticleImg
-  title?: ArticleTitle
+  article?: Article
   info?: ArticleInfo
 }
