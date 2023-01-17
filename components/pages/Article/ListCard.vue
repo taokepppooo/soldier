@@ -1,26 +1,26 @@
 <template>
   <ArticleCard
-    class="shadow-[0_0_5rem_hsla(0deg,0%,46%,5%)] hover:shadow-[0_5rem_7.5rem_hsla(0deg,0%,46%,15%)]"
+    class="p-x-15 shadow-[0_0_5rem_hsla(0deg,0%,46%,5%)] hover:shadow-[0_5rem_7.5rem_hsla(0deg,0%,46%,15%)]"
     :options="options"
   >
     <el-row :gutter="24" class="flex items-center h-full">
-      <el-col :span="7">
+      <el-col v-if="img" :span="7">
         <nuxt-img
-          class="ml-15 radius-15"
+          class="radius-15"
           :src="img.source"
           width="240"
           height="160"
         />
       </el-col>
-      <el-col :span="17">
+      <el-col :span="img ? 17 : 24">
         <el-row :gutter="24">
-          <el-col :span="19">
+          <el-col :span="img ? 19 : 20">
             <el-link class="mb-10 text-24 font-bold" :underline="false">
               <span class="ellipsis-2">{{ article.label }}</span>
             </el-link>
           </el-col>
           <!-- TODO -->
-          <el-col :span="5"> </el-col>
+          <el-col :span="img ? 5 : 4"> </el-col>
           <el-col>
             <ArticleCardInfo v-if="info" :options="info"></ArticleCardInfo>
           </el-col>

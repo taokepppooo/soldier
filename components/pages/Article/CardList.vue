@@ -43,9 +43,6 @@ const articleCardList = reactive<ArticleCardContentOptions[]>([
     },
   },
   {
-    img: {
-      source: 'https://sky-lark-public.oss-cn-qingdao.aliyuncs.com/006-1.jpg',
-    },
     article: {
       label:
         '阿三大苏打撒旦阿三打撒打撒打撒大山东撒旦阿斯顿撒大苏打阿斯顿撒旦阿三阿三大苏打阿斯顿大山东阿斯顿阿斯顿啊实打实  ',
