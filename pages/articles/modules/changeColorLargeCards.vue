@@ -7,8 +7,8 @@
 </template>
 
 <script setup lang="ts">
-import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleLargeCardProps'
-import { ArticleCardOptions } from '@/components/types/cardProps'
+import { ArticleCardContentOptions } from '@/composables/article/articleLargeCardProps'
+import { ArticleCardOptions } from '@/composables/cardProps'
 import ChangeColorLargeCard from './changeColorLargeCard.vue'
 
 // TODO 可自定义

@@ -22,7 +22,7 @@
 
 <script setup lang="ts">
 import { ElRow, ElCol } from 'element-plus'
-import { ArticleCardOptions } from '@/components/types/cardProps'
+import { ArticleCardOptions } from '@/composables/cardProps'
 
 // TODO 接口获取
 const cards = reactive([

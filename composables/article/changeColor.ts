@@ -1,5 +1,5 @@
-import { ArticleCardOptions } from '@/components/types/cardProps'
-import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleLargeCardProps'
+import { ArticleCardOptions } from '@/composables/cardProps'
+import { ArticleCardContentOptions } from '@/composables/article/articleLargeCardProps'
 
 export interface ChangeColorCard {
   id?: string | number

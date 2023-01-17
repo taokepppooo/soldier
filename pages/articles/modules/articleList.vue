@@ -30,7 +30,7 @@ const tabs = [
   },
 ]
 
-const activeName = ref(tabs[0]?.name)
+const activeName = ref(tabs[0]!.name)
 </script>
 <style lang="less" scoped>
 :deep(.el-tabs__header) {

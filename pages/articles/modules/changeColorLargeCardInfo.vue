@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { ArticleInfo } from '@/components/types/pages/articles/articleLargeCardProps'
+import { ArticleInfo } from '@/composables/article/articleLargeCardProps'
 import type { PropType } from 'vue'
 const props = defineProps({
   options: Object as PropType<ArticleInfo>,

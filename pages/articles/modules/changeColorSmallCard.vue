@@ -20,8 +20,8 @@
 
 <script setup lang="ts">
 import { ElRow, ElCol } from 'element-plus'
-import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleLargeCardProps'
-import type { ArticleCardOptions } from '@/components/types/cardProps'
+import { ArticleCardContentOptions } from '@/composables/article/articleLargeCardProps'
+import type { ArticleCardOptions } from '@/composables/cardProps'
 import type { PropType } from 'vue'
 
 const props = defineProps({

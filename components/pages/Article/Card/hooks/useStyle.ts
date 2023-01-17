@@ -1,5 +1,5 @@
 import { useMouseInElement, UseMouseInElementReturn } from '@vueuse/core'
-import type { ArticleCardOptions } from '@/components/types/cardProps'
+import type { ArticleCardOptions } from '@/composables/cardProps'
 import type { Ref } from 'vue'
 
 type transformType = string | undefined

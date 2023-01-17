@@ -26,8 +26,8 @@
 <script setup lang="ts">
 import { ElRow, ElCol } from 'element-plus'
 import { toRem } from '@/utils/style'
-import { ArticleCardOptions } from '@/components/types/cardProps'
-import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleLargeCardProps'
+import { ArticleCardOptions } from '@/composables/cardProps'
+import { ArticleCardContentOptions } from '@/composables/article/articleLargeCardProps'
 import ChangeColorLargeCardInfo from './changeColorLargeCardInfo.vue'
 import type { CSSProperties, PropType } from 'vue'
 

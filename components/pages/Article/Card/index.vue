@@ -13,7 +13,7 @@ import { getRandomValueFromObject } from '@/utils/random'
 import { colors } from '@/types/constant/card-colors'
 import RenderCard from './renderers'
 import type { RenderCardInstance } from './renderers'
-import type { ArticleCardOptions } from '@/components/types/cardProps'
+import type { ArticleCardOptions } from '@/composables/cardProps'
 import type { PropType } from 'vue'
 
 const props = defineProps({
@@ -34,8 +34,8 @@ if (props.options!.scale) {
 
 const options = reactive<ArticleCardOptions>({
   ...(props.options as ArticleCardOptions),
-  background: props.options?.customBg
-    ? props.options?.customBg
+  background: props.options!.customBg
+    ? props.options!.customBg
     : `linear-gradient(${backgroundAngle}${getRandomValueFromObject(colors)})`,
   transform: `scale(${defaultScale}) translateZ(0)`,
   layout: 'vertical' as const,

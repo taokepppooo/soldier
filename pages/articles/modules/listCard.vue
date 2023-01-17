@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import type { ArticleListOptions, Img } from '@/composables/article/articleList'
 import type { PropType } from 'vue'
-import type { ArticleCardOptions } from '@/components/types/cardProps'
+import type { ArticleCardOptions } from '@/composables/cardProps'
 
 const props = defineProps({
   articleCard: Object as PropType<ArticleListOptions>,

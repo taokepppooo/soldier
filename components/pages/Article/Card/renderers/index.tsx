@@ -1,5 +1,5 @@
-import { SCard } from '@@/components/types'
-import { cardProps } from '@@/components/types/cardProps'
+import { cardProps } from '@@/composables/cardProps'
+import { SCard } from '@/components/global/SCard/types'
 import { setStyles } from '../hooks/useStyle'
 
 // 使用vue中的defineComponent会报错
