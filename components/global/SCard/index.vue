@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div ref="target" class="card" :style="[baseStyles]">
+    <div ref="target" class="card cursor-pointer" :style="[baseStyles]">
       <slot></slot>
     </div>
   </div>

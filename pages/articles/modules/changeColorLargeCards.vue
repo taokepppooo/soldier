@@ -1,14 +1,15 @@
 <template>
-  <change-color-article-large-card
+  <change-color-large-card
     :card-options="cardOptions"
     :content-options="contentOptions"
   >
-  </change-color-article-large-card>
+  </change-color-large-card>
 </template>
 
 <script setup lang="ts">
 import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleLargeCardProps'
 import { ArticleCardOptions } from '@/components/types/cardProps'
+import ChangeColorLargeCard from './changeColorLargeCard.vue'
 
 // TODO 可自定义
 const cardOptions = reactive<ArticleCardOptions>({

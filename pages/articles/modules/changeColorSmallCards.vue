@@ -1,17 +1,18 @@
 <template>
   <div class="flex flex-col row-gap-10">
     <div v-for="option in cardOptionsArr" :key="option.id">
-      <change-color-article-small-card
+      <change-color-small-card
         :card-options="option.cardOptions"
         :content-options="option.contentOptions"
       >
-      </change-color-article-small-card>
+      </change-color-small-card>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ChangeColorCard } from '@/pages/articles/types/changeColor'
+import { ChangeColorCard } from '@/composables/article/changeColor'
+import ChangeColorSmallCard from './changeColorSmallCard.vue'
 
 const cardOptionsArr = reactive<ChangeColorCard[]>([
   {

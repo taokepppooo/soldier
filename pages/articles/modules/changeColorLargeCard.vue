@@ -13,11 +13,11 @@
             </title>
           </el-col>
         </el-row>
-        <ChangeColorArticleLargeCardInfo
+        <change-color-large-card-info
           v-if="infoOptions"
           :options="infoOptions"
           class="absolute bottom-40"
-        ></ChangeColorArticleLargeCardInfo>
+        ></change-color-large-card-info>
       </div>
     </div>
   </ArticleCard>
@@ -28,6 +28,7 @@ import { ElRow, ElCol } from 'element-plus'
 import { toRem } from '@/utils/style'
 import { ArticleCardOptions } from '@/components/types/cardProps'
 import { ArticleCardContentOptions } from '@/components/types/pages/articles/articleLargeCardProps'
+import ChangeColorLargeCardInfo from './changeColorLargeCardInfo.vue'
 import type { CSSProperties, PropType } from 'vue'
 
 const props = defineProps({

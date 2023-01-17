@@ -8,11 +8,11 @@
     </el-col>
   </el-row>
   <el-row :gutter="24" class="mt-30 col-gap-20 justify-between">
-    <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="15">
+    <el-col :xs="24" :sm="24" :md="24" :lg="13" :xl="16">
       <article-list></article-list>
     </el-col>
-    <el-col class="hidden-md-and-down" :lg="9" :xl="8">
-      <article-list></article-list>
+    <el-col class="hidden-md-and-down" :lg="8" :xl="7">
+      <div></div>
     </el-col>
   </el-row>
 </template>

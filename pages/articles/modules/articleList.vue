@@ -6,13 +6,14 @@
       :label="tab.label"
       :name="tab.name"
     >
-      <article-card-list></article-card-list>
+      <card-list></card-list>
     </el-tab-pane>
   </el-tabs>
 </template>
 
 <script setup lang="ts">
 import { ElTabs, ElTabPane } from 'element-plus'
+import CardList from './cardList.vue'
 
 const tabs = [
   {
@@ -40,5 +41,9 @@ const activeName = ref(tabs[0]?.name)
   .el-tabs__active-bar {
     height: 0;
   }
+}
+
+:deep(.el-tabs__content) {
+  overflow: unset;
 }
 </style>
