@@ -1,6 +1,6 @@
 <template>
   <ArticleCard
-    class="p-x-15 shadow-[0_0_5rem_hsla(0deg,0%,46%,5%)] hover:shadow-[0_5rem_7.5rem_hsla(0deg,0%,46%,15%)]"
+    class="p-x-15 shadow-[0_0_5rem_hsla(0deg,0%,46%,15%)] hover:shadow-[0_5rem_7.5rem_hsla(0deg,0%,46%,15%)]"
     :options="options"
   >
     <el-row :gutter="24" class="flex items-center h-full">

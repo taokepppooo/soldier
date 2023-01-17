@@ -12,7 +12,7 @@ import { ArticleCardOptions } from '@/composables/cardProps'
 
 // TODO 可自定义
 const cardOptions = reactive<ArticleCardOptions>({
-  height: 547,
+  height: 551,
 })
 // TODO 可自定义
 const contentOptions = reactive<ArticleCardContentOptions>({

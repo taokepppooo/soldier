@@ -32,7 +32,11 @@ export default {
       },
     ],
   },
-  css: ['~/assets/less/index.less', '~/assets/font/iconfont.css'],
+  css: [
+    '@unocss/reset/tailwind.css',
+    '~/assets/less/index.less',
+    '~/assets/font/iconfont.css',
+  ],
   typescript: {
     strict: true,
     typeCheck: true,

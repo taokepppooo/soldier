@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <SSwiper></SSwiper>
-    <HomeCards></HomeCards>
-  </div>
+  <SSwiper></SSwiper>
+  <HomeCards></HomeCards>
 </template>
 
 <script setup lang="ts"></script>
