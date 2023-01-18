@@ -57,7 +57,8 @@ const articleCardList = reactive<ArticleCardContentOptions[]>([
   },
   {
     img: {
-      source: 'https://sky-lark-public.oss-cn-qingdao.aliyuncs.com/006-1.jpg',
+      source:
+        'https://sky-lark-public.oss-cn-qingdao.aliyuncs.com/snipaste-screen-01.jpg',
     },
     article: {
       label:

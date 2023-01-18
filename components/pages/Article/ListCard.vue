@@ -6,10 +6,9 @@
     <el-row :gutter="24" class="m-y-10">
       <el-col v-if="img" :xs="24" :sm="7" :md="7" :lg="7" :xl="7">
         <nuxt-img
-          class="radius-15 ma"
+          class="radius-15 ma h-full object-cover"
           :src="img.source"
           width="100%"
-          height="160"
         />
       </el-col>
       <el-col

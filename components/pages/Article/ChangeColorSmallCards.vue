@@ -1,10 +1,7 @@
 <template>
   <div class="flex flex-col row-gap-10">
     <div v-for="option in cardOptionsArr" :key="option.id">
-      <ArticleChangeColorSmallCard
-        :card-options="option.cardOptions"
-        :content-options="option.contentOptions"
-      >
+      <ArticleChangeColorSmallCard :content-options="option.contentOptions">
       </ArticleChangeColorSmallCard>
     </div>
   </div>
@@ -16,16 +13,11 @@ import { ChangeColorCard } from '@/composables/article/changeColor'
 const cardOptionsArr = reactive<ChangeColorCard[]>([
   {
     id: 1,
-    cardOptions: {
-      height: 173.6,
-      scale: '1.02',
-    },
     contentOptions: {
       article: {
         label:
           '苹果发布iOS/iPadOS 14苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
-        content:
-          '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
+        content: '苹果发布iOS/iPadOS',
       },
       info: {
         tag: '文章',
@@ -38,16 +30,12 @@ const cardOptionsArr = reactive<ChangeColorCard[]>([
   },
   {
     id: 2,
-    cardOptions: {
-      height: 173.6,
-      scale: '1.02',
-    },
     contentOptions: {
       article: {
         label:
           '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
         content:
-          '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
+          '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新22222222222222222222222222222',
       },
       info: {
         tag: '文章',
@@ -60,10 +48,6 @@ const cardOptionsArr = reactive<ChangeColorCard[]>([
   },
   {
     id: 3,
-    cardOptions: {
-      height: 173.6,
-      scale: '1.02',
-    },
     contentOptions: {
       article: {
         label:

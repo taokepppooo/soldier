@@ -1,11 +1,13 @@
 <template>
-  <ArticleCard :options="props.cardOptions">
+  <ArticleCard :options="cardOptions">
     <el-row :gutter="24" class="p-15">
       <el-col :span="21">
         <title class="ellipsis-1 label--style color-#fff font-bold text-18">
           {{ titleLabel }}
         </title>
-        <title class="ellipsis-3 label--style color-#ffffff99 text-14 lh-[1.5]">
+        <title
+          class="min-h-50 ellipsis-3 label--style color-#ffffff99 text-14 lh-[1.5]"
+        >
           {{ titleContent }}
         </title>
       </el-col>
@@ -22,16 +24,20 @@
 <script setup lang="ts">
 import { ElRow, ElCol } from 'element-plus'
 import { ArticleCardContentOptions } from '@/composables/article/articleLargeCardProps'
-import type { ArticleCardOptions } from '@/composables/cardProps'
 import type { PropType } from 'vue'
 
 const props = defineProps({
-  cardOptions: Object as PropType<ArticleCardOptions>,
   contentOptions: Object as PropType<ArticleCardContentOptions>,
 })
 
 const titleOptions = props.contentOptions!.article
 const infoOptions = props.contentOptions!.info
+
+const cardOptions = {
+  height: '100%',
+  minHeight: 166,
+  scale: '1.02',
+}
 
 const titleLabel = ref(titleOptions!.label)
 const titleContent = ref(titleOptions!.content)
