@@ -1,18 +1,16 @@
 <template>
-  <render-card
+  <ArticleChangeColorCard
     ref="target"
     class="inline-block overflow-hidden radius-10"
     :options="options"
   >
     <slot></slot>
-  </render-card>
+  </ArticleChangeColorCard>
 </template>
 
-<script setup lang="tsx">
+<script setup lang="ts">
 import { getRandomValueFromObject } from '@/utils/random'
 import { colors } from '@/types/constant/card-colors'
-import RenderCard from './renderers'
-import type { RenderCardInstance } from './renderers'
 import type { ArticleCardOptions } from '@/composables/cardProps'
 import type { PropType } from 'vue'
 
@@ -20,7 +18,7 @@ const props = defineProps({
   options: Object as PropType<ArticleCardOptions>,
 })
 
-const target = ref<RenderCardInstance>()
+const target = ref()
 
 const backgroundAngle = props.options!.backgroundAngle
   ? `${props.options!.backgroundAngle},`

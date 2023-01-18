@@ -36,13 +36,16 @@
           </el-col>
           <!-- TODO -->
           <el-col
+            class="relative"
             :xs="0"
-            :sm="0"
+            :sm="img ? 5 : 4"
             :md="img ? 5 : 4"
             :lg="img ? 5 : 4"
             :xl="img ? 5 : 4"
           >
-            1111
+            <div class="absolute right-0 break-all pr-10 pt-10">
+              111111111111111111111111111111111111111111111111111111111111111
+            </div>
           </el-col>
           <el-col>
             <ArticleCardInfo v-if="info" :options="info"></ArticleCardInfo>
