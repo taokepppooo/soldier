@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { setStyles } from './hooks/useStyle'
+import { setStyles } from '@/composables/article/changeColorCard'
 import type { ArticleCardOptions } from '@/composables/cardProps'
 import type { PropType } from 'vue'
 
