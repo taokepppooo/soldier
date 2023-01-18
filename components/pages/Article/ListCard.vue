@@ -3,24 +3,47 @@
     class="p-x-15 shadow-[0_0_5rem_hsla(0deg,0%,46%,15%)] hover:shadow-[0_5rem_7.5rem_hsla(0deg,0%,46%,15%)]"
     :options="options"
   >
-    <el-row :gutter="24" class="flex items-center h-full">
-      <el-col v-if="img" :span="7">
+    <el-row :gutter="24" class="m-y-10">
+      <el-col v-if="img" :xs="24" :sm="7" :md="7" :lg="7" :xl="7">
         <nuxt-img
-          class="radius-15"
+          class="radius-15 ma"
           :src="img.source"
-          width="240"
+          width="100%"
           height="160"
         />
       </el-col>
-      <el-col :span="img ? 17 : 24">
+      <el-col
+        :xs="24"
+        :sm="img ? 17 : 24"
+        :md="img ? 17 : 24"
+        :lg="img ? 17 : 24"
+        :xl="img ? 17 : 24"
+      >
         <el-row :gutter="24">
-          <el-col :span="img ? 19 : 20">
-            <el-link class="mb-10 text-24 font-bold" :underline="false">
+          <el-col
+            :xs="24"
+            :sm="img ? 19 : 20"
+            :md="img ? 19 : 20"
+            :lg="img ? 19 : 20"
+            :xl="img ? 19 : 20"
+          >
+            <el-link
+              class="flex items-start justify-start h-100 text-24 font-bold lh-2"
+              :underline="false"
+            >
               <span class="ellipsis-2">{{ article.label }}</span>
             </el-link>
           </el-col>
           <!-- TODO -->
-          <el-col :span="img ? 5 : 4"> </el-col>
+          <el-col
+            :xs="0"
+            :sm="0"
+            :md="img ? 5 : 4"
+            :lg="img ? 5 : 4"
+            :xl="img ? 5 : 4"
+          >
+            1111
+          </el-col>
           <el-col>
             <ArticleCardInfo v-if="info" :options="info"></ArticleCardInfo>
           </el-col>
@@ -53,8 +76,15 @@ info.tagStyle = {
 }
 
 const options = reactive<ArticleCardOptions>({
-  height: 203.6,
+  height: '100%',
+  minHeight: 203.6,
   customBg: '#fff',
   scale: '1.02',
 })
 </script>
+<style lang="less" scoped>
+:deep(.card) {
+  display: flex;
+  align-items: center;
+}
+</style>

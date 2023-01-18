@@ -13,6 +13,7 @@
 
 <script setup lang="ts">
 import { ElTabs, ElTabPane } from 'element-plus'
+import { toRem } from '@/utils/style'
 
 const tabs = [
   {
@@ -30,6 +31,8 @@ const tabs = [
 ]
 
 const activeName = ref(tabs[0]!.name)
+
+const tabFontSize = ref(toRem(16))
 </script>
 <style lang="less" scoped>
 :deep(.el-tabs__header) {
@@ -44,5 +47,10 @@ const activeName = ref(tabs[0]!.name)
 
 :deep(.el-tabs__content) {
   overflow: unset;
+}
+
+:deep(.el-tabs__item) {
+  font-weight: 600;
+  font-size: v-bind(tabFontSize);
 }
 </style>

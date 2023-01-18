@@ -12,6 +12,7 @@ export const useStyle = (
 
   const width = options!.width ? toRem(options!.width) : '100%'
   const height = toRem(options!.height)
+  const minHeight = toRem(options!.minHeight)
 
   const transform = ref<string>()
 
@@ -23,6 +24,7 @@ export const useStyle = (
   const baseStyles = reactive<CSSProperties>({
     width,
     height,
+    'min-height': minHeight,
     'background-image': options!.backgroundImage,
     transform: transform as any as string,
     transition: options!.transition,
