@@ -1,6 +1,7 @@
 <template>
   <div>
     <swiper
+      :slides-per-view="1"
       :space-between="50"
       loop
       :autoplay="autoplay"
@@ -27,5 +28,5 @@ const slides = [
 ]
 </script>
 <style lang="less" scoped>
-@import '@/components/style/swiper.less';
+@import './style/swiper.less';
 </style>
