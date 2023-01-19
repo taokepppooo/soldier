@@ -4,7 +4,23 @@ import Components from 'unplugin-vue-components/vite'
 
 export default {
   ssr: true,
-  modules: ['@unocss/nuxt', '@vueuse/nuxt', '@nuxt/image-edge'],
+  modules: [
+    '@unocss/nuxt',
+    '@vueuse/nuxt',
+    '@nuxt/image-edge',
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: [
+          // 自动引入 `usePinia()`
+          'defineStore',
+          // 自动引入 `usePinia()` 并重命名为 `usePiniaStore()`
+          ['defineStore', 'definePiniaStore'],
+        ],
+      },
+    ],
+    '@nuxtjs/critters',
+  ],
   app: {
     head: {
       meta: [

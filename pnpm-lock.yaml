@@ -7,6 +7,8 @@ specifiers:
   '@mapbox/node-pre-gyp': ^1.0.10
   '@nuxt/image-edge': 1.0.0-27827328.bc9ddc0
   '@nuxt/kit': npm:@nuxt/kit-edge@3.0.1-rc.0-27828744.aa9aec1
+  '@nuxtjs/critters': ^0.4.0
+  '@pinia/nuxt': ^0.4.6
   '@types/lodash': ^4.14.191
   '@typescript-eslint/eslint-plugin': ^5.42.1
   '@typescript-eslint/parser': ^5.42.1
@@ -58,6 +60,8 @@ specifiers:
 dependencies:
   '@mapbox/node-pre-gyp': registry.npmmirror.com/@mapbox/node-pre-gyp/1.0.10
   '@nuxt/kit': registry.npmmirror.com/@nuxt/kit-edge/3.0.1-rc.0-27828744.aa9aec1_rollup@2.79.1
+  '@nuxtjs/critters': registry.npmmirror.com/@nuxtjs/critters/0.4.0_rollup@2.79.1
+  '@pinia/nuxt': registry.npmmirror.com/@pinia/nuxt/0.4.6_lhbujygtiktv3p6zq3a5jwcv6a
   '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.45
   element-plus: registry.npmmirror.com/element-plus/2.2.28_vue@3.2.45
   lodash: registry.npmmirror.com/lodash/4.17.21
@@ -1920,6 +1924,46 @@ packages:
       - typescript
       - vls
       - vti
+
+  registry.npmmirror.com/@nuxtjs/critters/0.4.0_rollup@2.79.1:
+    resolution:
+      {
+        integrity: sha512-+7RHktQwJcZsnWh6WB9nlX+t2gCv7/tv90DbVrFcXLR1Ew23uKcS5M2Wwq9emFupc1qnNJTk3zXR3GAGvqaRTg==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/@nuxtjs/critters/-/critters-0.4.0.tgz,
+      }
+    id: registry.npmmirror.com/@nuxtjs/critters/0.4.0
+    name: '@nuxtjs/critters'
+    version: 0.4.0
+    dependencies:
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.0.0_rollup@2.79.1
+      critters: registry.npmmirror.com/critters/0.0.16
+      pathe: registry.npmmirror.com/pathe/1.0.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: false
+
+  registry.npmmirror.com/@pinia/nuxt/0.4.6_lhbujygtiktv3p6zq3a5jwcv6a:
+    resolution:
+      {
+        integrity: sha512-HjrYEfLdFpmsjhicPJgL36jVhzHWukIQPFFHGTSF84Cplu+f2nY2XHKqe9ToHzE9rLee2RjLOwAzOnXa/I/u6A==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/@pinia/nuxt/-/nuxt-0.4.6.tgz,
+      }
+    id: registry.npmmirror.com/@pinia/nuxt/0.4.6
+    name: '@pinia/nuxt'
+    version: 0.4.6
+    dependencies:
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.0.0_rollup@2.79.1
+      pinia: registry.npmmirror.com/pinia/2.0.29_zwu2zepfy3m6u2gunxlolp35gi
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - typescript
+      - vue
+    dev: false
 
   registry.npmmirror.com/@polka/url/1.0.0-next.21:
     resolution:
@@ -5362,6 +5406,24 @@ packages:
       }
     name: create-require
     version: 1.1.1
+
+  registry.npmmirror.com/critters/0.0.16:
+    resolution:
+      {
+        integrity: sha512-JwjgmO6i3y6RWtLYmXwO5jMd+maZt8Tnfu7VVISmEWyQqfLpB8soBswf8/2bu6SBXxtKA68Al3c+qIG1ApT68A==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/critters/-/critters-0.0.16.tgz,
+      }
+    name: critters
+    version: 0.0.16
+    dependencies:
+      chalk: registry.npmmirror.com/chalk/4.1.2
+      css-select: registry.npmmirror.com/css-select/4.3.0
+      parse5: registry.npmmirror.com/parse5/6.0.1
+      parse5-htmlparser2-tree-adapter: registry.npmmirror.com/parse5-htmlparser2-tree-adapter/6.0.1
+      postcss: registry.npmmirror.com/postcss/8.4.19
+      pretty-bytes: registry.npmmirror.com/pretty-bytes/5.6.0
+    dev: false
 
   registry.npmmirror.com/cross-spawn/7.0.3:
     resolution:
@@ -12501,6 +12563,30 @@ packages:
     dependencies:
       parse-path: registry.npmmirror.com/parse-path/7.0.0
 
+  registry.npmmirror.com/parse5-htmlparser2-tree-adapter/6.0.1:
+    resolution:
+      {
+        integrity: sha512-qPuWvbLgvDGilKc5BoicRovlT4MtYT6JfJyBOMDsKoiT+GiuP5qyrPCnR9HcPECIJJmZh5jRndyNThnhhb/vlA==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/parse5-htmlparser2-tree-adapter/-/parse5-htmlparser2-tree-adapter-6.0.1.tgz,
+      }
+    name: parse5-htmlparser2-tree-adapter
+    version: 6.0.1
+    dependencies:
+      parse5: registry.npmmirror.com/parse5/6.0.1
+    dev: false
+
+  registry.npmmirror.com/parse5/6.0.1:
+    resolution:
+      {
+        integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/parse5/-/parse5-6.0.1.tgz,
+      }
+    name: parse5
+    version: 6.0.1
+    dev: false
+
   registry.npmmirror.com/parseurl/1.3.3:
     resolution:
       {
@@ -12675,6 +12761,32 @@ packages:
     version: 4.0.1
     engines: { node: '>=6' }
     optional: true
+
+  registry.npmmirror.com/pinia/2.0.29_zwu2zepfy3m6u2gunxlolp35gi:
+    resolution:
+      {
+        integrity: sha512-5z/KpFecq/cIgfeTnulJXldiLcTITRkTe3N58RKYSj0Pc1EdR6oyCdnf5A9jLoVwBqX5LtHhd0kGlpzWvk9oiQ==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/pinia/-/pinia-2.0.29.tgz,
+      }
+    id: registry.npmmirror.com/pinia/2.0.29
+    name: pinia
+    version: 2.0.29
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api/6.4.5
+      typescript: registry.npmmirror.com/typescript/4.8.4
+      vue: registry.npmmirror.com/vue/3.2.45
+      vue-demi: registry.npmmirror.com/vue-demi/0.13.11_vue@3.2.45
+    dev: false
 
   registry.npmmirror.com/pkg-types/1.0.1:
     resolution:
@@ -13404,6 +13516,18 @@ packages:
     engines: { node: '>=10.13.0' }
     hasBin: true
     dev: true
+
+  registry.npmmirror.com/pretty-bytes/5.6.0:
+    resolution:
+      {
+        integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/pretty-bytes/-/pretty-bytes-5.6.0.tgz,
+      }
+    name: pretty-bytes
+    version: 5.6.0
+    engines: { node: '>=6' }
+    dev: false
 
   registry.npmmirror.com/pretty-bytes/6.0.0:
     resolution:
