@@ -12,7 +12,7 @@ import { ArticleCardOptions } from '@/composables/cardProps'
 
 // TODO 可自定义
 const cardOptions = reactive<ArticleCardOptions>({
-  height: 551,
+  height: '100%',
 })
 // TODO 可自定义
 const contentOptions = reactive<ArticleCardContentOptions>({
@@ -22,7 +22,7 @@ const contentOptions = reactive<ArticleCardContentOptions>({
   },
   article: {
     content:
-      '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新',
+      '苹果发布iOS/iPadOS 14.4.2 提供重要安全更新iOS/iPadOS 14.4.2 提供重要安全更新阿斯顿撒旦撒旦啊实打实的撒撒打算阿斯顿撒旦撒的撒大苏打撒旦',
   },
   info: {
     tag: '文章',

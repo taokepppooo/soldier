@@ -1,9 +1,11 @@
 <template>
   <div class="flex flex-col row-gap-10">
-    <div v-for="option in cardOptionsArr" :key="option.id">
-      <ArticleChangeColorSmallCard :content-options="option.contentOptions">
-      </ArticleChangeColorSmallCard>
-    </div>
+    <ArticleChangeColorSmallCard
+      v-for="option in cardOptionsArr"
+      :key="option.id"
+      :content-options="option.contentOptions"
+    >
+    </ArticleChangeColorSmallCard>
   </div>
 </template>
 

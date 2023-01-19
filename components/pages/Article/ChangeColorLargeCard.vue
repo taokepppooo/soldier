@@ -6,7 +6,7 @@
         <el-row :gutter="24" class="absolute top-20">
           <el-col :span="18">
             <title
-              class="ellipsis-5 transform-font text-justify c-#fff text-55 lh-[1.3]"
+              class="ellipsis-5 transform-font text-justify c-#fff text-50 lh-[1.3]"
               :style="titleStyle"
             >
               {{ titleContent }}

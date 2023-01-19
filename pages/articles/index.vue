@@ -7,7 +7,7 @@
       <article-change-color-small-cards></article-change-color-small-cards>
     </el-col>
   </el-row>
-  <el-row :gutter="24" class="mt-30 col-gap-20 justify-between">
+  <el-row :gutter="24" class="mt-10 col-gap-20 justify-between">
     <el-col :xs="24" :sm="24" :md="24" :lg="13" :xl="16">
       <article-list></article-list>
     </el-col>

@@ -35,7 +35,7 @@ const infoOptions = props.contentOptions!.info
 
 const cardOptions = {
   height: '100%',
-  minHeight: 166,
+  minHeight: 165,
   scale: '1.02',
 }
 

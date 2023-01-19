@@ -32,7 +32,7 @@ const tabs = [
 
 const activeName = ref(tabs[0]!.name)
 
-const tabFontSize = ref(toRem(16))
+const tabFontSize = ref(toRem(14))
 </script>
 <style lang="less" scoped>
 :deep(.el-tabs__header) {
