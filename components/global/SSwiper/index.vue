@@ -20,7 +20,7 @@ import type { Options, Slide } from './types/type'
 import type { PropType } from 'vue'
 
 const props = defineProps({
-  slides: Object as PropType<Slide[]>,
+  slides: Array as PropType<Slide[]>,
   options: Object as PropType<Options>,
 })
 
