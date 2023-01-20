@@ -1,19 +1,17 @@
 <template>
-  <div>
-    <swiper
-      :slides-per-view="1"
-      :space-between="50"
-      loop
-      :autoplay="autoplay"
-      :pagination="pagination"
-      navigation
-      :modules="modules"
-    >
-      <swiper-slide v-for="(slide, index) in slides" :key="index">
-        <img :src="slide.src" />
-      </swiper-slide>
-    </swiper>
-  </div>
+  <swiper
+    :slides-per-view="1"
+    :space-between="50"
+    loop
+    :autoplay="autoplay"
+    :pagination="pagination"
+    navigation
+    :modules="modules"
+  >
+    <swiper-slide v-for="(slide, index) in slides" :key="index">
+      <nuxt-img :src="slide.src" />
+    </swiper-slide>
+  </swiper>
 </template>
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue'
