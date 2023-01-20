@@ -103,5 +103,11 @@
     "unplugin-icons": "^0.15.1",
     "unplugin-vue-components": "^0.22.12",
     "vue": "^3.2.45"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
