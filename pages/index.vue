@@ -1,5 +1,5 @@
 <template>
-  <SSwiper></SSwiper>
+  <HomeSwiper></HomeSwiper>
   <HomeCards></HomeCards>
 </template>
 
