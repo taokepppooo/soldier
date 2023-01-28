@@ -1,4 +1,4 @@
-import { Options } from '@/components/global/SCard/types/props'
+import { Options } from '@/components/global/SCard/types'
 import type { PropType, Ref } from 'vue'
 
 export interface ArticleCardOptions extends Options {

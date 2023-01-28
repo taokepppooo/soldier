@@ -7,10 +7,10 @@
 </template>
 
 <script setup lang="ts">
-import { cardProps } from './types/props'
+import { Props } from './types/props'
 import { useStyle } from './hooks/useStyle'
 
-const props = defineProps(cardProps)
+const props = defineProps(Props)
 
 const target = ref()
 

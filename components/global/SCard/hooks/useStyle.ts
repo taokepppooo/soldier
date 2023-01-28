@@ -1,11 +1,11 @@
 import { divide, subtract, round, multiply } from 'lodash'
 import { useMouseInElement, UseMouseInElementReturn } from '@vueuse/core'
 import { toRem } from '@/utils/style'
-import { cardProps } from '../types/props'
+import { Props } from '../types/props'
 import type { CSSProperties, ExtractPropTypes, Ref } from 'vue'
 
 export const useStyle = (
-  props: ExtractPropTypes<typeof cardProps>,
+  props: ExtractPropTypes<typeof Props>,
   target: Ref
 ) => {
   const options = props.options

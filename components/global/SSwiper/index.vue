@@ -16,13 +16,9 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { autoplay, pagination, modules } from './hooks/useSwiperOptions'
-import type { Options, Slide } from './types/type'
-import type { PropType } from 'vue'
+import { Props } from './types/props'
 
-const props = defineProps({
-  slides: Array as PropType<Slide[]>,
-  options: Object as PropType<Options>,
-})
+const props = defineProps(Props)
 
 const height = props.options!.height
 </script>

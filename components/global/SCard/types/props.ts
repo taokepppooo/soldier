@@ -1,16 +1,7 @@
 import type { PropType } from 'vue'
+import type { Options } from '.'
 
-export interface Options {
-  width?: string | number
-  height: string | number
-  minHeight?: string | number
-  background?: string
-  backgroundImage?: string
-  mode?: '3d'
-  transition?: string
-}
-
-export const cardProps = {
+export const Props = {
   options: {
     type: Object as PropType<Options>,
     require: true,
