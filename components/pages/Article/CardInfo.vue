@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center col-gap-12">
     <div
-      class="py-8 px-14 text-14 spacing-[1.5] bg-#d62164 radius-12 inline-block color-#fff"
+      class="py-8 px-14 text-14 spacing-[1.5] bg-#d62164 radius-12 inline-block c-#fff"
     >
       {{ options.tag }}
     </div>
@@ -11,7 +11,7 @@
       width="30"
       height="30"
     />
-    <div class="flex col-gap-5 color-#fff text-14" :style="options.tagStyle">
+    <div class="flex col-gap-5 c-#fff text-14" :style="options.tagStyle">
       <span>{{ options.username }}</span>
       <span>•</span>
       <span>{{ options.publishTime }}</span>

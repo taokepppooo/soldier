@@ -11,17 +11,27 @@
       :xl="6"
     >
       <NuxtLink :to="card.link">
-        <SCard :options="getCardOptions(index)">
-          <span class="text-22 mr-10" :class="getIconfont(card.icon)"></span>
-          <span class="truncate text-18 font-400">{{ card.title }}</span>
-        </SCard>
+        <el-skeleton class="h-80" :loading="loading" animated>
+          <template #template>
+            <el-skeleton-item variant="image" class="h-80" />
+          </template>
+          <template #default>
+            <SCard :options="getCardOptions(index)">
+              <span
+                class="text-22 mr-10"
+                :class="getIconfont(card.icon)"
+              ></span>
+              <span class="truncate text-18 font-400">{{ card.title }}</span>
+            </SCard>
+          </template>
+        </el-skeleton>
       </NuxtLink>
     </el-col>
   </el-row>
 </template>
 
 <script setup lang="ts">
-import { ElRow, ElCol } from 'element-plus'
+import { ElSkeleton, ElSkeletonItem, ElRow, ElCol } from 'element-plus'
 import { ArticleCardOptions } from '@/composables/cardProps'
 
 // TODO 接口获取
@@ -51,6 +61,12 @@ const cards = reactive([
     backgroundImage: 'linear-gradient(45deg,#a682e4,#c1a7e9)',
   },
 ])
+
+const loading = ref(true)
+
+setTimeout(() => {
+  loading.value = false
+}, 2000)
 
 const getCardOptions = (index: number) => {
   const options: ArticleCardOptions = {

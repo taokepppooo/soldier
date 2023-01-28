@@ -2,14 +2,26 @@
   <ArticleCard :options="cardOptions">
     <el-row :gutter="24" class="p-15">
       <el-col :span="21">
-        <title class="ellipsis-1 label--style color-#fff font-bold text-18">
-          {{ titleLabel }}
-        </title>
-        <title
-          class="min-h-50 ellipsis-3 label--style color-#ffffff99 text-14 lh-[1.5]"
-        >
-          {{ titleContent }}
-        </title>
+        <el-skeleton :loading="loading" animated>
+          <template #template>
+            <el-skeleton-item variant="text" class="text-18" />
+            <div class="min-h-50 text-14 lh-[1.5]">
+              <el-skeleton-item variant="text" />
+              <el-skeleton-item variant="text" />
+              <el-skeleton-item variant="text" />
+            </div>
+          </template>
+          <template #default>
+            <title class="ellipsis-1 label--style c-#fff font-bold text-18">
+              {{ titleLabel }}
+            </title>
+            <title
+              class="min-h-50 ellipsis-3 label--style c-#ffffff99 text-14 lh-[1.5]"
+            >
+              {{ titleContent }}
+            </title>
+          </template>
+        </el-skeleton>
       </el-col>
       <el-col :span="24">
         <ArticleCardInfo
@@ -22,13 +34,19 @@
 </template>
 
 <script setup lang="ts">
-import { ElRow, ElCol } from 'element-plus'
+import { ElSkeleton, ElSkeletonItem, ElRow, ElCol } from 'element-plus'
 import { ArticleCardContentOptions } from '@/composables/article/articleLargeCardProps'
 import type { PropType } from 'vue'
 
 const props = defineProps({
   contentOptions: Object as PropType<ArticleCardContentOptions>,
 })
+
+const loading = ref(true)
+
+setTimeout(() => {
+  loading.value = false
+}, 20000)
 
 const titleOptions = props.contentOptions!.article
 const infoOptions = props.contentOptions!.info
