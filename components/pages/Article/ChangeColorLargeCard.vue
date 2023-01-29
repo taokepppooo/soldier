@@ -2,16 +2,18 @@
   <ArticleCard :options="props.cardOptions">
     <div class="h-full bg-[rgba(255,255,255,0.3)]">
       <div class="relative h-inherit p-20">
-        <el-skeleton :loading="loading" animated class="absolute">
+        <el-skeleton :loading="loading" animated>
           <template #template>
-            <el-row :gutter="24">
+            <div
+              :style="{
+                width: imgWidth,
+                height: imgHeight,
+              }"
+            ></div>
+            <el-row :gutter="24" class="absolute top-20 w-full">
               <el-col :span="18">
-                <div class="text-50 lh-[1.3] top-20">
-                  <el-skeleton-item
-                    v-for="s in skeletonCount"
-                    :key="s"
-                    variant="h1"
-                  />
+                <div class="text-50 lh-[1.3]">
+                  <el-skeleton-item v-for="s in skeletonCount" :key="s" />
                 </div>
               </el-col>
             </el-row>
@@ -23,12 +25,12 @@
             ></div>
             <el-row :gutter="24" class="absolute top-20">
               <el-col :span="18">
-                <title
+                <p
                   class="ellipsis-5 transform-font text-justify c-#fff text-50 lh-[1.3]"
                   :style="titleStyle"
                 >
                   {{ titleContent }}
-                </title>
+                </p>
               </el-col>
             </el-row>
           </template>
@@ -36,7 +38,7 @@
         <ArticleCardInfo
           v-if="infoOptions"
           :options="infoOptions"
-          class="absolute bottom-40"
+          class="absolute bottom-15"
         ></ArticleCardInfo>
       </div>
     </div>

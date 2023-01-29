@@ -4,20 +4,22 @@
       <el-col :span="21">
         <el-skeleton :loading="loading" animated>
           <template #template>
-            <el-skeleton-item class="text-18 label--style" />
-            <div class="min-h-50 text-14 lh-[1.5] label--style">
+            <div class="text-18 label--style">
+              <el-skeleton-item class="text-18 label--style" />
+            </div>
+            <div class="min-h-65 text-14 lh-[1.5] label--style">
               <el-skeleton-item v-for="s in skeletonCount" :key="s" />
             </div>
           </template>
           <template #default>
-            <title class="ellipsis-1 label--style c-#fff font-bold text-18">
+            <p class="ellipsis-1 label--style c-#fff font-bold text-18">
               {{ titleLabel }}
-            </title>
-            <title
-              class="min-h-50 ellipsis-3 label--style c-#ffffff99 text-14 lh-[1.5]"
+            </p>
+            <p
+              class="min-h-65 ellipsis-3 label--style c-#ffffff99 text-14 lh-[1.5]"
             >
               {{ titleContent }}
-            </title>
+            </p>
           </template>
         </el-skeleton>
       </el-col>

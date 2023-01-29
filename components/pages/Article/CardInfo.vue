@@ -2,10 +2,10 @@
   <div class="flex items-center col-gap-12">
     <el-skeleton :loading="loading" animated>
       <template #template>
-        <div class="flex items-center">
-          <el-skeleton-item class="py-8 px-14 text-14 radius-12 w-50" />
+        <div class="flex items-center text-14 h-37">
+          <el-skeleton-item class="py-8 radius-12 w-50" />
           <el-skeleton-item class="radius-50% mx-14 w-30 h-30" />
-          <el-skeleton-item class="text-14 w-200" />
+          <el-skeleton-item class="w-200" />
         </div>
       </template>
       <template #default>

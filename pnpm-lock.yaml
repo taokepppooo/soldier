@@ -55,7 +55,7 @@ specifiers:
   vite: 4.0.4
   vitest: ^0.23.4
   vue: 3.2.45
-  vue-tsc: ^1.0.22
+  vue-tsc: ^1.0.24
 
 dependencies:
   '@mapbox/node-pre-gyp': registry.npmmirror.com/@mapbox/node-pre-gyp/1.0.10
@@ -2179,7 +2179,7 @@ packages:
       knitwork: registry.npmmirror.com/knitwork/1.0.0
       lodash.template: registry.npmmirror.com/lodash.template/4.5.0
       mlly: registry.npmmirror.com/mlly/1.1.0
-      pathe: registry.npmmirror.com/pathe/1.1.0
+      pathe: registry.npmmirror.com/pathe/1.0.0
       pkg-types: registry.npmmirror.com/pkg-types/1.0.1
       scule: registry.npmmirror.com/scule/1.0.0
       semver: registry.npmmirror.com/semver/7.3.8
@@ -2270,7 +2270,7 @@ packages:
       create-require: registry.npmmirror.com/create-require/1.1.1
       defu: registry.npmmirror.com/defu/6.1.2
       jiti: registry.npmmirror.com/jiti/1.16.2
-      pathe: registry.npmmirror.com/pathe/1.1.0
+      pathe: registry.npmmirror.com/pathe/1.0.0
       pkg-types: registry.npmmirror.com/pkg-types/1.0.1
       postcss-import-resolver: registry.npmmirror.com/postcss-import-resolver/2.0.0
       scule: registry.npmmirror.com/scule/1.0.0
@@ -2785,7 +2785,7 @@ packages:
     version: 3.7.4
     dependencies:
       '@types/eslint': registry.npmmirror.com/@types/eslint/8.4.10
-      '@types/estree': registry.npmmirror.com/@types/estree/1.0.0
+      '@types/estree': registry.npmmirror.com/@types/estree/0.0.51
     dev: true
 
   registry.npmmirror.com/@types/eslint/8.4.10:
@@ -2798,7 +2798,7 @@ packages:
     name: '@types/eslint'
     version: 8.4.10
     dependencies:
-      '@types/estree': registry.npmmirror.com/@types/estree/1.0.0
+      '@types/estree': registry.npmmirror.com/@types/estree/0.0.51
       '@types/json-schema': registry.npmmirror.com/@types/json-schema/7.0.11
     dev: true
 
