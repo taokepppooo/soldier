@@ -4,11 +4,9 @@
       <el-col :span="21">
         <el-skeleton :loading="loading" animated>
           <template #template>
-            <el-skeleton-item variant="text" class="text-18" />
-            <div class="min-h-50 text-14 lh-[1.5]">
-              <el-skeleton-item variant="text" />
-              <el-skeleton-item variant="text" />
-              <el-skeleton-item variant="text" />
+            <el-skeleton-item class="text-18 label--style" />
+            <div class="min-h-50 text-14 lh-[1.5] label--style">
+              <el-skeleton-item v-for="s in skeletonCount" :key="s" />
             </div>
           </template>
           <template #default>
@@ -46,7 +44,9 @@ const loading = ref(true)
 
 setTimeout(() => {
   loading.value = false
-}, 20000)
+}, 2000)
+
+const skeletonCount = ref(3)
 
 const titleOptions = props.contentOptions!.article
 const infoOptions = props.contentOptions!.info

@@ -7,11 +7,11 @@
             <el-row :gutter="24">
               <el-col :span="18">
                 <div class="text-50 lh-[1.3] top-20">
-                  <el-skeleton-item variant="text" />
-                  <el-skeleton-item variant="text" />
-                  <el-skeleton-item variant="text" />
-                  <el-skeleton-item variant="text" />
-                  <el-skeleton-item variant="text" />
+                  <el-skeleton-item
+                    v-for="s in skeletonCount"
+                    :key="s"
+                    variant="h1"
+                  />
                 </div>
               </el-col>
             </el-row>
@@ -60,6 +60,8 @@ const loading = ref(true)
 setTimeout(() => {
   loading.value = false
 }, 2000)
+
+const skeletonCount = ref(5)
 
 const imgOptions = props.contentOptions!.img
 const titleOptions = props.contentOptions!.article
