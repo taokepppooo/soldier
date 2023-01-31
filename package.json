@@ -1,4 +1,5 @@
 {
+  "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@6.27.2",
   "engines": {
@@ -20,6 +21,7 @@
     "clean:cache": "rimraf node_modules/.cache/ && rimraf node_modules/.vite",
     "clean:lib": "rimraf node_modules",
     "commit": "git add . && cz-customizable",
+    "release": "git add . && cz-customizable && npx bumpp --push --tag --commit &&  npm publish --access=public && git push --follow-tags",
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "prepare": "nuxi prepare && husky install"
