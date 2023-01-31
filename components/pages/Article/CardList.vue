@@ -1,14 +1,25 @@
 <template>
-  <ArticleListCard
-    v-for="(articleCard, index) in articleCardList"
-    :key="index"
-    :article-card="articleCard"
-    class="mb-10"
-  ></ArticleListCard>
+  <el-skeleton :rows="3" :loading="loading" animated>
+    <template #default>
+      <ArticleListCard
+        v-for="(articleCard, index) in articleCardList"
+        :key="index"
+        :article-card="articleCard"
+        class="mb-10"
+      ></ArticleListCard>
+    </template>
+  </el-skeleton>
 </template>
 
 <script setup lang="ts">
+import { ElSkeleton } from 'element-plus'
 import type { ArticleCardContentOptions } from '@/composables/article/articleLargeCardProps'
+
+const loading = ref(true)
+
+setTimeout(() => {
+  loading.value = false
+}, 2000)
 
 const articleCardList = reactive<ArticleCardContentOptions[]>([
   {

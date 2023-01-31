@@ -4,7 +4,7 @@
       <el-col :span="21">
         <el-skeleton :loading="loading" animated>
           <template #template>
-            <div class="text-18 label--style">
+            <div class="text-18 label--style h-27">
               <el-skeleton-item class="text-18 label--style" />
             </div>
             <div class="min-h-65 text-14 lh-[1.5] label--style">
@@ -48,7 +48,7 @@ setTimeout(() => {
   loading.value = false
 }, 2000)
 
-const skeletonCount = ref(3)
+const skeletonCount = 3
 
 const titleOptions = props.contentOptions!.article
 const infoOptions = props.contentOptions!.info

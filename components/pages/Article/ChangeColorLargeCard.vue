@@ -63,7 +63,7 @@ setTimeout(() => {
   loading.value = false
 }, 2000)
 
-const skeletonCount = ref(5)
+const skeletonCount = 5
 
 const imgOptions = props.contentOptions!.img
 const titleOptions = props.contentOptions!.article
