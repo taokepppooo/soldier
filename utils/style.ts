@@ -1,6 +1,6 @@
 /* eslint-disable vue/prefer-import-from-vue */
 import { isString } from '@vue/shared'
-import { divide } from 'lodash'
+import { divide } from 'lodash-es'
 import { constant } from '../types/constant'
 
 export const toRem = (

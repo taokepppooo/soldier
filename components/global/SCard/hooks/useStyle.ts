@@ -1,4 +1,4 @@
-import { divide, subtract, round, multiply } from 'lodash'
+import { divide, subtract, round, multiply } from 'lodash-es'
 import { useMouseInElement, UseMouseInElementReturn } from '@vueuse/core'
 import { toRem } from '@/utils/style'
 import { Props } from '../types/props'
