@@ -1,6 +1,5 @@
 /* eslint-disable vue/prefer-import-from-vue */
 import { isString } from '@vue/shared'
-import { divide } from 'lodash-es'
 import { constant } from '../types/constant'
 
 export const toRem = (
@@ -25,7 +24,7 @@ export const getCalculateValue = (
 
 export const PxUnitToRem = (value: number | string): string => {
   const _val = Number(value)
-  const remUnit = divide(_val, constant.ROOT_SIZE)
+  const remUnit = _val / constant.ROOT_SIZE
   const rem = `${remUnit}rem`
   return rem
 }

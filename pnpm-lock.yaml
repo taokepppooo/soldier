@@ -57,33 +57,35 @@ specifiers:
   vitest: ^0.23.4
   vue: 3.2.45
   vue-tsc: ^1.0.24
+  webpack: '>=4.0.0 <5.0.0 || >=5.0.0 <6.0.0'
 
 dependencies:
   '@mapbox/node-pre-gyp': registry.npmmirror.com/@mapbox/node-pre-gyp/1.0.10
-  '@nuxt/kit': registry.npmmirror.com/@nuxt/kit-edge/3.0.1-rc.0-27828744.aa9aec1_rollup@3.11.0
-  '@nuxtjs/critters': registry.npmmirror.com/@nuxtjs/critters/0.4.0_rollup@3.11.0
-  '@pinia/nuxt': registry.npmmirror.com/@pinia/nuxt/0.4.6_oug66pdv5r7q46o6bgigxt5sm4
+  '@nuxt/kit': registry.npmmirror.com/@nuxt/kit-edge/3.0.1-rc.0-27828744.aa9aec1
+  '@nuxtjs/critters': registry.npmmirror.com/@nuxtjs/critters/0.4.0
+  '@pinia/nuxt': registry.npmmirror.com/@pinia/nuxt/0.4.6_prq2uz4lho2pwp6irk4cfkrxwu
   '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.45
   element-plus: registry.npmmirror.com/element-plus/2.2.28_vue@3.2.45
   lodash: registry.npmmirror.com/lodash/4.17.21
-  nuxt: registry.npmmirror.com/nuxt/3.1.1_rt4acthlntrqt2v5illy3aet3m
+  nuxt: registry.npmmirror.com/nuxt/3.1.1_akhx6ewvartiiqzw6cvjabolti
   swiper: registry.npmmirror.com/swiper/8.4.6
   unplugin-icons: registry.npmmirror.com/unplugin-icons/0.15.1
-  unplugin-vue-components: registry.npmmirror.com/unplugin-vue-components/0.22.12_rollup@3.11.0+vue@3.2.45
+  unplugin-vue-components: registry.npmmirror.com/unplugin-vue-components/0.22.12_vue@3.2.45
   vue: registry.npmmirror.com/vue/3.2.45
+  webpack: registry.npmmirror.com/webpack/5.75.0
 
 devDependencies:
   '@commitlint/cli': registry.npmmirror.com/@commitlint/cli/17.4.2
   '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/17.4.2
   '@commitlint/cz-commitlint': registry.npmmirror.com/@commitlint/cz-commitlint/17.4.2_i4x6owxztfhigiiqlxwntt4k24
-  '@nuxt/image-edge': registry.npmmirror.com/@nuxt/image-edge/1.0.0-27827328.bc9ddc0_rollup@3.11.0
+  '@nuxt/image-edge': registry.npmmirror.com/@nuxt/image-edge/1.0.0-27827328.bc9ddc0
   '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.191
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.49.0_iu322prlnwsygkcra5kbpy22si
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.49.0_7uibuqfxkfaozanbtbziikiqje
-  '@unocss/nuxt': registry.npmmirror.com/@unocss/nuxt/0.48.0_vlztpnogday2riea4a52fgjwqe
+  '@unocss/nuxt': registry.npmmirror.com/@unocss/nuxt/0.48.0_vite@4.0.4+webpack@5.75.0
   '@vitejs/plugin-vue-jsx': registry.npmmirror.com/@vitejs/plugin-vue-jsx/3.0.0_vite@4.0.4+vue@3.2.45
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/9.11.1_vue@3.2.45
-  '@vueuse/nuxt': registry.npmmirror.com/@vueuse/nuxt/9.11.1_iegmkv6vuamsp4edbe6vv4r7m4
+  '@vueuse/nuxt': registry.npmmirror.com/@vueuse/nuxt/9.11.1_nuxt@3.1.1+vue@3.2.45
   commitizen: registry.npmmirror.com/commitizen/4.3.0
   consola: registry.npmmirror.com/consola/2.15.3
   cz-customizable: registry.npmmirror.com/cz-customizable/6.9.2
@@ -2107,19 +2109,18 @@ packages:
     name: '@nuxt/devalue'
     version: 2.0.0
 
-  registry.npmmirror.com/@nuxt/image-edge/1.0.0-27827328.bc9ddc0_rollup@3.11.0:
+  registry.npmmirror.com/@nuxt/image-edge/1.0.0-27827328.bc9ddc0:
     resolution:
       {
         integrity: sha512-8fy6dSJaH9I5FKPK4EA6ddgUWNkxz2Y1AGIKVbAaRKftyK4y66gHmA+pbPPjb1cgYw6pWoWrnA4JxsHKelD8+A==,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.npmmirror.com/@nuxt/image-edge/-/image-edge-1.0.0-27827328.bc9ddc0.tgz,
       }
-    id: registry.npmmirror.com/@nuxt/image-edge/1.0.0-27827328.bc9ddc0
     name: '@nuxt/image-edge'
     version: 1.0.0-27827328.bc9ddc0
     engines: { node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 }
     dependencies:
-      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1_rollup@3.11.0
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1
       consola: registry.npmmirror.com/consola/2.15.3
       defu: registry.npmmirror.com/defu/6.1.2
       h3: registry.npmmirror.com/h3/1.1.0
@@ -2135,19 +2136,18 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/@nuxt/kit-edge/3.0.1-rc.0-27828744.aa9aec1_rollup@3.11.0:
+  registry.npmmirror.com/@nuxt/kit-edge/3.0.1-rc.0-27828744.aa9aec1:
     resolution:
       {
         integrity: sha512-3rfeJTugvUAINUEEZWDIeFB6QFuZoqSgrklxqQI2b3QZ30LUxSR8ADRetRjLZHOS2CUSoY260bJWTzGcYLFgOQ==,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.npmmirror.com/@nuxt/kit-edge/-/kit-edge-3.0.1-rc.0-27828744.aa9aec1.tgz,
       }
-    id: registry.npmmirror.com/@nuxt/kit-edge/3.0.1-rc.0-27828744.aa9aec1
     name: '@nuxt/kit-edge'
     version: 3.0.1-rc.0-27828744.aa9aec1
     engines: { node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 }
     dependencies:
-      '@nuxt/schema': registry.npmmirror.com/@nuxt/schema-edge/3.0.1-rc.0-27828744.aa9aec1_rollup@3.11.0
+      '@nuxt/schema': registry.npmmirror.com/@nuxt/schema-edge/3.0.1-rc.0-27828744.aa9aec1
       c12: registry.npmmirror.com/c12/1.1.0
       consola: registry.npmmirror.com/consola/2.15.3
       defu: registry.npmmirror.com/defu/6.1.2
@@ -2163,26 +2163,25 @@ packages:
       scule: registry.npmmirror.com/scule/1.0.0
       semver: registry.npmmirror.com/semver/7.3.8
       unctx: registry.npmmirror.com/unctx/2.1.1
-      unimport: registry.npmmirror.com/unimport/1.3.0_rollup@3.11.0
+      unimport: registry.npmmirror.com/unimport/1.3.0
       untyped: registry.npmmirror.com/untyped/1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: false
 
-  registry.npmmirror.com/@nuxt/kit/3.0.0_rollup@3.11.0:
+  registry.npmmirror.com/@nuxt/kit/3.0.0:
     resolution:
       {
         integrity: sha512-7ZsOLt5s9a0ZleAIzmoD70JwkZf5ti6bDdxl6f8ew7Huxz+ni/oRfTPTX9TrORXsgW5CvDt6Q9M7IJNPkAN/Iw==,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.npmmirror.com/@nuxt/kit/-/kit-3.0.0.tgz,
       }
-    id: registry.npmmirror.com/@nuxt/kit/3.0.0
     name: '@nuxt/kit'
     version: 3.0.0
     engines: { node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 }
     dependencies:
-      '@nuxt/schema': registry.npmmirror.com/@nuxt/schema/3.0.0_rollup@3.11.0
+      '@nuxt/schema': registry.npmmirror.com/@nuxt/schema/3.0.0
       c12: registry.npmmirror.com/c12/1.1.0
       consola: registry.npmmirror.com/consola/2.15.3
       defu: registry.npmmirror.com/defu/6.1.2
@@ -2198,12 +2197,45 @@ packages:
       scule: registry.npmmirror.com/scule/1.0.0
       semver: registry.npmmirror.com/semver/7.3.8
       unctx: registry.npmmirror.com/unctx/2.1.1
-      unimport: registry.npmmirror.com/unimport/1.3.0_rollup@3.11.0
+      unimport: registry.npmmirror.com/unimport/1.3.0
       untyped: registry.npmmirror.com/untyped/1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: false
+
+  registry.npmmirror.com/@nuxt/kit/3.1.1:
+    resolution:
+      {
+        integrity: sha512-wmqVCIuD/te6BKf3YiqWyMumKI5JIpkiv0li/1Y3QHnTkoxyIhLkbFgNcQHuBxJ3eMlk2UjAjAqWiqBHTX54vQ==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/@nuxt/kit/-/kit-3.1.1.tgz,
+      }
+    name: '@nuxt/kit'
+    version: 3.1.1
+    engines: { node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 }
+    dependencies:
+      '@nuxt/schema': registry.npmmirror.com/@nuxt/schema/3.1.1
+      c12: registry.npmmirror.com/c12/1.1.0
+      consola: registry.npmmirror.com/consola/2.15.3
+      defu: registry.npmmirror.com/defu/6.1.2
+      globby: registry.npmmirror.com/globby/13.1.3
+      hash-sum: registry.npmmirror.com/hash-sum/2.0.0
+      ignore: registry.npmmirror.com/ignore/5.2.4
+      jiti: registry.npmmirror.com/jiti/1.16.2
+      knitwork: registry.npmmirror.com/knitwork/1.0.0
+      lodash.template: registry.npmmirror.com/lodash.template/4.5.0
+      mlly: registry.npmmirror.com/mlly/1.1.0
+      pathe: registry.npmmirror.com/pathe/1.1.0
+      pkg-types: registry.npmmirror.com/pkg-types/1.0.1
+      scule: registry.npmmirror.com/scule/1.0.0
+      semver: registry.npmmirror.com/semver/7.3.8
+      unctx: registry.npmmirror.com/unctx/2.1.1
+      unimport: registry.npmmirror.com/unimport/2.0.1
+      untyped: registry.npmmirror.com/untyped/1.2.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
 
   registry.npmmirror.com/@nuxt/kit/3.1.1_rollup@3.11.0:
     resolution:
@@ -2239,14 +2271,13 @@ packages:
       - rollup
       - supports-color
 
-  registry.npmmirror.com/@nuxt/schema-edge/3.0.1-rc.0-27828744.aa9aec1_rollup@3.11.0:
+  registry.npmmirror.com/@nuxt/schema-edge/3.0.1-rc.0-27828744.aa9aec1:
     resolution:
       {
         integrity: sha512-AnKyMEjwZMPaejlfko4ab3Fcy29V8Rk/7TPmBkbJwV5ecTOLDk6oI8/QZjfZVXvYNAv/WBtHogs/tMzxkxad3g==,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.npmmirror.com/@nuxt/schema-edge/-/schema-edge-3.0.1-rc.0-27828744.aa9aec1.tgz,
       }
-    id: registry.npmmirror.com/@nuxt/schema-edge/3.0.1-rc.0-27828744.aa9aec1
     name: '@nuxt/schema-edge'
     version: 3.0.1-rc.0-27828744.aa9aec1
     engines: { node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 }
@@ -2261,21 +2292,20 @@ packages:
       scule: registry.npmmirror.com/scule/1.0.0
       std-env: registry.npmmirror.com/std-env/3.3.1
       ufo: registry.npmmirror.com/ufo/1.0.1
-      unimport: registry.npmmirror.com/unimport/1.3.0_rollup@3.11.0
+      unimport: registry.npmmirror.com/unimport/1.3.0
       untyped: registry.npmmirror.com/untyped/1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: false
 
-  registry.npmmirror.com/@nuxt/schema/3.0.0_rollup@3.11.0:
+  registry.npmmirror.com/@nuxt/schema/3.0.0:
     resolution:
       {
         integrity: sha512-5fwsidhs5NjFzR8sIzHMXO0WFGkI3tCH3ViANn2W4N5qCwoYZ0n1sZBkQ9Esn1VoEed6RsIlTpWrPZPVtqNkGQ==,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.npmmirror.com/@nuxt/schema/-/schema-3.0.0.tgz,
       }
-    id: registry.npmmirror.com/@nuxt/schema/3.0.0
     name: '@nuxt/schema'
     version: 3.0.0
     engines: { node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 }
@@ -2290,12 +2320,40 @@ packages:
       scule: registry.npmmirror.com/scule/1.0.0
       std-env: registry.npmmirror.com/std-env/3.3.1
       ufo: registry.npmmirror.com/ufo/1.0.1
-      unimport: registry.npmmirror.com/unimport/1.3.0_rollup@3.11.0
+      unimport: registry.npmmirror.com/unimport/1.3.0
       untyped: registry.npmmirror.com/untyped/1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: false
+
+  registry.npmmirror.com/@nuxt/schema/3.1.1:
+    resolution:
+      {
+        integrity: sha512-/KuoCDVGrLD9W7vwuYhu4HbdT/BpbrhA4Pm9dGn7Jah40kHDGqUnJxugvMjt+4suq53rLQyTA0LRDWfFxfxAOQ==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/@nuxt/schema/-/schema-3.1.1.tgz,
+      }
+    name: '@nuxt/schema'
+    version: 3.1.1
+    engines: { node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 }
+    dependencies:
+      c12: registry.npmmirror.com/c12/1.1.0
+      create-require: registry.npmmirror.com/create-require/1.1.1
+      defu: registry.npmmirror.com/defu/6.1.2
+      hookable: registry.npmmirror.com/hookable/5.4.2
+      jiti: registry.npmmirror.com/jiti/1.16.2
+      pathe: registry.npmmirror.com/pathe/1.1.0
+      pkg-types: registry.npmmirror.com/pkg-types/1.0.1
+      postcss-import-resolver: registry.npmmirror.com/postcss-import-resolver/2.0.0
+      scule: registry.npmmirror.com/scule/1.0.0
+      std-env: registry.npmmirror.com/std-env/3.3.1
+      ufo: registry.npmmirror.com/ufo/1.0.1
+      unimport: registry.npmmirror.com/unimport/2.0.1
+      untyped: registry.npmmirror.com/untyped/1.2.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
 
   registry.npmmirror.com/@nuxt/schema/3.1.1_rollup@3.11.0:
     resolution:
@@ -2326,19 +2384,18 @@ packages:
       - rollup
       - supports-color
 
-  registry.npmmirror.com/@nuxt/telemetry/2.1.9_rollup@3.11.0:
+  registry.npmmirror.com/@nuxt/telemetry/2.1.9:
     resolution:
       {
         integrity: sha512-mUyDqmB8GUJwTHVnwxuapeUHDSsUycOt+ZsA7GB6F8MOBJiVhQl/EeEAWoO2TUs0BPp2SlY9uO6eQihvxyLRqQ==,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.npmmirror.com/@nuxt/telemetry/-/telemetry-2.1.9.tgz,
       }
-    id: registry.npmmirror.com/@nuxt/telemetry/2.1.9
     name: '@nuxt/telemetry'
     version: 2.1.9
     hasBin: true
     dependencies:
-      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1_rollup@3.11.0
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1
       chalk: registry.npmmirror.com/chalk/5.2.0
       ci-info: registry.npmmirror.com/ci-info/3.7.1
       consola: registry.npmmirror.com/consola/2.15.3
@@ -2437,18 +2494,17 @@ packages:
       - vti
       - vue-tsc
 
-  registry.npmmirror.com/@nuxtjs/critters/0.4.0_rollup@3.11.0:
+  registry.npmmirror.com/@nuxtjs/critters/0.4.0:
     resolution:
       {
         integrity: sha512-+7RHktQwJcZsnWh6WB9nlX+t2gCv7/tv90DbVrFcXLR1Ew23uKcS5M2Wwq9emFupc1qnNJTk3zXR3GAGvqaRTg==,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.npmmirror.com/@nuxtjs/critters/-/critters-0.4.0.tgz,
       }
-    id: registry.npmmirror.com/@nuxtjs/critters/0.4.0
     name: '@nuxtjs/critters'
     version: 0.4.0
     dependencies:
-      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.0.0_rollup@3.11.0
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.0.0
       critters: registry.npmmirror.com/critters/0.0.16
       pathe: registry.npmmirror.com/pathe/1.0.0
     transitivePeerDependencies:
@@ -2456,7 +2512,7 @@ packages:
       - supports-color
     dev: false
 
-  registry.npmmirror.com/@pinia/nuxt/0.4.6_oug66pdv5r7q46o6bgigxt5sm4:
+  registry.npmmirror.com/@pinia/nuxt/0.4.6_prq2uz4lho2pwp6irk4cfkrxwu:
     resolution:
       {
         integrity: sha512-HjrYEfLdFpmsjhicPJgL36jVhzHWukIQPFFHGTSF84Cplu+f2nY2XHKqe9ToHzE9rLee2RjLOwAzOnXa/I/u6A==,
@@ -2467,7 +2523,7 @@ packages:
     name: '@pinia/nuxt'
     version: 0.4.6
     dependencies:
-      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1_rollup@3.11.0
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1
       pinia: registry.npmmirror.com/pinia/2.0.29_prq2uz4lho2pwp6irk4cfkrxwu
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -2676,6 +2732,26 @@ packages:
       estree-walker: registry.npmmirror.com/estree-walker/2.0.2
       picomatch: registry.npmmirror.com/picomatch/2.3.1
 
+  registry.npmmirror.com/@rollup/pluginutils/5.0.2:
+    resolution:
+      {
+        integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/@rollup/pluginutils/-/pluginutils-5.0.2.tgz,
+      }
+    name: '@rollup/pluginutils'
+    version: 5.0.2
+    engines: { node: '>=14.0.0' }
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@types/estree': registry.npmmirror.com/@types/estree/1.0.0
+      estree-walker: registry.npmmirror.com/estree-walker/2.0.2
+      picomatch: registry.npmmirror.com/picomatch/2.3.1
+
   registry.npmmirror.com/@rollup/pluginutils/5.0.2_rollup@3.11.0:
     resolution:
       {
@@ -2800,7 +2876,6 @@ packages:
     dependencies:
       '@types/eslint': registry.npmmirror.com/@types/eslint/8.4.10
       '@types/estree': registry.npmmirror.com/@types/estree/1.0.0
-    dev: true
 
   registry.npmmirror.com/@types/eslint/8.4.10:
     resolution:
@@ -2814,7 +2889,6 @@ packages:
     dependencies:
       '@types/estree': registry.npmmirror.com/@types/estree/1.0.0
       '@types/json-schema': registry.npmmirror.com/@types/json-schema/7.0.11
-    dev: true
 
   registry.npmmirror.com/@types/estree/0.0.51:
     resolution:
@@ -2825,7 +2899,6 @@ packages:
       }
     name: '@types/estree'
     version: 0.0.51
-    dev: true
 
   registry.npmmirror.com/@types/estree/1.0.0:
     resolution:
@@ -2846,7 +2919,6 @@ packages:
       }
     name: '@types/json-schema'
     version: 7.0.11
-    dev: true
 
   registry.npmmirror.com/@types/json5/0.0.29:
     resolution:
@@ -3208,7 +3280,7 @@ packages:
       hookable: registry.npmmirror.com/hookable/5.4.2
       vue: registry.npmmirror.com/vue/3.2.45
 
-  registry.npmmirror.com/@unocss/astro/0.48.0_rollup@3.11.0+vite@4.0.4:
+  registry.npmmirror.com/@unocss/astro/0.48.0_vite@4.0.4:
     resolution:
       {
         integrity: sha512-MoINkgukO6YxVVEmEsY0oLWqU+Fv/dzPtUQhfsfek1mqtUbnwQ3n1xuOJ2S0eJSYmbprSuhvW/yTFVn1twsM1A==,
@@ -3221,27 +3293,26 @@ packages:
     dependencies:
       '@unocss/core': registry.npmmirror.com/@unocss/core/0.48.0
       '@unocss/reset': registry.npmmirror.com/@unocss/reset/0.48.0
-      '@unocss/vite': registry.npmmirror.com/@unocss/vite/0.48.0_rollup@3.11.0+vite@4.0.4
+      '@unocss/vite': registry.npmmirror.com/@unocss/vite/0.48.0_vite@4.0.4
     transitivePeerDependencies:
       - rollup
       - vite
     dev: true
 
-  registry.npmmirror.com/@unocss/cli/0.48.0_rollup@3.11.0:
+  registry.npmmirror.com/@unocss/cli/0.48.0:
     resolution:
       {
         integrity: sha512-stfRsxzWK11VtrwUXTRPUyndzhdc2UUp5J148QlgMOClLpR370LADSfj8SHawF5+ID/0k+pd65r7fMGQsx75pw==,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.npmmirror.com/@unocss/cli/-/cli-0.48.0.tgz,
       }
-    id: registry.npmmirror.com/@unocss/cli/0.48.0
     name: '@unocss/cli'
     version: 0.48.0
     engines: { node: '>=14' }
     hasBin: true
     dependencies:
       '@ampproject/remapping': registry.npmmirror.com/@ampproject/remapping/2.2.0
-      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2_rollup@3.11.0
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2
       '@unocss/config': registry.npmmirror.com/@unocss/config/0.48.0
       '@unocss/core': registry.npmmirror.com/@unocss/core/0.48.0
       '@unocss/preset-uno': registry.npmmirror.com/@unocss/preset-uno/0.48.0
@@ -3297,7 +3368,7 @@ packages:
       sirv: registry.npmmirror.com/sirv/2.0.2
     dev: true
 
-  registry.npmmirror.com/@unocss/nuxt/0.48.0_vlztpnogday2riea4a52fgjwqe:
+  registry.npmmirror.com/@unocss/nuxt/0.48.0_vite@4.0.4+webpack@5.75.0:
     resolution:
       {
         integrity: sha512-kdSW9vE9XUIrV5Tpe7YhLY+9W6E46mbiLxKn9JKLhmapjgImaez1+PvUoOpJElIk8m/Q1LAfth/wASZWQ/IRKg==,
@@ -3308,7 +3379,7 @@ packages:
     name: '@unocss/nuxt'
     version: 0.48.0
     dependencies:
-      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1_rollup@3.11.0
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1
       '@unocss/config': registry.npmmirror.com/@unocss/config/0.48.0
       '@unocss/core': registry.npmmirror.com/@unocss/core/0.48.0
       '@unocss/preset-attributify': registry.npmmirror.com/@unocss/preset-attributify/0.48.0
@@ -3319,9 +3390,9 @@ packages:
       '@unocss/preset-web-fonts': registry.npmmirror.com/@unocss/preset-web-fonts/0.48.0
       '@unocss/preset-wind': registry.npmmirror.com/@unocss/preset-wind/0.48.0
       '@unocss/reset': registry.npmmirror.com/@unocss/reset/0.48.0
-      '@unocss/vite': registry.npmmirror.com/@unocss/vite/0.48.0_rollup@3.11.0+vite@4.0.4
-      '@unocss/webpack': registry.npmmirror.com/@unocss/webpack/0.48.0_w6clx3upxetcktavuo3ut6rdie
-      unocss: registry.npmmirror.com/unocss/0.48.0_xpxumia7uh2eagmqawfkmaiulu
+      '@unocss/vite': registry.npmmirror.com/@unocss/vite/0.48.0_vite@4.0.4
+      '@unocss/webpack': registry.npmmirror.com/@unocss/webpack/0.48.0_webpack@5.75.0
+      unocss: registry.npmmirror.com/unocss/0.48.0_kgxz7aktfvsz76ep66vgjbvvl4
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -3516,7 +3587,7 @@ packages:
       '@unocss/core': registry.npmmirror.com/@unocss/core/0.48.0
     dev: true
 
-  registry.npmmirror.com/@unocss/vite/0.48.0_rollup@3.11.0+vite@4.0.4:
+  registry.npmmirror.com/@unocss/vite/0.48.0_vite@4.0.4:
     resolution:
       {
         integrity: sha512-j4QS2Ns02J9LRwdpLNiKt+Fo0+YUtvTQ66Xc/xq9s/ErptUwNnXsTCEDQzadXwPw+I8REKakLUve32to8VAd0w==,
@@ -3530,7 +3601,7 @@ packages:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0
     dependencies:
       '@ampproject/remapping': registry.npmmirror.com/@ampproject/remapping/2.2.0
-      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2_rollup@3.11.0
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2
       '@unocss/config': registry.npmmirror.com/@unocss/config/0.48.0
       '@unocss/core': registry.npmmirror.com/@unocss/core/0.48.0
       '@unocss/inspector': registry.npmmirror.com/@unocss/inspector/0.48.0
@@ -3544,7 +3615,7 @@ packages:
       - rollup
     dev: true
 
-  registry.npmmirror.com/@unocss/webpack/0.48.0_w6clx3upxetcktavuo3ut6rdie:
+  registry.npmmirror.com/@unocss/webpack/0.48.0_webpack@5.75.0:
     resolution:
       {
         integrity: sha512-SMfaUWaDxq4lrx18vj6VPogkDm/E30Er62xAK8s1D9Li5zhtZPheP1dcc5t5zR1Cm3OA5Ow767eIQbnF3Fh9Lg==,
@@ -3558,7 +3629,7 @@ packages:
       webpack: ^4 || ^5
     dependencies:
       '@ampproject/remapping': registry.npmmirror.com/@ampproject/remapping/2.2.0
-      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2_rollup@3.11.0
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2
       '@unocss/config': registry.npmmirror.com/@unocss/config/0.48.0
       '@unocss/core': registry.npmmirror.com/@unocss/core/0.48.0
       chokidar: registry.npmmirror.com/chokidar/3.5.3
@@ -3944,7 +4015,7 @@ packages:
     name: '@vueuse/metadata'
     version: 9.11.1
 
-  registry.npmmirror.com/@vueuse/nuxt/9.11.1_iegmkv6vuamsp4edbe6vv4r7m4:
+  registry.npmmirror.com/@vueuse/nuxt/9.11.1_nuxt@3.1.1+vue@3.2.45:
     resolution:
       {
         integrity: sha512-hiiRzLgsH5nTAb2TChyFc6nykIyTB3MnCEhILg44Ug9ILC3vG/qnHnv3zRtIu4bXNOhDQN5shfnchgGPJFf8PA==,
@@ -3957,11 +4028,11 @@ packages:
     peerDependencies:
       nuxt: ^3.0.0
     dependencies:
-      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1_rollup@3.11.0
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1
       '@vueuse/core': registry.npmmirror.com/@vueuse/core/9.11.1_vue@3.2.45
       '@vueuse/metadata': registry.npmmirror.com/@vueuse/metadata/9.11.1
       local-pkg: registry.npmmirror.com/local-pkg/0.4.3
-      nuxt: registry.npmmirror.com/nuxt/3.1.1_rt4acthlntrqt2v5illy3aet3m
+      nuxt: registry.npmmirror.com/nuxt/3.1.1_akhx6ewvartiiqzw6cvjabolti
       vue-demi: registry.npmmirror.com/vue-demi/0.13.11_vue@3.2.45
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3998,7 +4069,6 @@ packages:
     dependencies:
       '@webassemblyjs/helper-numbers': registry.npmmirror.com/@webassemblyjs/helper-numbers/1.11.1
       '@webassemblyjs/helper-wasm-bytecode': registry.npmmirror.com/@webassemblyjs/helper-wasm-bytecode/1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/floating-point-hex-parser/1.11.1:
     resolution:
@@ -4009,7 +4079,6 @@ packages:
       }
     name: '@webassemblyjs/floating-point-hex-parser'
     version: 1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/helper-api-error/1.11.1:
     resolution:
@@ -4020,7 +4089,6 @@ packages:
       }
     name: '@webassemblyjs/helper-api-error'
     version: 1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/helper-buffer/1.11.1:
     resolution:
@@ -4031,7 +4099,6 @@ packages:
       }
     name: '@webassemblyjs/helper-buffer'
     version: 1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/helper-numbers/1.11.1:
     resolution:
@@ -4046,7 +4113,6 @@ packages:
       '@webassemblyjs/floating-point-hex-parser': registry.npmmirror.com/@webassemblyjs/floating-point-hex-parser/1.11.1
       '@webassemblyjs/helper-api-error': registry.npmmirror.com/@webassemblyjs/helper-api-error/1.11.1
       '@xtuc/long': registry.npmmirror.com/@xtuc/long/4.2.2
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/helper-wasm-bytecode/1.11.1:
     resolution:
@@ -4057,7 +4123,6 @@ packages:
       }
     name: '@webassemblyjs/helper-wasm-bytecode'
     version: 1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/helper-wasm-section/1.11.1:
     resolution:
@@ -4073,7 +4138,6 @@ packages:
       '@webassemblyjs/helper-buffer': registry.npmmirror.com/@webassemblyjs/helper-buffer/1.11.1
       '@webassemblyjs/helper-wasm-bytecode': registry.npmmirror.com/@webassemblyjs/helper-wasm-bytecode/1.11.1
       '@webassemblyjs/wasm-gen': registry.npmmirror.com/@webassemblyjs/wasm-gen/1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/ieee754/1.11.1:
     resolution:
@@ -4086,7 +4150,6 @@ packages:
     version: 1.11.1
     dependencies:
       '@xtuc/ieee754': registry.npmmirror.com/@xtuc/ieee754/1.2.0
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/leb128/1.11.1:
     resolution:
@@ -4099,7 +4162,6 @@ packages:
     version: 1.11.1
     dependencies:
       '@xtuc/long': registry.npmmirror.com/@xtuc/long/4.2.2
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/utf8/1.11.1:
     resolution:
@@ -4110,7 +4172,6 @@ packages:
       }
     name: '@webassemblyjs/utf8'
     version: 1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/wasm-edit/1.11.1:
     resolution:
@@ -4130,7 +4191,6 @@ packages:
       '@webassemblyjs/wasm-opt': registry.npmmirror.com/@webassemblyjs/wasm-opt/1.11.1
       '@webassemblyjs/wasm-parser': registry.npmmirror.com/@webassemblyjs/wasm-parser/1.11.1
       '@webassemblyjs/wast-printer': registry.npmmirror.com/@webassemblyjs/wast-printer/1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/wasm-gen/1.11.1:
     resolution:
@@ -4147,7 +4207,6 @@ packages:
       '@webassemblyjs/ieee754': registry.npmmirror.com/@webassemblyjs/ieee754/1.11.1
       '@webassemblyjs/leb128': registry.npmmirror.com/@webassemblyjs/leb128/1.11.1
       '@webassemblyjs/utf8': registry.npmmirror.com/@webassemblyjs/utf8/1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/wasm-opt/1.11.1:
     resolution:
@@ -4163,7 +4222,6 @@ packages:
       '@webassemblyjs/helper-buffer': registry.npmmirror.com/@webassemblyjs/helper-buffer/1.11.1
       '@webassemblyjs/wasm-gen': registry.npmmirror.com/@webassemblyjs/wasm-gen/1.11.1
       '@webassemblyjs/wasm-parser': registry.npmmirror.com/@webassemblyjs/wasm-parser/1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/wasm-parser/1.11.1:
     resolution:
@@ -4181,7 +4239,6 @@ packages:
       '@webassemblyjs/ieee754': registry.npmmirror.com/@webassemblyjs/ieee754/1.11.1
       '@webassemblyjs/leb128': registry.npmmirror.com/@webassemblyjs/leb128/1.11.1
       '@webassemblyjs/utf8': registry.npmmirror.com/@webassemblyjs/utf8/1.11.1
-    dev: true
 
   registry.npmmirror.com/@webassemblyjs/wast-printer/1.11.1:
     resolution:
@@ -4195,7 +4252,6 @@ packages:
     dependencies:
       '@webassemblyjs/ast': registry.npmmirror.com/@webassemblyjs/ast/1.11.1
       '@xtuc/long': registry.npmmirror.com/@xtuc/long/4.2.2
-    dev: true
 
   registry.npmmirror.com/@xtuc/ieee754/1.2.0:
     resolution:
@@ -4206,7 +4262,6 @@ packages:
       }
     name: '@xtuc/ieee754'
     version: 1.2.0
-    dev: true
 
   registry.npmmirror.com/@xtuc/long/4.2.2:
     resolution:
@@ -4217,7 +4272,6 @@ packages:
       }
     name: '@xtuc/long'
     version: 4.2.2
-    dev: true
 
   registry.npmmirror.com/@zhead/schema/1.0.9:
     resolution:
@@ -4268,7 +4322,6 @@ packages:
       acorn: ^8
     dependencies:
       acorn: registry.npmmirror.com/acorn/8.8.2
-    dev: true
 
   registry.npmmirror.com/acorn-jsx/5.3.2_acorn@8.8.2:
     resolution:
@@ -4364,7 +4417,6 @@ packages:
       ajv: ^6.9.1
     dependencies:
       ajv: registry.npmmirror.com/ajv/6.12.6
-    dev: true
 
   registry.npmmirror.com/ajv/6.12.6:
     resolution:
@@ -5334,7 +5386,6 @@ packages:
     name: chrome-trace-event
     version: 1.0.3
     engines: { node: '>=6.0' }
-    dev: true
 
   registry.npmmirror.com/ci-info/3.7.1:
     resolution:
@@ -6092,8 +6143,8 @@ packages:
     engines: { node: '>=10' }
     hasBin: true
     dependencies:
-      is-text-path: registry.npmmirror.com/is-text-path/1.0.1
       JSONStream: registry.npmmirror.com/JSONStream/1.3.5
+      is-text-path: registry.npmmirror.com/is-text-path/1.0.1
       lodash: registry.npmmirror.com/lodash/4.17.21
       meow: registry.npmmirror.com/meow/8.1.2
       split2: registry.npmmirror.com/split2/3.2.2
@@ -7378,7 +7429,6 @@ packages:
       }
     name: es-module-lexer
     version: 0.9.3
-    dev: true
 
   registry.npmmirror.com/es-set-tostringtag/2.0.1:
     resolution:
@@ -8160,7 +8210,6 @@ packages:
     dependencies:
       esrecurse: registry.npmmirror.com/esrecurse/4.3.0
       estraverse: registry.npmmirror.com/estraverse/4.3.0
-    dev: true
 
   registry.npmmirror.com/eslint-scope/7.1.1:
     resolution:
@@ -8346,7 +8395,6 @@ packages:
     name: estraverse
     version: 4.3.0
     engines: { node: '>=4.0' }
-    dev: true
 
   registry.npmmirror.com/estraverse/5.3.0:
     resolution:
@@ -8423,7 +8471,6 @@ packages:
     name: events
     version: 3.3.0
     engines: { node: '>=0.8.x' }
-    dev: true
 
   registry.npmmirror.com/execa/4.1.0:
     resolution:
@@ -9377,7 +9424,6 @@ packages:
       }
     name: glob-to-regexp
     version: 0.4.1
-    dev: true
 
   registry.npmmirror.com/glob/7.2.3:
     resolution:
@@ -10915,7 +10961,6 @@ packages:
       '@types/node': registry.npmmirror.com/@types/node/18.11.18
       merge-stream: registry.npmmirror.com/merge-stream/2.0.0
       supports-color: registry.npmmirror.com/supports-color/8.1.1
-    dev: true
 
   registry.npmmirror.com/jiti/1.16.2:
     resolution:
@@ -11336,7 +11381,6 @@ packages:
     name: loader-runner
     version: 4.3.0
     engines: { node: '>=6.11.5' }
-    dev: true
 
   registry.npmmirror.com/local-pkg/0.4.3:
     resolution:
@@ -12056,7 +12100,6 @@ packages:
     name: mime-db
     version: 1.52.0
     engines: { node: '>= 0.6' }
-    dev: true
 
   registry.npmmirror.com/mime-types/2.1.35:
     resolution:
@@ -12070,7 +12113,6 @@ packages:
     engines: { node: '>= 0.6' }
     dependencies:
       mime-db: registry.npmmirror.com/mime-db/1.52.0
-    dev: true
 
   registry.npmmirror.com/mime/1.6.0:
     resolution:
@@ -12534,7 +12576,6 @@ packages:
       }
     name: neo-async
     version: 2.6.2
-    dev: true
 
   registry.npmmirror.com/nitropack/2.1.0:
     resolution:
@@ -12894,7 +12935,7 @@ packages:
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
 
-  registry.npmmirror.com/nuxt/3.1.1_rt4acthlntrqt2v5illy3aet3m:
+  registry.npmmirror.com/nuxt/3.1.1_akhx6ewvartiiqzw6cvjabolti:
     resolution:
       {
         integrity: sha512-GVdmV88lR01OX0slxTPyTzwQkge7fxNREkx2QW0Lo66fb6aHcJlRXzFMBCOTjas+Ncng6AalIyIiPREEteGKSg==,
@@ -12908,9 +12949,9 @@ packages:
     hasBin: true
     dependencies:
       '@nuxt/devalue': registry.npmmirror.com/@nuxt/devalue/2.0.0
-      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1_rollup@3.11.0
-      '@nuxt/schema': registry.npmmirror.com/@nuxt/schema/3.1.1_rollup@3.11.0
-      '@nuxt/telemetry': registry.npmmirror.com/@nuxt/telemetry/2.1.9_rollup@3.11.0
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit/3.1.1
+      '@nuxt/schema': registry.npmmirror.com/@nuxt/schema/3.1.1
+      '@nuxt/telemetry': registry.npmmirror.com/@nuxt/telemetry/2.1.9
       '@nuxt/ui-templates': registry.npmmirror.com/@nuxt/ui-templates/1.1.0
       '@nuxt/vite-builder': registry.npmmirror.com/@nuxt/vite-builder/3.1.1_lvewwhtjoo7jnfvl5mmoipzcbm
       '@unhead/ssr': registry.npmmirror.com/@unhead/ssr/1.0.18
@@ -12945,7 +12986,7 @@ packages:
       unctx: registry.npmmirror.com/unctx/2.1.1
       unenv: registry.npmmirror.com/unenv/1.0.2
       unhead: registry.npmmirror.com/unhead/1.0.18
-      unimport: registry.npmmirror.com/unimport/2.0.1_rollup@3.11.0
+      unimport: registry.npmmirror.com/unimport/2.0.1
       unplugin: registry.npmmirror.com/unplugin/1.0.1
       untyped: registry.npmmirror.com/untyped/1.2.2
       vue: registry.npmmirror.com/vue/3.2.45
@@ -15243,7 +15284,6 @@ packages:
       '@types/json-schema': registry.npmmirror.com/@types/json-schema/7.0.11
       ajv: registry.npmmirror.com/ajv/6.12.6
       ajv-keywords: registry.npmmirror.com/ajv-keywords/3.5.2_ajv@6.12.6
-    dev: true
 
   registry.npmmirror.com/scule/1.0.0:
     resolution:
@@ -16325,7 +16365,6 @@ packages:
     engines: { node: '>=10' }
     dependencies:
       has-flag: registry.npmmirror.com/has-flag/4.0.0
-    dev: true
 
   registry.npmmirror.com/supports-hyperlinks/2.3.0:
     resolution:
@@ -16534,7 +16573,6 @@ packages:
       serialize-javascript: registry.npmmirror.com/serialize-javascript/6.0.1
       terser: registry.npmmirror.com/terser/5.16.1
       webpack: registry.npmmirror.com/webpack/5.75.0
-    dev: true
 
   registry.npmmirror.com/terser/5.16.1:
     resolution:
@@ -17139,18 +17177,17 @@ packages:
       '@unhead/schema': registry.npmmirror.com/@unhead/schema/1.0.18
       hookable: registry.npmmirror.com/hookable/5.4.2
 
-  registry.npmmirror.com/unimport/1.3.0_rollup@3.11.0:
+  registry.npmmirror.com/unimport/1.3.0:
     resolution:
       {
         integrity: sha512-fOkrdxglsHd428yegH0wPH/6IfaSdDeMXtdRGn6en/ccyzc2aaoxiUTMrJyc6Bu+xoa18RJRPMfLUHEzjz8atw==,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.npmmirror.com/unimport/-/unimport-1.3.0.tgz,
       }
-    id: registry.npmmirror.com/unimport/1.3.0
     name: unimport
     version: 1.3.0
     dependencies:
-      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2_rollup@3.11.0
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2
       escape-string-regexp: registry.npmmirror.com/escape-string-regexp/5.0.0
       fast-glob: registry.npmmirror.com/fast-glob/3.2.12
       local-pkg: registry.npmmirror.com/local-pkg/0.4.3
@@ -17164,6 +17201,30 @@ packages:
     transitivePeerDependencies:
       - rollup
     dev: false
+
+  registry.npmmirror.com/unimport/2.0.1:
+    resolution:
+      {
+        integrity: sha512-hMeDspGrEcocahicTr0AQYUGes24FvJtOxk9QEjeEOGv+n1EdpsDiT6z8t209PWhemPg0T5w/ooTVhup2GdrFA==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/unimport/-/unimport-2.0.1.tgz,
+      }
+    name: unimport
+    version: 2.0.1
+    dependencies:
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2
+      escape-string-regexp: registry.npmmirror.com/escape-string-regexp/5.0.0
+      fast-glob: registry.npmmirror.com/fast-glob/3.2.12
+      local-pkg: registry.npmmirror.com/local-pkg/0.4.3
+      magic-string: registry.npmmirror.com/magic-string/0.27.0
+      mlly: registry.npmmirror.com/mlly/1.1.0
+      pathe: registry.npmmirror.com/pathe/1.1.0
+      pkg-types: registry.npmmirror.com/pkg-types/1.0.1
+      scule: registry.npmmirror.com/scule/1.0.0
+      strip-literal: registry.npmmirror.com/strip-literal/1.0.0
+      unplugin: registry.npmmirror.com/unplugin/1.0.1
+    transitivePeerDependencies:
+      - rollup
 
   registry.npmmirror.com/unimport/2.0.1_rollup@3.11.0:
     resolution:
@@ -17201,7 +17262,7 @@ packages:
     version: 2.0.0
     engines: { node: '>= 10.0.0' }
 
-  registry.npmmirror.com/unocss/0.48.0_xpxumia7uh2eagmqawfkmaiulu:
+  registry.npmmirror.com/unocss/0.48.0_kgxz7aktfvsz76ep66vgjbvvl4:
     resolution:
       {
         integrity: sha512-rDyMHyvRTRUPOd406CzgoYfiQ4tzN/TGU++jFTDzLsJ9Unuwf/pBBclP6z6aqt5eRBoEOEMqrJJwm9QN7aeYdA==,
@@ -17218,8 +17279,8 @@ packages:
       '@unocss/webpack':
         optional: true
     dependencies:
-      '@unocss/astro': registry.npmmirror.com/@unocss/astro/0.48.0_rollup@3.11.0+vite@4.0.4
-      '@unocss/cli': registry.npmmirror.com/@unocss/cli/0.48.0_rollup@3.11.0
+      '@unocss/astro': registry.npmmirror.com/@unocss/astro/0.48.0_vite@4.0.4
+      '@unocss/cli': registry.npmmirror.com/@unocss/cli/0.48.0
       '@unocss/core': registry.npmmirror.com/@unocss/core/0.48.0
       '@unocss/preset-attributify': registry.npmmirror.com/@unocss/preset-attributify/0.48.0
       '@unocss/preset-icons': registry.npmmirror.com/@unocss/preset-icons/0.48.0
@@ -17234,8 +17295,8 @@ packages:
       '@unocss/transformer-compile-class': registry.npmmirror.com/@unocss/transformer-compile-class/0.48.0
       '@unocss/transformer-directives': registry.npmmirror.com/@unocss/transformer-directives/0.48.0
       '@unocss/transformer-variant-group': registry.npmmirror.com/@unocss/transformer-variant-group/0.48.0
-      '@unocss/vite': registry.npmmirror.com/@unocss/vite/0.48.0_rollup@3.11.0+vite@4.0.4
-      '@unocss/webpack': registry.npmmirror.com/@unocss/webpack/0.48.0_w6clx3upxetcktavuo3ut6rdie
+      '@unocss/vite': registry.npmmirror.com/@unocss/vite/0.48.0_vite@4.0.4
+      '@unocss/webpack': registry.npmmirror.com/@unocss/webpack/0.48.0_webpack@5.75.0
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -17277,7 +17338,7 @@ packages:
       - supports-color
     dev: false
 
-  registry.npmmirror.com/unplugin-vue-components/0.22.12_rollup@3.11.0+vue@3.2.45:
+  registry.npmmirror.com/unplugin-vue-components/0.22.12_vue@3.2.45:
     resolution:
       {
         integrity: sha512-FxyzsuBvMCYPIk+8cgscGBQ345tvwVu+qY5IhE++eorkyvA4Z1TiD/HCiim+Kbqozl10i4K+z+NCa2WO2jexRA==,
@@ -17296,7 +17357,7 @@ packages:
         optional: true
     dependencies:
       '@antfu/utils': registry.npmmirror.com/@antfu/utils/0.7.2
-      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2_rollup@3.11.0
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2
       chokidar: registry.npmmirror.com/chokidar/3.5.3
       debug: registry.npmmirror.com/debug/4.3.4
       fast-glob: registry.npmmirror.com/fast-glob/3.2.12
@@ -17911,7 +17972,6 @@ packages:
     dependencies:
       glob-to-regexp: registry.npmmirror.com/glob-to-regexp/0.4.1
       graceful-fs: registry.npmmirror.com/graceful-fs/4.2.10
-    dev: true
 
   registry.npmmirror.com/wcwidth/1.0.1:
     resolution:
@@ -18012,7 +18072,6 @@ packages:
       - '@swc/core'
       - esbuild
       - uglify-js
-    dev: true
 
   registry.npmmirror.com/whatwg-url/5.0.0:
     resolution:
