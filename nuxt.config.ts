@@ -1,11 +1,17 @@
 import vueJsx from '@vitejs/plugin-vue-jsx'
+import { visualizer } from 'rollup-plugin-visualizer'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
+import { isDev } from './build/util'
 
-export default {
+export default defineNuxtConfig({
   ssr: true,
   experimental: {
-    reactivityTransform: true,
+    reactivityTransform: false,
+  },
+  sourcemap: {
+    server: isDev(),
+    client: isDev(),
   },
   modules: [
     '@unocss/nuxt',
@@ -71,12 +77,20 @@ export default {
       target: 'esnext',
     },
     plugins: [
+      visualizer(),
       vueJsx(),
       Components({
         dts: true,
         resolvers: [IconsResolver({})],
       }),
     ],
+    esbuild: {
+      pure: ['console.log', 'console.info'],
+      drop: ['console', 'debugger'],
+    },
+    optimizeDeps: {
+      exclude: ['lodash-es'],
+    },
   },
   // eslint-disable-next-line @typescript-eslint/prefer-ts-expect-error
   // @ts-ignore nuxt-security is conditional
@@ -104,4 +118,4 @@ export default {
     },
     rateLimiter: false,
   },
-}
+})

@@ -8,7 +8,8 @@
     "npm": ">= 8"
   },
   "scripts": {
-    "build": "nuxi build",
+    "build:dev": "nuxi build --dotenv .env.development",
+    "build:pro": "nuxi build --dotenv .env.production",
     "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
     "test": "vitest",
@@ -63,6 +64,7 @@
     "commitizen": "^4.2.5",
     "consola": "*",
     "cz-customizable": "^6.9.2",
+    "dotenv": "16.0.3",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-define-config": "^1.12.0",
@@ -81,6 +83,7 @@
     "postcss-less": "^6.0.0",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
+    "rollup-plugin-visualizer": "5.9.0",
     "standard-version": "9.5.0",
     "stylelint": "^14.14.1",
     "stylelint-config-prettier": "^9.0.4",
