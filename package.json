@@ -10,8 +10,10 @@
   "scripts": {
     "build:dev": "nuxi build --dotenv .env.development",
     "build:pro": "nuxi build --dotenv .env.production",
-    "dev": "nuxi dev",
-    "start": "node .output/server/index.mjs",
+    "deploy:dev": "bash ./scripts/docker-compose.sh development",
+    "deploy:pro": "bash ./scripts/docker-compose.sh production",
+    "dev": "nuxi dev --port 5314",
+    "start": "PORT=5314 node .output/server/index.mjs",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "format": "prettier . --write",

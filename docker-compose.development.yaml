@@ -1,0 +1,8 @@
+version: '3'
+services:
+  sky-lark-development:
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    ports:
+      - 5314:5314

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  sky-lark-pro:
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+    ports:
+      - 5314:5314

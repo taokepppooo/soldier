@@ -1,19 +1,20 @@
 FROM node:16.15.0
 
-WORKDIR /sky-lark
+WORKDIR /sky-lark-development
 
 COPY package.json ./
+COPY pnpm-lock.yaml ./
 
 RUN npm config set registry https://registry.npm.taobao.org
 
 RUN npm install -g pnpm
 
+COPY . ./
+
 RUN pnpm i
 
-RUN pnpm run build
+RUN pnpm run build:dev
 
-COPY ./.output /sky-lark/.output
-
-EXPOSE 3000
+EXPOSE 5314
 
 ENTRYPOINT [ "pnpm", "run", "start" ]
