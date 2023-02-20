@@ -1,8 +1,13 @@
 version: '3'
 services:
-  sky-lark-pro:
+  sky-lark:
     build:
       context: .
       dockerfile: Dockerfile.production
     ports:
       - 5314:5314
+
+  nginx:
+    image: nginx
+    ports:
+      - '8080:80'

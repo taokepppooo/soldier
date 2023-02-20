@@ -1,20 +1,16 @@
-FROM node:16.15.0
+FROM node:16.15.0 AS builder
 
-WORKDIR /sky-lark-pro
-
-COPY package.json ./
-COPY pnpm-lock.yaml ./
-
+WORKDIR /sky-lark
 RUN npm config set registry https://registry.npm.taobao.org
-
 RUN npm install -g pnpm
-
 COPY . ./
-
 RUN pnpm i
-
 RUN pnpm run build:pro
 
-EXPOSE 5314
+FROM nginx
+
+COPY --from=builder /sky-lark/nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 80
 
 ENTRYPOINT [ "pnpm", "run", "start" ]

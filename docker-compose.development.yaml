@@ -1,8 +1,17 @@
 version: '3'
 services:
-  sky-lark-development:
+  sky-lark:
     build:
       context: .
       dockerfile: Dockerfile.development
     ports:
       - 5314:5314
+    command: 'pnpm run start'
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx:/etc/nginx/nginx.conf
+    ports:
+      - '80:80'
+    depends_on:
+      - sky-lark
