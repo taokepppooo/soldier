@@ -1,5 +1,6 @@
 FROM node:16.15.0 AS builder
 
+RUN mkdir -p /sky-lark
 WORKDIR /sky-lark
 RUN npm config set registry https://registry.npm.taobao.org
 RUN npm install -g pnpm
@@ -9,6 +10,7 @@ RUN pnpm run build:dev
 
 FROM builder AS runner
 
-WORKDIR /sky-lark
 COPY --from=builder /sky-lark/.output ./.output
+
 EXPOSE 5314
+CMD [ "pnpm", "run", "start" ]
