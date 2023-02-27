@@ -10,7 +10,7 @@ services:
   nginx:
     image: nginx
     volumes:
-      - ./nginx:/etc/nginx/nginx.conf
+      - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
     ports:
       - '80:80'
     depends_on:
