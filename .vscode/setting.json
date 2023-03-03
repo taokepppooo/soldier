@@ -8,7 +8,7 @@
   "stylelint.disableErrorMessage": true,
   "stylelint.enable": true,
   "stylelint.useLocal": true,
-  "stylelint.configFile": ".stylelintrc.json",
+  "stylelint.configFile": "stylelint.config.js",
   "stylelint.packageManager": "pnpm",
   "npm.packageManager": "pnpm",
   "eslint.packageManager": "pnpm",
